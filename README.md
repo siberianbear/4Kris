@@ -28,7 +28,7 @@ BootSMACSS code is currenntly separated to two folders:
 2. *drupal* - since we use Drupal as a backend, here is a port for it! You can
 find there a stuff like themes, views, displays, field formatters etc neccessary to provide valid markup. Everything with readme files attached.
 
-## Realisations
+## Realizations
 Here are the examples of sites we created using BootSMACSS and Drupal:
 
 * [eurekanetwork.org](http://eurekanetwork.org/) - EUREKA Network information website
@@ -79,3 +79,10 @@ same time jekyll command renders the html prototype from your layouts and includ
 SCSS files are located inside the sass folder and HTML files are in the root.
 See [this movie](https://www.youtube.com/watch?v=iWowJBRMtpc) to understand how
 to work with Jekyll if you're not familiar with.
+
+### Creators
+
+* Michal Kokocinski
+* Kris Gunciarz
+
+Development Supported by [WAAT](http://waat.eu/)
