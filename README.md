@@ -14,8 +14,8 @@ technologies and approaches that we like very much:
 
 * **[Bootstrap](http://getbootstrap.com/)** - because you need a good base and Swiss Army Knife, all Bootstrap goods are in your hands
 * **[SMACSS](https://smacss.com/)** - because you need CSS that is scalable and easy to maintain
-* **[SCSS](https://smacss.com/)** - as above
-* **KSS** - as you can render styleguide based on your components
+* **SCSS** - as above
+* **[KSS](http://warpspire.com/kss/)** - as you can render [styleguide](http://htanjo.github.io/kss-node-template/) based on your components
 * **[Jekyll](http://jekyllrb.com/)** - to render static html prototypes as a result
 of graphic project's implementation that can be shown to client, tested and
 implemented later to CMS, or deployed to production server
