@@ -1,0 +1,33 @@
+// Language switcher
+//
+// Tiny dropdown button to switch languages.
+//
+// Markup: html/lang-switch.html
+//
+// Styleguide lang-switch
+
+
+// Component
+// --------------------------------------------------
+.lang-switch {
+  line-height: $font-size-small;
+  margin: -1px 0 0 5px;
+}
+
+
+// Elements
+// --------------------------------------------------
+.lang-switch__button {
+  padding: 0 3px;
+  border: 1px solid $gray-light;
+  font-size: $font-size-small;
+  color: $brand-primary-dark;
+  cursor: pointer;
+}
+
+
+// States
+// --------------------------------------------------
+.lang-switch__button:hover {
+  text-decoration: none;
+}

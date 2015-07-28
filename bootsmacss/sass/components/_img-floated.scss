@@ -1,0 +1,30 @@
+// Image - floated
+//
+// Floated images generally should be wrapped around with text.
+// It is duplicate of .sinlge-page_media and should be considered deletion any
+// of those two elements.
+//
+// Markup: html/img-floated.html
+//
+// Styleguide img.img-floated
+
+// Component
+// --------------------------------------------------
+.img-floated {
+  float: left;
+  display: block;
+  overflow: hidden;
+  margin: 0 15px 15px 0;
+}
+
+// Modifiers
+// --------------------------------------------------
+.img-floated--right {
+  float: right;
+  margin: 0 0 15px 15px;
+}
+
+.img-floated--large {
+  width: 100%;
+  margin: 0 0 30px;
+}

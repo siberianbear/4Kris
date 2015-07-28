@@ -1,0 +1,52 @@
+// Social links
+//
+// Social media icons.
+//
+// Markup: html/social-links.html
+//
+// Styleguide social-links
+
+// Component
+// --------------------------------------------------
+.social-links {
+  line-height: $line-height-computed * 0.65;
+  text-align: center;
+
+  .social-links__item {
+    padding: 0;
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
+    @include circle($brand-primary);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .icon {
+    position: absolute;
+    margin: -15px;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    @include icon-size(30px);
+  }
+}
+
+// States
+// --------------------------------------------------
+.social-links {
+  @include breakpoint(tablet) {
+    margin-left: -12px; // ~25px/2
+    .social-links__item {
+      margin: 0 12px;
+    }
+  }
+  @include breakpoint(desktop) {
+    text-align: right;
+    margin-left: -5px;
+    .social-links__item {
+      margin: 0;
+    }
+  }
+}

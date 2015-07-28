@@ -1,0 +1,186 @@
+// Icons
+//
+// Set of WAAT icons for any occasion. Since icons are fonts, they can be placed
+// anywhere where text is placed and are sized automatically to match the
+// surrounding child. Color of the icon might be declared same way as for text.
+//
+// Markup: html/icon.html
+//
+// .icon--add - .icon--add
+// .icon--arrow-next - .icon--arrow-next
+// .icon--arrow-prev - .icon--arrow-prev
+// .icon--circle-arrow-right - .icon--circle-arrow-right
+// .icon--arrows - .icon--arrows
+// .icon--bell - .icon--bell
+// .icon--book-bookmark - .icon--book-bookmark
+// .icon--bookmark - .icon--bookmark
+// .icon--books - .icon--books
+// .icon--buildings - .icon--buildings
+// .icon--bulb - .icon--bulb
+// .icon--calendar - .icon--calendar
+// .icon--calendar-check - .icon--calendar-check
+// .icon--close - .icon--close
+// .icon--clusters - .icon--clusters
+// .icon--docs - .icon--docs
+// .icon--download - .icon--download
+// .icon--envelope - .icon--envelope
+// .icon--envelope-open - .icon--envelope-open
+// .icon--envelope-plus - .icon--envelope-plus
+// .icon--eu - .icon--eu
+// .icon--europe - .icon--europe
+// .icon--fb - .icon--fb
+// .icon--fill-doc - .icon--fill-doc
+// .icon--globe - .icon--globe
+// .icon--helpdesk - .icon--helpdesk
+// .icon--ok - .icon--ok
+// .icon--open-paper - .icon--open-paper
+// .icon--link - .icon--link
+// .icon--linkedin - .icon--linkedin
+// .icon--lock - .icon--lock
+// .icon--unlock - .icon--unlock
+// .icon--menu - .icon--menu
+// .icon--pencil - .icon--pencil
+// .icon--phone - .icon--phone
+// .icon--phone-question-mark - .icon--phone-question-mark
+// .icon--print - .icon--print
+// .icon--printer - .icon--printer
+// .icon--puzzle - .icon--puzzle
+// .icon--question-mark - .icon--question-mar
+// .icon--scope - .icon--scope
+// .icon--search - .icon--search
+// .icon--send - .icon--send
+// .icon--square-ok - .icon--square-ok
+// .icon--square-left - .icon--square-left
+// .icon--square-right - .icon--square-right
+// .icon--star - .icon--star
+// .icon--study - .icon--study
+// .icon--twitter - .icon--twitter
+// .icon--umbrela - .icon--umbrela
+// .icon--user - .icon--user
+// .icon--user-suit - .icon--user-suit
+// .icon--world - .icon--world
+// .icon--mime-default - .icon--mime-default
+// .icon--mime-doc - .icon--mime-doc
+// .icon--mime-exe - .icon--mime-exe
+// .icon--mime-jpg - .icon--mime-jpg
+// .icon--mime-pdf - .icon--mime-pdf
+// .icon--mime-png - .icon--mime-png
+// .icon--mime-rar - .icon--mime-rar
+// .icon--mime-xls - .icon--mime-xls
+// .icon--mime-zip - .icon--mime-zip
+//
+// Styleguide icon
+
+
+// Component
+// --------------------------------------------------
+//
+// WAAT for Bootstrap
+//
+// Since icons are fonts, they can be placed anywhere text is placed and are
+// thus automatically sized to match the surrounding child. To use, create an
+// inline element with the appropriate classes, like so:
+//
+// <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
+
+// Import the fonts
+@font-face {
+  font-family: 'WAAT Icons';
+  src: url('#{$waat-icons-font-path}.eot');
+  src: url('#{$waat-icons-font-path}.eot?#iefix') format('embedded-opentype'),
+       url('#{$waat-icons-font-path}.woff') format('woff'),
+       url('#{$waat-icons-font-path}.ttf') format('truetype'),
+       url('#{$waat-icons-font-path}.svg#icomoon') format('svg');
+}
+
+.icon {
+  font-family: 'WAAT Icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+
+  // To small icons fix.
+  font-size: 175%;
+  display: inline-block;
+  line-height: 100%;
+  position: relative;
+  top: 6px;
+  margin-top: -8px;
+
+  // Better Font Rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+// Modifiers
+// --------------------------------------------------
+.icon--add:before { content: "\e60c"; }
+.icon--arrow-next:before { content: "\e615"; }
+.icon--arrow-prev:before { content: "\e613"; }
+.icon--circle-arrow-right:before { content: "\e608"; }
+.icon--circle-ok:before { content: "\e618"; }
+.icon--arrows:before { content: "\e648"; }
+.icon--bell:before { content: "\e61a"; }
+.icon--book-bookmark:before { content: "\e64c"; }
+.icon--bookmark:before { content: "\e64d"; }
+.icon--books:before { content: "\e64b"; }
+.icon--buildings:before { content: "\e627"; }
+.icon--bulb:before { content: "\e61c"; }
+.icon--calendar:before { content: "\e61b"; }
+.icon--calendar-check:before { content: "\e649"; }
+.icon--close:before { content: "\e617"; }
+.icon--clusters:before { content: "\e607"; }
+.icon--docs:before { content: "\e604"; }
+.icon--download:before { content: "\e847"; }
+.icon--envelope:before { content: "\e629"; }
+.icon--envelope-open:before { content: "\e630"; }
+.icon--envelope-plus:before { content: "\e637"; }
+.icon--eu:before { content: "\e64a"; }
+.icon--europe:before { content: "\e62f"; }
+.icon--fb:before { content: "\e61f"; }
+.icon--fill-doc:before { content: "\e62d"; }
+.icon--globe:before { content: "\e602"; }
+.icon--helpdesk:before { content: "\e647"; }
+.icon--ok:before { content: "\e66b"; }
+.icon--open-paper:before { content: "\e628"; }
+.icon--link:before { content: "\e62b"; }
+.icon--linkedin:before { content: "\e623"; }
+.icon--lock:before { content: "\e651"; }
+.icon--unlock:before { content: "\e652"; }
+.icon--menu:before { content: "\e601"; }
+.icon--no:before { content: "\e66a"; }
+.icon--pencil:before { content: "\e63b"; }
+.icon--phone:before { content: "\e62c"; }
+.icon--phone-question-mark:before { content: "\e638"; }
+.icon--print:before { content: "\e6c7"; }
+.icon--printer:before { content: "\e6c6"; }
+.icon--puzzle:before { content: "\e620"; }
+.icon--question-mark:before { content: "\e60e"; }
+.icon--scope:before { content: "\e621"; }
+.icon--search:before { content: "\e603"; }
+.icon--send:before { content: "\e635"; }
+.icon--square-ok:before { content: "\e877"; }
+.icon--square-left:before { content: "\e873"; }
+.icon--square-right:before { content: "\e874"; }
+.icon--star:before { content: "\e61d"; }
+.icon--study:before { content: "\e634"; }
+.icon--twitter:before { content: "\e61e"; }
+.icon--triangle-right:before { content: "\e608"; }
+.icon--triangle-left:before { content: "\e608"; }
+.icon--umbrela:before { content: "\e619"; }
+.icon--user:before { content: "\e60a"; }
+.icon--user-suit:before { content: "\e60b"; }
+.icon--world:before { content: "\e62e"; }
+// File mime icons:
+.icon--mime-default:before { content: "\e63c"; }
+.icon--mime-doc:before { content: "\e63d"; }
+.icon--mime-exe:before { content: "\e643"; }
+.icon--mime-jpg:before { content: "\e644"; }
+.icon--mime-pdf:before { content: "\e641"; }
+.icon--mime-png:before { content: "\e642"; }
+.icon--mime-rar:before { content: "\e63f"; }
+.icon--mime-xls:before { content: "\e63e"; }
+.icon--mime-zip:before { content: "\e640"; }

@@ -1,0 +1,54 @@
+// Ornament
+//
+// Colorful singleline decoration for headers.
+//
+// Markup: html/ornament.html
+//
+// .ornament--blue - Blue
+// .ornament--azure - Azure
+// .ornament--blue - Blue
+// .ornament--blue-dark - Dark blue
+// .ornament--brown - Brown
+// .ornament--gray-light - Light gray
+// .ornament--gray-lighter - Lighter gray
+// .ornament--green - Green
+// .ornament--green-dark - Dark green
+// .ornament--orange - Orange
+// .ornament--white - White
+//
+// Styleguide ornament
+
+
+// Component
+// --------------------------------------------------
+.ornament {
+  &:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 30px;
+    background: $ornament-default;
+  }
+}
+
+
+// Modifiers
+// --------------------------------------------------
+.ornament--azure:before {background-color: $azure; }
+.ornament--blue:before {background-color: $blue; }
+.ornament--blue-dark:before {background-color: $blue-dark; }
+.ornament--brown:before {background-color: $brown; }
+.ornament--gray-light:before {background-color: $gray-light; }
+.ornament--gray-lighter:before {background-color: $gray-lighter; }
+.ornament--green:before {background-color: $green; }
+.ornament--green-dark:before {background-color: $green-dark; }
+.ornament--orange:before {background-color: $orange; }
+.ornament--white:before {background-color: #fff; }
+
+
+// Dependencies
+// --------------------------------------------------
+.ornament.page-title {
+  margin-top: 0;
+}

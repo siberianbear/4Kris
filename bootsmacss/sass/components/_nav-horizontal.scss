@@ -1,0 +1,47 @@
+// Horizontal navigation
+//
+// Inline navigation with bigger paddings dedicated for footer. Text aligned to the left on desktop and centered on mobile.
+//
+// Markup: html/nav-horizontal.html
+//
+// .nav-horizontal--condensed - Condensed
+//
+// Styleguide nav.nav-horizontal
+
+
+// Component
+// --------------------------------------------------
+.nav-horizontal {
+  margin: 0;
+  font-size: $font-size-small;
+  text-align: center;
+  line-height: $line-height-computed * 1.9;
+  @include breakpoint(desktop) {
+    line-height: $line-height-computed * 1.65;
+    text-align: left;
+  }
+}
+
+
+// Elements
+// --------------------------------------------------
+.nav-horizontal .nav-horizontal__item {
+  padding: 0 15px;
+}
+
+.nav-horizontal__link {
+  color: $brand-primary-dark;
+}
+
+
+// Modifiers
+// --------------------------------------------------
+.nav-horizontal--condensed {
+  line-height: $font-size-small;
+  .nav-horizontal__item {
+    padding: 0 3px;
+    &:not(:last-child) {
+      border-right: 1px solid $gray-base;
+    }
+  }
+}

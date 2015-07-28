@@ -1,0 +1,91 @@
+// Alert
+//
+// Alert messages. In practice this styles works as not so complicated Bootstrap
+// overrides. Just a little improvements.
+//
+//
+// Markup:
+// <div class="alert {{modifier_class}} alert-dismissible" role="alert">
+//   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+//   <strong>Warning!</strong> Better check yourself, you're not looking too good.
+// </div>
+//
+// .alert-success - Success
+// .alert-info    - Info
+// .alert-warning - Warning
+// .alert-danger  - Danger
+//
+// Styleguide alert
+
+
+// Component
+// --------------------------------------------------
+.alert {
+  background-color: #fff;
+  border-width: 2px;
+  border-radius: 0;
+  color: $text-color;
+}
+
+
+// Elements
+// --------------------------------------------------
+.alert__prefix {
+  margin: -65px 0 15px -17px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+.alert-success .alert__prefix {
+  background-color: $state-success-text;
+  @include arrow($state-success-text, transparent, 'bottom', 'out', 10px, 15px);
+}
+.alert-info .alert__prefix    {
+  background-color: $state-info-text;
+  @include arrow($state-info-text, transparent, 'bottom', 'out', 10px, 15px);
+}
+.alert-warning .alert__prefix {
+  background-color: $state-warning-text;
+  @include arrow($state-warning-text, transparent, 'bottom', 'out', 10px, 15px);
+}
+.alert-danger .alert__prefix  {
+  background-color: $state-danger-text;
+  @include arrow($state-danger-text, transparent, 'bottom', 'out', 10px, 15px);
+}
+
+
+// Modifiers
+// --------------------------------------------------
+// Use text color instead of border.
+.alert-success {
+  border-color: $alert-success-text;
+}
+.alert-info {
+  border-color: $alert-info-text
+}
+.alert-warning {
+  border-color: $alert-warning-text;
+}
+.alert-danger {
+  border-color: $alert-danger-text
+}
+
+
+// Dependencies
+// --------------------------------------------------
+.alert {
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+}
+
+.alert__prefix .icon {
+  @include icon-size(50px);
+}
+
+
+// States
+// --------------------------------------------------
+.has-prefix {
+  margin-top: 70px;
+}

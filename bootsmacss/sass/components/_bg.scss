@@ -1,0 +1,43 @@
+// Background
+//
+// Set of placeholders for background css property which are defined in _variables.scss file. They might be used to define a background for any element or to set a full page width background wrapper around container sections.
+//
+// Markup: html/bg.html
+//
+// .bg--1   - Background placeholder for $bg1
+// .bg--2   - Background placeholder for $bg2
+// .bg--3   - Background placeholder for $bg3
+// .bg--4   - Background placeholder for $bg4
+// .bg--5   - Background placeholder for $bg5
+//
+// Styleguide bg
+
+
+// Component
+// --------------------------------------------------
+.bg {
+  overflow: hidden; // fix in case of floated children elements
+}
+
+
+// Modifiers
+// --------------------------------------------------
+.bg--1 {
+  background: $bg1;
+}
+
+.bg--2 {
+  background: $bg2;
+}
+
+.bg--3 {
+  background: $bg3;
+}
+
+.bg--4 {
+  background: $bg4;
+}
+
+.bg--5 {
+  background: $bg5;
+}

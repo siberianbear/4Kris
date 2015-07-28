@@ -1,0 +1,37 @@
+// Social media buttons
+//
+// large buttons
+//
+// Markup:
+// <div class="form-group">
+//  <button class="social-media__btn">
+//    <p><span class="icon icon--facebook"></span>Facebook</p>
+//  </button>
+//  <button class="social-media__btn">
+//    <p><span class="icon icon--google"></span>Google</p>
+//  </button>
+//  <button class="social-media__btn">
+//    <p><span class="icon icon--twitter"></span>Twitter</p>
+//  </button>
+// </div>
+//
+// Styleguide social-media
+
+
+// Component
+// --------------------------------------------------
+
+.social-media__btn {
+  display: block;
+  width: 260px;
+  height: 40px;
+  margin-bottom:10px;
+  border: thin solid $gray-light;
+  background-color: white;
+  padding: 8px 12px;
+  vertical-align: middle;
+  .icon{
+    margin: -4px 0 0 0;
+    float:left;
+  }
+}

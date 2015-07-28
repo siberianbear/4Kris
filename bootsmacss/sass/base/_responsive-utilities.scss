@@ -1,0 +1,38 @@
+//
+// Responsive: Extra xxs breakpoint
+// --------------------------------------------------
+
+@include responsive-invisibility('.visible-xxs');
+
+.visible-xxs-block,
+.visible-xxs-inline,
+.visible-xxs-inline-block {
+  display: none !important;
+}
+
+.visible-xxs-block {
+  @media (max-width: $screen-xxs-max) {
+    display: block !important;
+  }
+}
+.visible-xxs-inline {
+  @media (max-width: $screen-xxs-max) {
+    display: inline !important;
+  }
+}
+.visible-xxs-inline-block {
+  @media (max-width: $screen-xxs-max) {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: $screen-xxs-max) {
+  @include responsive-invisibility('.hidden-xxs');
+}
+
+//
+// Responsive: Grid without gutters
+// --------------------------------------------------
+.no-gutters {
+  @include no-gutters();
+}

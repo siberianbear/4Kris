@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>kss-node Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+    
+
+    <!-- Scripts placed in head to use them in Component examples -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Scripts placed in head to use them in Component examples -->
+    <script src="../../bootstrap-sass/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">kss-node Styleguide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="news-carousel">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">Overview</span></a></li>
+              <li class="kss-menu-item"><a href="section-alert.html"><span class="kss-ref">alert</span><span class="kss-name">Alert</span></a></li>
+              <li class="kss-menu-item"><a href="section-bg.html"><span class="kss-ref">bg</span><span class="kss-name">Background</span></a></li>
+              <li class="kss-menu-item"><a href="section-bookmark.html"><span class="kss-ref">bookmark</span><span class="kss-name">Bookmark</span></a></li>
+              <li class="kss-menu-item"><a href="section-box.html"><span class="kss-ref">box</span><span class="kss-name">Box</span></a></li>
+              <li class="kss-menu-item"><a href="section-buttons.html"><span class="kss-ref">buttons</span><span class="kss-name">Buttons</span></a></li>
+              <li class="kss-menu-item"><a href="section-contact.html"><span class="kss-ref">contact</span><span class="kss-name">Contact</span></a></li>
+              <li class="kss-menu-item"><a href="section-counter.html"><span class="kss-ref">counter</span><span class="kss-name">Counter</span></a></li>
+              <li class="kss-menu-item"><a href="section-date.html"><span class="kss-ref">date</span><span class="kss-name">Date select</span></a></li>
+              <li class="kss-menu-item"><a href="section-engagement.html"><span class="kss-ref">engagement</span><span class="kss-name">Text engagement</span></a></li>
+              <li class="kss-menu-item"><a href="section-faq.html"><span class="kss-ref">faq</span><span class="kss-name">FAQ</span></a></li>
+              <li class="kss-menu-item"><a href="section-featured.html"><span class="kss-ref">featured</span><span class="kss-name">Featured</span></a></li>
+              <li class="kss-menu-item"><a href="section-fonts.html"><span class="kss-ref">fonts</span><span class="kss-name">Typography</span></a></li>
+              <li class="kss-menu-item"><a href="section-footer.html"><span class="kss-ref">footer</span><span class="kss-name">Footer</span></a></li>
+              <li class="kss-menu-item"><a href="section-form.html"><span class="kss-ref">form</span><span class="kss-name">Form</span></a></li>
+              <li class="kss-menu-item"><a href="section-header.html"><span class="kss-ref">header</span><span class="kss-name">Header</span></a></li>
+              <li class="kss-menu-item"><a href="section-highlight.html"><span class="kss-ref">highlight</span><span class="kss-name">Highlight</span></a></li>
+              <li class="kss-menu-item"><a href="section-icon.html"><span class="kss-ref">icon</span><span class="kss-name">Icons</span></a></li>
+              <li class="kss-menu-item"><a href="section-label.html"><span class="kss-ref">label</span><span class="kss-name">Label</span></a></li>
+              <li class="kss-menu-item"><a href="section-listing.html"><span class="kss-ref">listing</span><span class="kss-name">Listing</span></a></li>
+              <li class="kss-menu-item"><a href="section-map.html"><span class="kss-ref">map</span><span class="kss-name">Map</span></a></li>
+              <li class="kss-menu-item"><a href="section-nav.html"><span class="kss-ref">nav</span><span class="kss-name">Navigation</span></a></li>
+              <li class="kss-menu-item"><a href="section-ornament.html"><span class="kss-ref">ornament</span><span class="kss-name">Ornament</span></a></li>
+              <li class="kss-menu-item"><a href="section-pagination.html"><span class="kss-ref">pagination</span><span class="kss-name">Pagination</span></a></li>
+              <li class="kss-menu-item"><a href="section-panel.html"><span class="kss-ref">panel</span><span class="kss-name">Panel</span></a></li>
+              <li class="kss-menu-item"><a href="section-subscribe.html"><span class="kss-ref">subscribe</span><span class="kss-name">Subscribe form</span></a></li>
+              <li class="kss-menu-item"><a href="section-table.html"><span class="kss-ref">table</span><span class="kss-name">Tables</span></a></li>
+              <li class="kss-menu-item"><a href="section-tabs.html"><span class="kss-ref">tabs</span><span class="kss-name">Tabs</span></a></li>
+            </ul>
+            <ul class="kss-menu-child">
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          <section id="section-news-carousel" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">news-carousel</span> News carousel</h1>
+            <div class="kss-description">
+              <p>Carousel item for showing featured news on homepage.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div id="newsCarousel" class="news-carousel carousel slide" data-ride="carousel">
+
+  <ul class="news-carousel__list-group list-group">
+    <li data-target="#newsCarousel" data-slide-to="0" class="news-carousel__list-group-item list-group-item active">
+      <h4 class="news-carousel__list-group-label">Advanced Manufacturing Technologies</h4>
+    </li>
+    <li data-target="#newsCarousel" data-slide-to="1" class="news-carousel__list-group-item list-group-item">
+      <h4 class="news-carousel__list-group-label">Guidebook on SME Internationalisation</h4>
+    </li>
+    <li data-target="#newsCarousel" data-slide-to="2" class="news-carousel__list-group-item list-group-item">
+      <h4 class="news-carousel__list-group-label">Start your Network experience</h4>
+    </li>
+    <li data-target="#newsCarousel" data-slide-to="3" class="news-carousel__list-group-item list-group-item">
+      <h4 class="news-carousel__list-group-label">Time for new business</h4>
+    </li>
+    <li data-target="#newsCarousel" data-slide-to="4" class="news-carousel__list-group-item list-group-item">
+      <h4 class="news-carousel__list-group-label">Practical information for participants in Imp3rove ...</h4>
+    </li>
+    <div class="news-carousel__show-all">
+      <a href="#" class="btn btn-default btn-block">Show all news</a>
+    </div>
+  </ul>
+
+  <!-- Wrapper for slides -->
+  <div class="news-carousel__inner-wrapper">
+    <div class="carousel__inner carousel-inner">
+
+      <div class="news-carousel__item item active">
+         <div class="news-carousel__item-row">
+          <div class="news-carousel__item-text">
+            <h2 class="news-carousel__item-title">
+              <div class="ornament ornament--white"></div>
+              <a href="#">Advanced Manufacturing Technologies</a>
+            </h2>
+            <p>The first training for new colleagues of the Enterprise Europe Network, will take place on 10 and 11 March 2015 in Brussels.</p>
+            <p class="clearfix">
+              <small class="pull-left"><strong>Type:</strong> Training</small>
+              <small class="pull-right"><strong>Published:</strong> 11.12.2014</small>
+            </p>
+            <p class="text-right"><a href="#" class="btn btn-primary btn-sm">Read more</a></p>
+          </div>
+          <div class="news-carousel__item-media">
+            <img class="img-responsive" src="http://placehold.it/370x400" />
+          </div>
+        </div>
+      </div><!-- End Item -->
+
+      <div class="news-carousel__item item">
+         <div class="news-carousel__item-row">
+          <div class="news-carousel__item-text">
+            <h2 class="news-carousel__item-title">
+              <div class="ornament ornament--white"></div>
+              <a href="#">Guidebook on SME Internationalisation</a>
+            </h2>
+            <p>The first training for new colleagues of the Enterprise Europe Network, will take place on 10 and 11 March 2015 in Brussels.</p>
+            <p class="clearfix">
+              <small class="pull-left"><strong>Type:</strong> Training</small>
+              <small class="pull-right"><strong>Published:</strong> 11.12.2014</small>
+            </p>
+            <p class="text-right"><a href="#" class="btn btn-primary btn-sm">Read more</a></p>
+          </div>
+          <div class="news-carousel__item-media">
+            <img class="img-responsive" src="http://placehold.it/370x400" />
+          </div>
+        </div>
+      </div><!-- End Item -->
+
+      <div class="news-carousel__item item">
+         <div class="news-carousel__item-row">
+          <div class="news-carousel__item-text">
+            <h2 class="news-carousel__item-title">
+              <div class="ornament ornament--white"></div>
+              <a href="#">Start your Network experience</a>
+            </h2>
+            <p>The first training for new colleagues of the Enterprise Europe Network, will take place on 10 and 11 March 2015 in Brussels.</p>
+            <p class="clearfix">
+              <small class="pull-left"><strong>Type:</strong> Training</small>
+              <small class="pull-right"><strong>Published:</strong> 11.12.2014</small>
+            </p>
+            <p class="text-right"><a href="#" class="btn btn-primary btn-sm">Read more</a></p>
+          </div>
+          <div class="news-carousel__item-media">
+            <img class="img-responsive" src="http://placehold.it/370x400" />
+          </div>
+        </div>
+      </div><!-- End Item -->
+
+      <div class="news-carousel__item item">
+         <div class="news-carousel__item-row">
+          <div class="news-carousel__item-text">
+            <h2 class="news-carousel__item-title">
+              <div class="ornament ornament--white"></div>
+              <a href="#">Time for new business</a>
+            </h2>
+            <p>The first training for new colleagues of the Enterprise Europe Network, will take place on 10 and 11 March 2015 in Brussels.</p>
+            <p class="clearfix">
+              <small class="pull-left"><strong>Type:</strong> Training</small>
+              <small class="pull-right"><strong>Published:</strong> 11.12.2014</small>
+            </p>
+            <p class="text-right"><a href="#" class="btn btn-primary btn-sm">Read more</a></p>
+          </div>
+          <div class="news-carousel__item-media">
+            <img class="img-responsive" src="http://placehold.it/370x400" />
+          </div>
+        </div>
+      </div><!-- End Item -->
+
+      <div class="news-carousel__item item">
+         <div class="news-carousel__item-row">
+          <div class="news-carousel__item-text">
+            <h2 class="news-carousel__item-title">
+              <div class="ornament ornament--white"></div>
+              <a href="#">Practical information for participants in Imp3rove ...</a>
+            </h2>
+            <p>The first training for new colleagues of the Enterprise Europe Network, will take place on 10 and 11 March 2015 in Brussels.</p>
+            <p class="clearfix">
+              <small class="pull-left"><strong>Type:</strong> Training</small>
+              <small class="pull-right"><strong>Published:</strong> 11.12.2014</small>
+            </p>
+            <p class="text-right"><a href="#" class="btn btn-primary btn-sm">Read more</a></p>
+          </div>
+          <div class="news-carousel__item-media">
+            <img class="img-responsive" src="http://placehold.it/370x400" />
+          </div>
+        </div>
+      </div><!-- End Item -->
+
+    </div><!-- End Carousel Inner -->
+  </div>
+
+  <!-- Controls -->
+  <div class="news-carousel__controls carousel-controls">
+    <a class="news-carousel__controls-left left" href="#newsCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="news-carousel__controls-right right" href="#newsCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+
+</div><!-- End Carousel -->
+
+<script src="../../js/components/news-carousel/news-carousel.js"></script>
+
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div id=&quot;newsCarousel&quot; class=&quot;news-carousel carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+
+  &lt;ul class=&quot;news-carousel__list-group list-group&quot;&gt;
+    &lt;li data-target=&quot;#newsCarousel&quot; data-slide-to=&quot;0&quot; class=&quot;news-carousel__list-group-item list-group-item active&quot;&gt;
+      &lt;h4 class=&quot;news-carousel__list-group-label&quot;&gt;Advanced Manufacturing Technologies&lt;/h4&gt;
+    &lt;/li&gt;
+    &lt;li data-target=&quot;#newsCarousel&quot; data-slide-to=&quot;1&quot; class=&quot;news-carousel__list-group-item list-group-item&quot;&gt;
+      &lt;h4 class=&quot;news-carousel__list-group-label&quot;&gt;Guidebook on SME Internationalisation&lt;/h4&gt;
+    &lt;/li&gt;
+    &lt;li data-target=&quot;#newsCarousel&quot; data-slide-to=&quot;2&quot; class=&quot;news-carousel__list-group-item list-group-item&quot;&gt;
+      &lt;h4 class=&quot;news-carousel__list-group-label&quot;&gt;Start your Network experience&lt;/h4&gt;
+    &lt;/li&gt;
+    &lt;li data-target=&quot;#newsCarousel&quot; data-slide-to=&quot;3&quot; class=&quot;news-carousel__list-group-item list-group-item&quot;&gt;
+      &lt;h4 class=&quot;news-carousel__list-group-label&quot;&gt;Time for new business&lt;/h4&gt;
+    &lt;/li&gt;
+    &lt;li data-target=&quot;#newsCarousel&quot; data-slide-to=&quot;4&quot; class=&quot;news-carousel__list-group-item list-group-item&quot;&gt;
+      &lt;h4 class=&quot;news-carousel__list-group-label&quot;&gt;Practical information for participants in Imp3rove ...&lt;/h4&gt;
+    &lt;/li&gt;
+    &lt;div class=&quot;news-carousel__show-all&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-block&quot;&gt;Show all news&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/ul&gt;
+
+  &lt;!-- Wrapper for slides --&gt;
+  &lt;div class=&quot;news-carousel__inner-wrapper&quot;&gt;
+    &lt;div class=&quot;carousel__inner carousel-inner&quot;&gt;
+
+      &lt;div class=&quot;news-carousel__item item active&quot;&gt;
+         &lt;div class=&quot;news-carousel__item-row&quot;&gt;
+          &lt;div class=&quot;news-carousel__item-text&quot;&gt;
+            &lt;h2 class=&quot;news-carousel__item-title&quot;&gt;
+              &lt;div class=&quot;ornament ornament--white&quot;&gt;&lt;/div&gt;
+              &lt;a href=&quot;#&quot;&gt;Advanced Manufacturing Technologies&lt;/a&gt;
+            &lt;/h2&gt;
+            &lt;p&gt;The first training for new colleagues of the Enterprise Europe Network, will take place on 10 and 11 March 2015 in Brussels.&lt;/p&gt;
+            &lt;p class=&quot;clearfix&quot;&gt;
+              &lt;small class=&quot;pull-left&quot;&gt;&lt;strong&gt;Type:&lt;/strong&gt; Training&lt;/small&gt;
+              &lt;small class=&quot;pull-right&quot;&gt;&lt;strong&gt;Published:&lt;/strong&gt; 11.12.2014&lt;/small&gt;
+            &lt;/p&gt;
+            &lt;p class=&quot;text-right&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Read more&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;news-carousel__item-media&quot;&gt;
+            &lt;img class=&quot;img-responsive&quot; src=&quot;http://placehold.it/370x400&quot; /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;&lt;!-- End Item --&gt;
+
+      &lt;div class=&quot;news-carousel__item item&quot;&gt;
+         &lt;div class=&quot;news-carousel__item-row&quot;&gt;
+          &lt;div class=&quot;news-carousel__item-text&quot;&gt;
+            &lt;h2 class=&quot;news-carousel__item-title&quot;&gt;
+              &lt;div class=&quot;ornament ornament--white&quot;&gt;&lt;/div&gt;
+              &lt;a href=&quot;#&quot;&gt;Guidebook on SME Internationalisation&lt;/a&gt;
+            &lt;/h2&gt;
+            &lt;p&gt;The first training for new colleagues of the Enterprise Europe Network, will take place on 10 and 11 March 2015 in Brussels.&lt;/p&gt;
+            &lt;p class=&quot;clearfix&quot;&gt;
+              &lt;small class=&quot;pull-left&quot;&gt;&lt;strong&gt;Type:&lt;/strong&gt; Training&lt;/small&gt;
+              &lt;small class=&quot;pull-right&quot;&gt;&lt;strong&gt;Published:&lt;/strong&gt; 11.12.2014&lt;/small&gt;
+            &lt;/p&gt;
+            &lt;p class=&quot;text-right&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Read more&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;news-carousel__item-media&quot;&gt;
+            &lt;img class=&quot;img-responsive&quot; src=&quot;http://placehold.it/370x400&quot; /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;&lt;!-- End Item --&gt;
+
+      &lt;div class=&quot;news-carousel__item item&quot;&gt;
+         &lt;div class=&quot;news-carousel__item-row&quot;&gt;
+          &lt;div class=&quot;news-carousel__item-text&quot;&gt;
+            &lt;h2 class=&quot;news-carousel__item-title&quot;&gt;
+              &lt;div class=&quot;ornament ornament--white&quot;&gt;&lt;/div&gt;
+              &lt;a href=&quot;#&quot;&gt;Start your Network experience&lt;/a&gt;
+            &lt;/h2&gt;
+            &lt;p&gt;The first training for new colleagues of the Enterprise Europe Network, will take place on 10 and 11 March 2015 in Brussels.&lt;/p&gt;
+            &lt;p class=&quot;clearfix&quot;&gt;
+              &lt;small class=&quot;pull-left&quot;&gt;&lt;strong&gt;Type:&lt;/strong&gt; Training&lt;/small&gt;
+              &lt;small class=&quot;pull-right&quot;&gt;&lt;strong&gt;Published:&lt;/strong&gt; 11.12.2014&lt;/small&gt;
+            &lt;/p&gt;
+            &lt;p class=&quot;text-right&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Read more&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;news-carousel__item-media&quot;&gt;
+            &lt;img class=&quot;img-responsive&quot; src=&quot;http://placehold.it/370x400&quot; /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;&lt;!-- End Item --&gt;
+
+      &lt;div class=&quot;news-carousel__item item&quot;&gt;
+         &lt;div class=&quot;news-carousel__item-row&quot;&gt;
+          &lt;div class=&quot;news-carousel__item-text&quot;&gt;
+            &lt;h2 class=&quot;news-carousel__item-title&quot;&gt;
+              &lt;div class=&quot;ornament ornament--white&quot;&gt;&lt;/div&gt;
+              &lt;a href=&quot;#&quot;&gt;Time for new business&lt;/a&gt;
+            &lt;/h2&gt;
+            &lt;p&gt;The first training for new colleagues of the Enterprise Europe Network, will take place on 10 and 11 March 2015 in Brussels.&lt;/p&gt;
+            &lt;p class=&quot;clearfix&quot;&gt;
+              &lt;small class=&quot;pull-left&quot;&gt;&lt;strong&gt;Type:&lt;/strong&gt; Training&lt;/small&gt;
+              &lt;small class=&quot;pull-right&quot;&gt;&lt;strong&gt;Published:&lt;/strong&gt; 11.12.2014&lt;/small&gt;
+            &lt;/p&gt;
+            &lt;p class=&quot;text-right&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Read more&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;news-carousel__item-media&quot;&gt;
+            &lt;img class=&quot;img-responsive&quot; src=&quot;http://placehold.it/370x400&quot; /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;&lt;!-- End Item --&gt;
+
+      &lt;div class=&quot;news-carousel__item item&quot;&gt;
+         &lt;div class=&quot;news-carousel__item-row&quot;&gt;
+          &lt;div class=&quot;news-carousel__item-text&quot;&gt;
+            &lt;h2 class=&quot;news-carousel__item-title&quot;&gt;
+              &lt;div class=&quot;ornament ornament--white&quot;&gt;&lt;/div&gt;
+              &lt;a href=&quot;#&quot;&gt;Practical information for participants in Imp3rove ...&lt;/a&gt;
+            &lt;/h2&gt;
+            &lt;p&gt;The first training for new colleagues of the Enterprise Europe Network, will take place on 10 and 11 March 2015 in Brussels.&lt;/p&gt;
+            &lt;p class=&quot;clearfix&quot;&gt;
+              &lt;small class=&quot;pull-left&quot;&gt;&lt;strong&gt;Type:&lt;/strong&gt; Training&lt;/small&gt;
+              &lt;small class=&quot;pull-right&quot;&gt;&lt;strong&gt;Published:&lt;/strong&gt; 11.12.2014&lt;/small&gt;
+            &lt;/p&gt;
+            &lt;p class=&quot;text-right&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Read more&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;news-carousel__item-media&quot;&gt;
+            &lt;img class=&quot;img-responsive&quot; src=&quot;http://placehold.it/370x400&quot; /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;&lt;!-- End Item --&gt;
+
+    &lt;/div&gt;&lt;!-- End Carousel Inner --&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Controls --&gt;
+  &lt;div class=&quot;news-carousel__controls carousel-controls&quot;&gt;
+    &lt;a class=&quot;news-carousel__controls-left left&quot; href=&quot;#newsCarousel&quot; data-slide=&quot;prev&quot;&gt;
+      &lt;span class=&quot;glyphicon glyphicon-chevron-left&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;news-carousel__controls-right right&quot; href=&quot;#newsCarousel&quot; data-slide=&quot;next&quot;&gt;
+      &lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- End Carousel --&gt;
+
+&lt;script src=&quot;../../js/components/news-carousel/news-carousel.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+              </div>
+            </div>
+          </section>
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/rainbow.min.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+  </body>
+</html>

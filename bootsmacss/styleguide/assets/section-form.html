@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>kss-node Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+    
+
+    <!-- Scripts placed in head to use them in Component examples -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Scripts placed in head to use them in Component examples -->
+    <script src="../../bootstrap-sass/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">kss-node Styleguide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="form">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">Overview</span></a></li>
+              <li class="kss-menu-item"><a href="section-alert.html"><span class="kss-ref">alert</span><span class="kss-name">Alert</span></a></li>
+              <li class="kss-menu-item"><a href="section-bg.html"><span class="kss-ref">bg</span><span class="kss-name">Background</span></a></li>
+              <li class="kss-menu-item"><a href="section-bookmark.html"><span class="kss-ref">bookmark</span><span class="kss-name">Bookmark</span></a></li>
+              <li class="kss-menu-item"><a href="section-box.html"><span class="kss-ref">box</span><span class="kss-name">Box</span></a></li>
+              <li class="kss-menu-item"><a href="section-buttons.html"><span class="kss-ref">buttons</span><span class="kss-name">Buttons</span></a></li>
+              <li class="kss-menu-item"><a href="section-contact.html"><span class="kss-ref">contact</span><span class="kss-name">Contact</span></a></li>
+              <li class="kss-menu-item"><a href="section-counter.html"><span class="kss-ref">counter</span><span class="kss-name">Counter</span></a></li>
+              <li class="kss-menu-item"><a href="section-date.html"><span class="kss-ref">date</span><span class="kss-name">Date select</span></a></li>
+              <li class="kss-menu-item"><a href="section-engagement.html"><span class="kss-ref">engagement</span><span class="kss-name">Text engagement</span></a></li>
+              <li class="kss-menu-item"><a href="section-faq.html"><span class="kss-ref">faq</span><span class="kss-name">FAQ</span></a></li>
+              <li class="kss-menu-item"><a href="section-featured.html"><span class="kss-ref">featured</span><span class="kss-name">Featured</span></a></li>
+              <li class="kss-menu-item"><a href="section-fonts.html"><span class="kss-ref">fonts</span><span class="kss-name">Typography</span></a></li>
+              <li class="kss-menu-item"><a href="section-footer.html"><span class="kss-ref">footer</span><span class="kss-name">Footer</span></a></li>
+              <li class="kss-menu-item"><a href="section-form.html"><span class="kss-ref">form</span><span class="kss-name">Form</span></a></li>
+              <li class="kss-menu-item"><a href="section-header.html"><span class="kss-ref">header</span><span class="kss-name">Header</span></a></li>
+              <li class="kss-menu-item"><a href="section-highlight.html"><span class="kss-ref">highlight</span><span class="kss-name">Highlight</span></a></li>
+              <li class="kss-menu-item"><a href="section-icon.html"><span class="kss-ref">icon</span><span class="kss-name">Icons</span></a></li>
+              <li class="kss-menu-item"><a href="section-label.html"><span class="kss-ref">label</span><span class="kss-name">Label</span></a></li>
+              <li class="kss-menu-item"><a href="section-listing.html"><span class="kss-ref">listing</span><span class="kss-name">Listing</span></a></li>
+              <li class="kss-menu-item"><a href="section-map.html"><span class="kss-ref">map</span><span class="kss-name">Map</span></a></li>
+              <li class="kss-menu-item"><a href="section-nav.html"><span class="kss-ref">nav</span><span class="kss-name">Navigation</span></a></li>
+              <li class="kss-menu-item"><a href="section-ornament.html"><span class="kss-ref">ornament</span><span class="kss-name">Ornament</span></a></li>
+              <li class="kss-menu-item"><a href="section-pagination.html"><span class="kss-ref">pagination</span><span class="kss-name">Pagination</span></a></li>
+              <li class="kss-menu-item"><a href="section-panel.html"><span class="kss-ref">panel</span><span class="kss-name">Panel</span></a></li>
+              <li class="kss-menu-item"><a href="section-subscribe.html"><span class="kss-ref">subscribe</span><span class="kss-name">Subscribe form</span></a></li>
+              <li class="kss-menu-item"><a href="section-table.html"><span class="kss-ref">table</span><span class="kss-name">Tables</span></a></li>
+              <li class="kss-menu-item"><a href="section-tabs.html"><span class="kss-ref">tabs</span><span class="kss-name">Tabs</span></a></li>
+            </ul>
+            <ul class="kss-menu-child">
+              <li class="kss-menu-item"><a href="#section-form.states"><span class="kss-ref">form.states</span><span class="kss-name">Validation states</span></a></li>
+              <li class="kss-menu-item"><a href="#section-form.submit"><span class="kss-ref">form.submit</span><span class="kss-name">Form Submit</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          <section id="section-form" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">form</span> Form</h1>
+            <div class="kss-description">
+              <p>Form improvements.</p>
+
+            </div>
+          </section>
+          <section id="section-form.states" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">form.states</span> Validation states</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="form-group has-success">
+  <label class="control-label" for="inputSuccess1">Input with success</label>
+  <input type="text" class="form-control" id="inputSuccess1">
+</div>
+<div class="form-group has-warning">
+  <label class="control-label" for="inputWarning1">Input with warning</label>
+  <input type="text" class="form-control" id="inputWarning1">
+</div>
+<div class="form-group has-error">
+  <label class="control-label" for="inputError1">Input with error</label>
+  <input type="text" class="form-control" id="inputError1">
+</div>
+<div class="has-success">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" id="checkboxSuccess" value="option1">
+      Checkbox with success
+    </label>
+  </div>
+</div>
+<div class="has-warning">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" id="checkboxWarning" value="option1">
+      Checkbox with warning
+    </label>
+  </div>
+</div>
+<div class="has-error">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" id="checkboxError" value="option1">
+      Checkbox with error
+    </label>
+  </div>
+</div>
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;form-group has-success&quot;&gt;
+  &lt;label class=&quot;control-label&quot; for=&quot;inputSuccess1&quot;&gt;Input with success&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputSuccess1&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group has-warning&quot;&gt;
+  &lt;label class=&quot;control-label&quot; for=&quot;inputWarning1&quot;&gt;Input with warning&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputWarning1&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group has-error&quot;&gt;
+  &lt;label class=&quot;control-label&quot; for=&quot;inputError1&quot;&gt;Input with error&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputError1&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;has-success&quot;&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; id=&quot;checkboxSuccess&quot; value=&quot;option1&quot;&gt;
+      Checkbox with success
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;has-warning&quot;&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; id=&quot;checkboxWarning&quot; value=&quot;option1&quot;&gt;
+      Checkbox with warning
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;has-error&quot;&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot; id=&quot;checkboxError&quot; value=&quot;option1&quot;&gt;
+      Checkbox with error
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-form.submit" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">form.submit</span> Form Submit</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <input class="btn btn-primary form-submit" type="submit" id="edit-submit" name="op" value="Submit">
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;input class=&quot;btn btn-primary form-submit&quot; type=&quot;submit&quot; id=&quot;edit-submit&quot; name=&quot;op&quot; value=&quot;Submit&quot;&gt;</code></pre>
+              </div>
+            </div>
+          </section>
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/rainbow.min.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+  </body>
+</html>

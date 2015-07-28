@@ -1,0 +1,38 @@
+.page-content {
+  background: #fff;
+  min-height: 200px;
+  padding: 40px 50px;
+  @include arrow($gray-light, $blue-light, 'left', 'in', 25px, 50px);
+
+  h2.page-title {
+    @include arrow($gray-light, #fff, 'bottom','out', 10px, 30px);
+  }
+
+  & > * {
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+.section--even .page-content {
+  &:before,
+  &:after {
+    content: none;
+  }
+}
+
+.section--full-width {
+  .section--sidebar-left {
+    border-right: 1px solid $gray-light;
+  }
+  .section--even {
+    padding-top: 0;
+  }
+  .page-content {
+    border-left: none;
+    &:before,
+    &:after {
+      content: none;
+    }
+  }
+}

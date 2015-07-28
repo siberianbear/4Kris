@@ -1,0 +1,138 @@
+// Typography
+//
+// Basic text components.
+//
+// Styleguide fonts
+
+
+
+// Headers
+//
+// Markup:
+// <h1>This is demo h1.</h1>
+// <h2>This is demo h2.</h2>
+// <h3>This is demo h3.</h3>
+// <h4>This is demo h4.</h4>
+//
+// Styleguide fonts.headers
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  color: $gray-base;
+  margin: 24px 0 12px 0;
+  text-transform: uppercase;
+
+  small,
+  .small {
+    font-size: 55%;
+    color: $gray-base;
+  }
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  padding: 0 0 20px;
+  border-bottom: 1px solid $gray-light;
+}
+
+h3,
+.h3 {
+  font-size: $font-size-h3;
+  font-weight: 400;
+}
+
+h4,
+.h4 {
+  font-size: $font-size-h4;
+}
+
+ul li {
+  padding-bottom: $line-height-computed / 3;
+}
+
+
+
+// Link
+//
+// Markup:
+// This is <a href="#">demo link</a>.
+//
+// Styleguide fonts.link
+
+a {
+  color: $link-color;
+  text-underline: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+
+p,
+.paragraph {
+  a:not(.btn) {
+    text-decoration: underline;
+  }
+}
+
+
+// Paragraphs
+//
+// Markup:
+// <p>This is first demo paragraph.</p>
+// <p>This is second demo paragraph.</p>
+//
+// Styleguide fonts.paragraph
+
+.paragraph {
+  margin-bottom: 16px;
+}
+
+p {
+  @extend .paragraph;
+}
+
+
+// Blockquote
+//
+// Markup:
+// <blockquote><p>This is demo blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis semper est. Nam eget tempor enim, id vehicula dui.</p></blockquote>
+//
+// Styleguide fonts.blockquote
+
+blockquote {
+  font-size: $font-size-base;
+  font-style: italic;
+  border-left: 5px solid $gray-lighter;
+  margin: 0 0 20px;
+  padding: 12px 24px;
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  text-align: justify;
+}
+
+
+// Color classes
+//
+// Markup:
+// <p class="{{modifier_class}}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis semper est. Nam eget tempor enim, id vehicula dui.</p>
+//
+// .light   - Lighten
+// .success - Success
+// .danger  - Danger
+//
+// Styleguide fonts.color
+
+.light   { color: darken($gray-light, 20%) !important; border-color: darken($gray-light, 20%) !important; }
+.success { color: $brand-success !important; border-color: $brand-success !important; }
+.danger { color: $brand-danger !important; border-color: $brand-danger !important; }

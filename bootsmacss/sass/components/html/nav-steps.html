@@ -1,0 +1,55 @@
+<div role="navigation" class="nav-steps">
+  <!-- Nav tabs -->
+  <ul role="tablist" class="nav-steps__steps nav nav-tabs">
+    <li class="first leaf nav-steps__tab">
+      <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab" class="nav-steps__tab-link">
+        <div class="nav-steps__icon-collumn">
+          <div class="nav-steps__icon-wrapper">
+            <span class="nav-steps__number"></span>
+            <span class="icon icon--docs"></span>
+          </div>
+        </div>
+        <span class="nav-steps__label hidden-xs">First <strong>label</strong></span>
+      </a>
+    </li>
+    <li class="leaf nav-steps__tab">
+      <a href="#tab2" aria-controls="tab2" aria-controls="coordinator" role="tab" data-toggle="tab" class="nav-steps__tab-link">
+        <div class="nav-steps__icon-collumn">
+          <div class="nav-steps__icon-wrapper">
+            <span class="nav-steps__number"></span>
+            <span class="icon icon--globe"></span>
+          </div>
+        </div>
+        <span class="nav-steps__label hidden-xs">Second <strong>label</strong></span>
+      </a>
+    </li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="nav-steps__panes tab-content">
+    <div role="tabpanel" class="nav-steps__pane tab-pane" id="tab1">
+      <span class="nav-steps__label visible-xs">First <strong>label</strong></span>
+      <div class="nav-steps__polygon"></div>
+      <div class="nav-steps__pane-body">
+        Navigation tiles component is a good choice for navigations steps content
+      </div>
+    </div>
+    <div role="tabpanel" class="nav-steps__pane tab-pane" id="tab2">
+      <span class="nav-steps__label visible-xs">Second <strong>label</strong></span>
+      <div class="nav-steps__polygon"></div>
+      <div class="nav-steps__pane-body">
+        Second tab content
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('#tab1 a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+  $('#tab2 a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+</script>

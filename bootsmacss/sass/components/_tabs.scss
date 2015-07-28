@@ -1,0 +1,122 @@
+// Tabs
+//
+// Tabs to place a various content inside one region.
+//
+// Markup: html/tabs.html
+//
+// Styleguide tabs
+
+
+// Component
+// --------------------------------------------------
+.tabs {
+  border: none;
+  margin: -8px 0 0;
+  overflow: hidden;
+  // z-index configuration for .listing--tabs-spacer class of included view.
+  position: relative;
+  z-index: 1;
+  &:after {
+    content: '';
+    width: 100%;
+    display: block;
+    border-bottom: 1px $gray-light solid;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+
+// Elements
+// --------------------------------------------------
+
+.tabs > .tabs__tab {
+  background-color: $gray-lighter;
+  margin: 10px 2px 0 0;
+  font-size: $font-size-base;
+  padding: 0;
+
+  .tabs__tab-link {
+    color: darken($gray-light, 35%);
+    line-height: $line-height-computed;
+    padding: 4px 20px;
+    margin: 0;
+    border-radius: 0;
+  }
+  &.active, {
+    margin: 0 2px -2px 0;
+    font-size: $font-size-large;
+    z-index: 1;
+
+    .tabs__tab-link {
+      border-top: 5px solid $tabs-accent !important;
+      &,
+      &:focus,
+      &:hover {
+        border: 1px $gray-light solid;
+        border-bottom-color: $tabs-active-background;
+        margin: 0;
+        padding-top: 7px;
+        color: $gray-base;
+        padding-bottom: 7px;
+        background-color: $tabs-active-background;
+      }
+    }
+  }
+}
+
+
+// Modifiers
+// --------------------------------------------------
+.tabs--listing-more {
+  margin-bottom: -30px;
+}
+
+.tabs--primary {
+  margin-bottom: 30px;
+}
+
+
+// Hacks to reuse styling on Drupal fieldgroup tabs.
+.horizontal-tabs ul.horizontal-tabs-list {
+  margin-top: $line-height-computed;
+  margin-bottom: 16px;
+  background: transparent;
+  border-right: none;
+  @extend .nav-tabs;
+  @extend .tabs;
+  li.horizontal-tab-button {
+    border: none;
+    line-height: $line-height-computed;
+    height: 34px;
+    @extend .tabs__tab;
+    a {
+      text-align: center;
+      color: $gray-light;
+      border-radius: 0;
+      @extend .tabs__tab-link;
+      &:hover {
+        border-bottom-color: #fff;
+      }
+      strong {
+        font-weight: $font-weight;
+      }
+    }
+    &.selected {
+      // Works as @extend .tabs__tab-link.active;
+      margin: 0 2px -1px 0;
+      font-size: $font-size-large;
+      a {
+        line-height: $line-height-computed !important;
+        // Works as @extend .tabs__tab-link.active tabs__tab-link;
+        border: 1px $gray-lighter solid;
+        border-bottom-color: #fff;
+        margin: 0;
+        padding-top: 7px;
+        color: $gray-base;
+        padding-bottom: 7px;
+        background-color: #fff;
+      }
+    }
+  }
+}

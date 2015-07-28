@@ -1,0 +1,75 @@
+// Tables
+//
+// You can use Bootstrap table styles as well. In practice this table styles
+// works as not so complicated Bootstrap overrides. Just a little improvements.
+//
+// Markup:
+// <table class="table">
+//   <tr>
+//     <td>1 col</td>
+//     <td>2 col</td>
+//     <td>3 col</td>
+//   </tr>
+//   <tr>
+//     <td>1 col</td>
+//     <td>2 col</td>
+//     <td>3 col</td>
+//   </tr>
+//   <tr>
+//     <td>1 col</td>
+//     <td>2 col</td>
+//     <td>3 col</td>
+//   </tr>
+// </table>
+//
+// Styleguide table
+
+
+// Component
+// --------------------------------------------------
+.table,
+table {
+  font-size: $font-size-small;
+  & > thead > tr > th,
+  & > thead > tr > td,
+  & > tbody > tr > th,
+  & > tbody > tr > td,
+  & > tfoot > tr > th,
+  & > tfoot > tr > td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  & > thead > tr > th {
+    text-transform: uppercase;
+    font-weight: $font-weight;
+    background-color: $table-bg-header;
+    font-size: $font-size-small - 3;
+    line-height: $line-height-computed / 2;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: left;
+  }
+}
+
+
+// Modifiers
+// --------------------------------------------------
+.table-bordered {
+  border-left: none;
+  border-right: none;
+  > thead > tr {
+    > th,
+    > td {
+      border-bottom: none;
+    }
+  }
+}
+
+.table-striped {
+  > tbody > tr:nth-child(odd) {
+    background-color: transparent;
+  }
+  > tbody > tr:nth-child(even) {
+    background-color: $table-bg-accent;
+  }
+}

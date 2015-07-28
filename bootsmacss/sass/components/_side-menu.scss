@@ -1,0 +1,229 @@
+// Side menu
+//
+// Collapsible sidebar menu. Preview might break the Styleguide because it affects global tags like <html> and <body>.
+//
+// Markup: html/side-menu.html
+//
+// Styleguide side-menu
+
+
+// Component
+// --------------------------------------------------
+.side-menu {
+  position: absolute;
+  overflow: hidden;
+  z-index: 900;
+  width: 235px;
+  height: 100%;
+  background-color: #fff;
+  -webkit-transform: translate3d(-320px,0,0);
+  transform: translate3d(-320px,0,0);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+  transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+  @include shadow($gray-light, 5px);
+  visibility: hidden; // For IE-8 that does not support CSS3 transitions.
+}
+
+
+// Elements
+// --------------------------------------------------
+.side-menu__button {
+  position: absolute;
+  top: 4px;
+  left: 15px;
+  cursor: pointer;
+  z-index: 100;
+  padding: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  .icon {
+    line-height: 45px;
+    font-size: 40px;
+
+    @include breakpoint(tablet) {
+      font-size: 50px;
+      line-height: 50px;
+    }
+  }
+}
+
+.side-menu__button-spacer {
+  margin-left: 45px;
+}
+
+.side-menu__scrollbar-hider {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+
+.side-menu__title {
+  padding: 8px 20px;
+  margin: 0 0 20px;
+  font-size: $font-size-h4;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.side-menu__close {
+  color: $brand-primary;
+  cursor: pointer;
+  position: relative;
+  left: -4px;
+  margin-right: 5px;
+}
+
+.side-menu__nav-title {
+  font-size: $font-size-base;
+  font-weight: 600;
+  padding: 5px 20px;
+  margin: 0;
+  -webkit-transform: translate3d(0,500px,0);
+  transform: translate3d(0,500px,0);
+  -webkit-transition: -webkit-transform 0s 0.4s;
+  transition: transform 0s 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+  transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.side-menu_nav {
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.side-menu_nav-item {
+  padding: 8px 20px;
+  display: block;
+  -webkit-transform: translate3d(0,500px,0);
+  transform: translate3d(0,500px,0);
+  -webkit-transition: -webkit-transform 0s 0.4s;
+  transition: transform 0s 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+  transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $gray-lighter;
+  }
+
+  &:nth-child(2) {
+    -webkit-transform: translate3d(0,1000px,0);
+    transform: translate3d(0,1000px,0);
+  }
+  &:nth-child(3) {
+    -webkit-transform: translate3d(0,1500px,0);
+    transform: translate3d(0,1500px,0);
+  }
+  &:nth-child(4) {
+    -webkit-transform: translate3d(0,2000px,0);
+    transform: translate3d(0,2000px,0);
+  }
+  &:nth-child(5) {
+    -webkit-transform: translate3d(0,2500px,0);
+    transform: translate3d(0,2500px,0);
+  }
+  &:nth-child(6) {
+    -webkit-transform: translate3d(0,3000px,0);
+    transform: translate3d(0,3000px,0);
+  }
+}
+
+.side-menu_nav-link {
+  color: $gray-base;
+}
+
+.side-menu__html, // Class added by script http://tympanus.net/Development/OffCanvasMenuEffects/sideslide.html
+.side-menu__html body,
+.side-menu__wrap,
+.side-menu__content-wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.side-menu__content-wrap {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.side-menu__content {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    content: '';
+    opacity: 0;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+    -webkit-transition: opacity 0.4s, -webkit-transform 0s 0.4s;
+    transition: opacity 0.4s, transform 0s 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+  }
+}
+
+
+// States
+// --------------------------------------------------
+.show-menu { // Class added by script http://tympanus.net/Development/OffCanvasMenuEffects/sideslide.html
+  .side-menu {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    visibility: visible; // For IE-8.
+  }
+  .side-menu__nav-title,
+  .side-menu_nav-item {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+  }
+  .side-menu_nav-item {
+    -webkit-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+  }
+  .side-menu__content::before {
+    opacity: 1;
+    -webkit-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+}
+
+@include breakpoint(tablet) {
+  .side-menu__button {
+    top: 15px;
+    left: 20px;
+
+    .icon {
+      width: 50px;
+    }
+  }
+  .side-menu__button-spacer {
+    margin-left: 70px;
+  }
+}
+@include breakpoint(lg-desktop) {
+  .side-menu__button-spacer {
+    margin-left: 0;
+  }
+}
