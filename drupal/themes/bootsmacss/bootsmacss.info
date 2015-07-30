@@ -1,5 +1,5 @@
 name = BootSMACSS base theme
-description = BootSMACSS base theme containing rewrites for BootSMACSS components
+description = BootSMACSS base theme containing rewrites for BootSMACSS library
 core = 7.x
 base theme = bootstrap
 

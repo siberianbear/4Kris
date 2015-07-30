@@ -1,5 +1,5 @@
 name = BootSMACSS subtheme
-description = BootSMACSS customizable subtheme based on WAAT theme.
+description = BootSMACSS customizable subtheme based on BootSMACSS theme.
 core = 7.x
 base theme = bootsmacss
 

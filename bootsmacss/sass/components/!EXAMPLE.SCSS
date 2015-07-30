@@ -1,0 +1,45 @@
+// Example component
+//
+// This is example how to create valid component SCSS file.
+//
+// Markup: html/component.html
+//
+// .example--modifier - Example modifier description
+//
+// Styleguide component
+
+
+// Component
+// --------------------------------------------------
+.example {
+}
+
+
+// Elements
+// --------------------------------------------------
+.example__element {
+}
+
+
+// Modifiers
+// --------------------------------------------------
+.example--modifier {
+}
+
+
+// States
+// --------------------------------------------------
+.example.is-active {
+}
+
+
+// Dependencies
+// --------------------------------------------------
+.example .icon {
+}
+
+
+// Skins
+// --------------------------------------------------
+.example--brand-primary {
+}

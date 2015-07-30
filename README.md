@@ -24,7 +24,7 @@ implemented later to CMS, or deployed to production server
 
 BootSMACSS code is currenntly separated to two folders:
 
-1. *bootsmacss* - holds everything that is neccessary to create static website
+1. *bootsmacss* - holds everything that is neccessary to create static website, including recent supported Bootstrap library
 2. *drupal* - since we use Drupal as a backend, here is a port for it! You can
 find there a stuff like themes, views, displays, field formatters etc neccessary to provide valid markup. Everything with readme files attached.
 
@@ -54,7 +54,8 @@ directory to it.
 **Variant II - Drupal theme**
 
 Download whole content of drupal directory to */sites/all* folder and check
-readme file inside the theme for info.
+readme file inside the theme for info. Package contains also Drupal Bootstrap
+in recent supported version.
 
 ## 3. Install project's dependencies
 

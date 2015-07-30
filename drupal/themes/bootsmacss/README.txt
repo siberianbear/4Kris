@@ -31,12 +31,11 @@ formatters, etc. See particular module's README file for reference.
 1. To create a theme for new site, copy BOOTSMACSS-SUBTHEME directory into
 sites/all/themes and rename it to your_theme_name.
 
-2. Then go to sites/all/themes/your_theme and rename BOOTSMACSS-SUBTHEME.info.txt file
+2. Then go to sites/all/themes/your_theme and rename BOOTSMACSS-SUBTHEME.info.txt
 to your_theme_name.info.
 
-3. Copy the whole content of styleguide folder located in the root of bootsmacss
-components repository into your newly created theme so that there were following
-folders and files:
+3. Copy the whole content of bootsmacss folder located in the root of bootsmacss
+repository into your newly created theme so that there were following folders and files:
 
 bootstrap-sass/*
 css/*
@@ -54,11 +53,11 @@ package.json
 
 etc.
 
-These files are not already inside this Drupal theme because we do not want
-replicated data inside the components.git repository structure. Also styleguide
-is not inside Drupal files, because it may be used with other technologies.
+These files are not already here because we do not want replicated data inside
+bootsmacss repository. Another reason is, because they may be used with other
+technologies than Drupal.
 
-4. Then run following command to install all node.js dependencies:
+4. Now run following command to install all node.js dependencies:
 $ npm install
 
 5. START CUSTOMIZING! To watch for changes inside SASS files, go to your theme
