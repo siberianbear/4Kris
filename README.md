@@ -1,32 +1,21 @@
 bootsmacss
 =========
 
-As a short for Bootstrap SMACSS, BootSMACSS is a starterkit library for frontend
-developers, that can be called as SMACSS implementation of Bootstrap. Based on
-experience with Web Components approach on goverment sites creation, it's
-everything you need to create modular frontend for responsive websites.
+As a short for Bootstrap SMACSS, BootSMACSS is a starterkit library for frontend web developers, that can be treat as a SMACSS implementation of Bootstrap. Based on experience with Web Components approach on goverment sites development, it's everything you need to create modular frontend for responsive websites.
 
 **Why? Because we needed something more flexible and scalable for rapid development than Bootstrap**
 
 ## Technologies included
-BootSMACSS is nothing else than fusion of becoming increasingly popular
-technologies and approaches that we like very much:
+BootSMACSS is nothing else than fusion of becoming increasingly popular technologies and approaches that we like very much:
 
 * **[Bootstrap](http://getbootstrap.com/)** - because you need a good base and Swiss Army Knife, all Bootstrap goods are in your hands
 * **[SMACSS](https://smacss.com/)** - because you need CSS that is scalable and easy to maintain
 * **SCSS** - as above
 * **[KSS](http://warpspire.com/kss/)** - as you can render [styleguide](http://htanjo.github.io/kss-node-template/) based on your components
-* **[Jekyll](http://jekyllrb.com/)** - to render static html prototypes as a result
-of graphic project's implementation that can be shown to client, tested and
-implemented later to CMS, or deployed to production server
+* **[Jekyll](http://jekyllrb.com/)** - to render static html prototypes as a result of graphic project's implementation that can be shown to client, tested and implemented later to CMS, or deployed to production server
 
-## What's inside?
-
-BootSMACSS code is currenntly separated to two folders:
-
-1. *bootsmacss* - holds everything that is neccessary to create static website, including recent supported Bootstrap library
-2. *drupal* - since we use Drupal as a backend, here is a port for it! You can
-find there a stuff like themes, views, displays, field formatters etc neccessary to provide valid markup. Everything with readme files attached.
+See demo of Styleguide generated from BootSMACSS - browse the components library:
+[Styleguide demo](https://htmlpreview.github.io/?https://github.com/bandanaman/bootsmacss/blob/master/styleguide/assets/index.html)
 
 ## Realizations
 Here are the examples of sites we created using BootSMACSS and Drupal:
@@ -35,55 +24,17 @@ Here are the examples of sites we created using BootSMACSS and Drupal:
 * [eurostars-eureka.eu](http://eurostars-eureka.eu/) - Eurostars joint programme information website
 * European Commission intranet (not deployed yet)
 
+### How to work with BootSMACSS?
 
-How to work with BootSMACSS
-========================
+See [wiki pages](https://github.com/bandanaman/bootsmacss/wiki) to learn how to use BootSMACSS.
 
-## 1. Install system dependencies
+### Drupal port
 
-First of all, you need [Node.js](https://nodejs.org/),
-[Jekyll](http://jekyllrb.com/) and [Grunt](http://gruntjs.com/) installed on
-your machine to watch for changes in SCSS files and html.
-
-## 2. Project initiation
-**Variant I - standalone**
-
-Create new directory for your project and download whole content of styleguide
-directory to it.
-
-**Variant II - Drupal theme**
-
-Download whole content of drupal directory to */sites/all* folder and check
-readme file inside the theme for info. Package contains also Drupal Bootstrap
-in recent supported version.
-
-## 3. Install project's dependencies
-
-Download all nodejs dependencies, since they are neccessary to
-watch for changes. You can do it by launching `npm install` command in the root of your
-theme:
-
-## 4. Work
-
-Run these two watch commands in the root of your theme (yes, you'll need two terminals
-open)
-
-```
-grunt
-```
-```
-jekyll serve
-```
-
-Grunt script is used here to compile SCSS files and the whole styleguide. In the
-same time jekyll command renders the html prototype from your layouts and includes.
-SCSS files are located inside the sass folder and HTML files are in the root.
-See [this movie](https://www.youtube.com/watch?v=iWowJBRMtpc) to understand how
-to work with Jekyll if you're not familiar with.
+You create a websites on Drupal? Check [Drupal port for BootSMACSS](https://github.com/bandanaman/bootsmacss-drupal)
 
 ### Creators
 
 * Michal Kokocinski
 * Kris Gunciarz
 
-Development Supported by [WAAT](http://waat.eu/)
+Development Supported by [WAAT Ltd](http://waat.eu/)
