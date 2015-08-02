@@ -112,11 +112,15 @@ $bg3: $blue-dark;
 $bg4: $blue-light url('../images/png/bg.png') center bottom no-repeat;
 $bg5: $almost-white;
 
+// Social links
+$social-links-size: 50px;
+$social-links-color: $brand-primary;
+
 // Ornament
 $ornament-default: $azure;
 
 // Tabs
-$tabs-active-background: $brand-primary-lighter; 
+$tabs-active-background: $brand-primary-lighter;
 $tabs-accent: $azure;
 
 // News carousel component variables.

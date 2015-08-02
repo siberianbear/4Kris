@@ -118,6 +118,11 @@
   }
 }
 
+.box--arrow-bottom {
+  @include arrow($brand-primary, $brand-primary, 'bottom', 'out', 15px, 110px);
+  overflow: visible;
+}
+
 
 // Dependencies
 // --------------------------------------------------

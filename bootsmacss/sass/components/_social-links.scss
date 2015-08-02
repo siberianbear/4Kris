@@ -14,10 +14,10 @@
 
   .social-links__item {
     padding: 0;
-    width: 37px;
-    height: 37px;
-    line-height: 37px;
-    @include circle($brand-primary);
+    width: $social-links-size;
+    height: $social-links-size;
+    line-height: $social-links-size * 2/3;
+    @include circle(transparent, 1px, $social-links-color);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -25,11 +25,11 @@
 
   .icon {
     position: absolute;
-    margin: -15px;
+    margin: - $social-links-size  * 3/4 / 2;
     top: 50%;
     left: 50%;
-    color: #fff;
-    @include icon-size(30px);
+    color: $social-links-color;
+    @include icon-size($social-links-size * 3/4);
   }
 }
 
