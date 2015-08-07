@@ -1,0 +1,22 @@
+// File link
+//
+// Link to file with label and mime type icon.
+//
+// Markup: html/file.html
+//
+// Styleguide file
+
+
+// Component
+// --------------------------------------------------
+.file {
+}
+
+
+// Dependencies
+// --------------------------------------------------
+.file .icon {
+  font-size: $font-size-h1;
+  top: $font-size-base;
+  margin: 0 -$font-size-h1 / 2 0 -$font-size-h1 / 3.5;
+}

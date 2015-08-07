@@ -52,11 +52,6 @@ h4,
   font-size: $font-size-h4;
 }
 
-ul li {
-  padding-bottom: $line-height-computed / 3;
-}
-
-
 
 // Link
 //
@@ -119,6 +114,37 @@ blockquote {
   overflow: hidden;
   clear: both;
   text-align: justify;
+}
+
+
+// List
+//
+// Markup:
+// <ul>
+//   <li>First item</li>
+//   <li>Second item</li>
+//   <li>Third item</li>
+// </ul>
+//
+// Styleguide fonts.list
+ul {
+  padding-left: 20px;
+  li {
+    padding-bottom: $line-height-computed / 3;
+    list-style:none;
+    position: relative;
+    // Style elements only without any class - prevent affecting various components
+    &:not([class]):before {
+      color: $brand-primary;
+      content:"\2022";
+      padding-right: 15px;
+      font-size: 3em;
+      line-height: 1px;
+      position: absolute;
+      top: $line-height-computed / 2.5;
+      left: -20px;
+    }
+  }
 }
 
 

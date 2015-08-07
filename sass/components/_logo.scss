@@ -13,35 +13,10 @@
   display: block;
   width: $logo-width-mobile;
   height: $logo-height-mobile;
-  background: url('../images/svg/ec-logo.svg') no-repeat;
-  margin: 15px 35px -35px 0;
+  background: url('../images/logo.png') no-repeat;
+  background-size: 100%;
   @include breakpoint(tablet) {
     width: $logo-width-desktop;
     height: $logo-height-desktop;
-  }
-}
-
-
-// Modifiers
-// --------------------------------------------------
-.logo--een {
-  width: $logo-width-mobile-een;
-  height: $logo-height-mobile-een;
-  background: url('../images/svg/een-logo.svg') no-repeat;
-  margin: 0;
-  @include breakpoint(tablet) {
-    width: $logo-width-desktop-een;
-    height: $logo-height-desktop-een;
-  }
-}
-
-// Skin
-// --------------------------------------------------
-.no-svg {
-  .logo {
-    background: url('../images/svg/ec-logo.svg') no-repeat;
-  }
-  .logo--een {
-    background: url('../images/svg/een-logo.svg') no-repeat;
   }
 }

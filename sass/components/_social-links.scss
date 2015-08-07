@@ -11,42 +11,25 @@
 .social-links {
   line-height: $line-height-computed * 0.65;
   text-align: center;
-
-  .social-links__item {
-    padding: 0;
-    width: $social-links-size;
-    height: $social-links-size;
-    line-height: $social-links-size * 2/3;
-    @include circle(transparent, 1px, $social-links-color);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .icon {
-    position: absolute;
-    margin: - $social-links-size  * 3/4 / 2;
-    top: 50%;
-    left: 50%;
-    color: $social-links-color;
-    @include icon-size($social-links-size * 3/4);
-  }
+  margin-left: 35px;
 }
 
-// States
+
+// Elements
 // --------------------------------------------------
-.social-links {
-  @include breakpoint(tablet) {
-    margin-left: -12px; // ~25px/2
-    .social-links__item {
-      margin: 0 12px;
-    }
-  }
-  @include breakpoint(desktop) {
-    text-align: right;
-    margin-left: -5px;
-    .social-links__item {
-      margin: 0;
-    }
-  }
+.social-links__item {
+  line-height: $social-links-size * 2/3;
+  text-align: center;
+}
+
+
+// Dependencies
+// --------------------------------------------------
+.social-links .icon {
+  @include circle(transparent, 1px, $social-links-color);
+  @include icon-size($social-links-size * 2/3);
+  color: $social-links-color;
+  width: $social-links-size;
+  height: $social-links-size;
+  line-height: $social-links-size;
 }

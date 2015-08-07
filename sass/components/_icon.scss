@@ -7,9 +7,14 @@
 // Markup: html/icon.html
 //
 // .icon--add - .icon--add
-// .icon--arrow-next - .icon--arrow-next
-// .icon--arrow-prev - .icon--arrow-prev
+// .icon--arrow-right - .icon--arrow-right
+// .icon--arrow-left - .icon--arrow-left
+// .icon--arrow-top - .icon--arrow-top
+// .icon--arrow-bottom - .icon--arrow-bottom
 // .icon--circle-arrow-right - .icon--circle-arrow-right
+// .icon--circle-ok - .icon--circle-ok
+// .icon--circle-plus - .icon--circle-plus
+// .icon--circle-minus - .icon--circle-minus
 // .icon--arrows - .icon--arrows
 // .icon--bell - .icon--bell
 // .icon--book-bookmark - .icon--book-bookmark
@@ -118,10 +123,14 @@
 // Modifiers
 // --------------------------------------------------
 .icon--add:before { content: "\e60c"; }
-.icon--arrow-next:before { content: "\e615"; }
-.icon--arrow-prev:before { content: "\e613"; }
+.icon--arrow-right:before { content: "\e615"; }
+.icon--arrow-left:before { content: "\e613"; }
+.icon--arrow-top:before { content: "\e611"; }
+.icon--arrow-bottom:before { content: "\e60f"; }
 .icon--circle-arrow-right:before { content: "\e608"; }
 .icon--circle-ok:before { content: "\e618"; }
+.icon--circle-plus:before { content: "\e60c"; }
+.icon--circle-minus:before { content: "\e60d"; }
 .icon--arrows:before { content: "\e648"; }
 .icon--bell:before { content: "\e61a"; }
 .icon--book-bookmark:before { content: "\e64c"; }
@@ -178,9 +187,11 @@
 .icon--mime-default:before { content: "\e63c"; }
 .icon--mime-doc:before { content: "\e63d"; }
 .icon--mime-exe:before { content: "\e643"; }
+.icon--mime-gif:before { content: "\e887"; }
 .icon--mime-jpg:before { content: "\e644"; }
 .icon--mime-pdf:before { content: "\e641"; }
 .icon--mime-png:before { content: "\e642"; }
+.icon--mime-ppt:before { content: "\e886"; }
 .icon--mime-rar:before { content: "\e63f"; }
 .icon--mime-xls:before { content: "\e63e"; }
 .icon--mime-zip:before { content: "\e640"; }

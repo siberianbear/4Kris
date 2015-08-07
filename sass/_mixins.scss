@@ -37,9 +37,7 @@
 @mixin circle($background-color: $brand-primary, $border-width: 0, $border-color: $brand-primary) {
   background-color: $background-color;
   border: $border-width $border-color solid;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+  @include border-radius(50%);
 }
 
 // Placeholder color
@@ -56,6 +54,13 @@
   &:-ms-input-placeholder {
       color: $color;
   }
+}
+
+// CSS3 Border radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
 }
 
 // CSS3 Box shadow (http://www.w3schools.com/cssref/css3_pr_box-shadow.asp)

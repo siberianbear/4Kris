@@ -29,6 +29,10 @@
 
 // Elements
 // --------------------------------------------------
+.listing__label {
+  margin-bottom: 0;
+}
+
 .listing__item,
 .listing__pagination {
   overflow: hidden;
@@ -286,22 +290,6 @@
   }
 }
 
-.listing__label--small {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin-bottom: 30px;
-  border: none;
-  @extend .h3;
-
-  .listing__label-col {
-    padding: 0;
-  }
-
-  & + .listing__item {
-    padding-top: 0 !important;
-  }
-}
-
 // States
 // --------------------------------------------------
 @include breakpoint(desktop) {
@@ -405,23 +393,5 @@
 .listing--media-circle {
   .listing__item-media {
     @include circle();
-  }
-}
-
-// Listing middle align
-//
-// Listing using Middle align component.
-//
-// Markup: html/listing--middle-align.html
-//
-// Styleguide listing.middle-align
-
-
-// Component
-// --------------------------------------------------
-.listing--middle-align {
-  .listing__item,
-  .middle-align__row {
-    width: 100%;
   }
 }

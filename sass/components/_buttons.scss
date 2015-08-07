@@ -25,11 +25,10 @@
   margin-bottom: 3px;
 }
 
-// Elements
-.btn-default {
-  border-color: $brand-primary-gray;
-}
 
+
+// Modifiers
+// --------------------------------------------------
 .btn-primary {
   @include gradient-vertical(#205EA1, darken( #205EA1, 5% ));
   border-color: $blue;
