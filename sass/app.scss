@@ -10,16 +10,24 @@
 // Base
 @import "base/main";
 @import "base/form";
-@import "base/table";
 @import "base/responsive-utilities";
 @import "base/type";
+
+// Bootstrap component overrides
+@import "base/alert";
+@import "base/buttons";
+@import "base/carousel";
+@import "base/label";
+@import "base/pagination";
+@import "base/panel";
+@import "base/tabs";
+@import "base/table";
 
 // Layout
 @import "layout/sections";
 @import "layout/page-content";
 
 // Compontents
-@import "components/label";
 @import "components/links-inline";
 @import "components/logo";
 @import "components/slogan";
@@ -40,14 +48,12 @@
 @import "components/listing--grid";
 @import "components/listing--stream";
 @import "components/listing--middlealign";
-@import "components/tabs";
 @import "components/icon";
 @import "components/middle-align";
 @import "components/counter";
 @import "components/subscribe";
 @import "components/social-links";
 @import "components/side-menu";
-@import "components/pagination";
 @import "components/bookmark";
 @import "components/input-inner-addon";
 @import "components/faq";
@@ -58,19 +64,15 @@
 @import "components/map";
 @import "components/img-floated";
 @import "components/img-profile";
-@import "components/panel";
 @import "components/featured";
 @import "components/simple-breadcrumb";
 @import "components/lang-switch";
 @import "components/ornament";
-@import "components/buttons";
 @import "components/news-carousel";
 @import "components/page-title";
 @import "components/title-more";
-@import "components/alert";
 @import "components/row-height";
 @import "components/file";
-@import "components/carousel";
 
 // Hacks
 @import "drupal-hacks";
