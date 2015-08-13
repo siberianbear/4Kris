@@ -74,7 +74,7 @@
 
 // Modifiers
 // --------------------------------------------------
-.counter--big {
+.counter.is-big {
   text-align: center;
 
   .counter__pie {
@@ -114,7 +114,7 @@
 }
 
 .counter--open {
-  &.counter--big {
+  &.counter.is-big {
     .counter__label {
       top: 0;
       left: 0;

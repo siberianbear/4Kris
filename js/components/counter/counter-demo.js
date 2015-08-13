@@ -13,11 +13,11 @@ function calculateCounter() {
 
   // Change widget version from floating to full width if neccesary.
   if (wrapperSize <= 120) {
-    $(id).addClass('counter--big');
+    $(id).addClass('is-big');
     $(id).find('.counter__left.counter__left--zero').addClass('hidden');
   }
   else {
-    $(id).removeClass('counter--big');
+    $(id).removeClass('is-big');
     $(id).find('.counter__left.counter__left--zero').removeClass('hidden');
   }
 

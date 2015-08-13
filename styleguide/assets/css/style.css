@@ -6664,30 +6664,30 @@ ul {
   .counter__caption br {
     display: none; }
 
-.counter--big {
+.counter.is-big {
   text-align: center; }
-  .counter--big .counter__pie {
+  .counter.is-big .counter__pie {
     position: relative;
     width: auto;
     width: 120px;
     height: 120px;
     margin-bottom: 5px; }
-  .counter--big .counter__left {
+  .counter.is-big .counter__left {
     padding-top: 40px;
     font-size: 48px;
     font-weight: 700;
     line-height: 28px; }
-  .counter--big .counter__label {
+  .counter.is-big .counter__label {
     top: 70px;
     left: 0;
     right: 0;
     font-size: 11px; }
-  .counter--big .counter__caption {
+  .counter.is-big .counter__caption {
     position: static;
     top: auto;
     left: auto;
     font-size: 14px; }
-    .counter--big .counter__caption br {
+    .counter.is-big .counter__caption br {
       display: inline; }
 
 .counter--fixed-big {
@@ -6695,14 +6695,14 @@ ul {
   margin: 0 10px 10px;
   float: left; }
 
-.counter--open.counter--big .counter__label {
+.counter--open.counter.is-big .counter__label {
   top: 0;
   left: 0;
   right: 0;
   line-height: 120px;
   font-size: 20px;
   font-weight: bold; }
-.counter--open.counter--big .counter__left {
+.counter--open.counter.is-big .counter__left {
   display: none; }
 
 .subscribe {
