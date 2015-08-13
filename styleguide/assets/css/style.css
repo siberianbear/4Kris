@@ -4632,8 +4632,7 @@ button.close {
 
 body {
   min-width: 320px;
-  font-weight: 300;
-  background: #f6fafb url('../images/png/bg.png') center bottom no-repeat; }
+  font-weight: 300; }
 
 label {
   margin-bottom: 0; }
@@ -6620,24 +6619,6 @@ ul {
 
 .middle-align h2, .middle-align .title-more {
   border: none; }
-
-.bg {
-  overflow: hidden; }
-
-.bg--1, .section--header__wrapper {
-  background: #205EA1; }
-
-.bg--2, .section--header, .section--menu-bar, .section--even, .section--footer {
-  background: #fff; }
-
-.bg--3 {
-  background: #1E4289; }
-
-.bg--4 {
-  background: #f6fafb url('../images/png/bg.png') center bottom no-repeat; }
-
-.bg--5 {
-  background: #FDFDFD; }
 
 .counter {
   position: relative;
