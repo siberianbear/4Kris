@@ -7349,51 +7349,58 @@ ul {
   color: #205EA1;
   font-weight: bold; }
 
-.single-page__header {
+.article__header {
   margin-bottom: 13px; }
 
-.single-page__media {
-  margin-bottom: 13px; }
-  .single-page__media * {
+.article__media {
+  margin-bottom: 13px;
+  float: left; }
+  .article__media * {
     width: 100%;
     height: auto !important; }
 
-.single-page__footer > .field {
+.article__body:before, .article__body:after {
+  content: " ";
+  display: table; }
+.article__body:after {
+  clear: both; }
+
+.article__footer > .field {
   display: table;
   width: 100%;
   padding: 15px 0 10px 0; }
-  .single-page__footer > .field:not(:last-child) {
+  .article__footer > .field:not(:last-child) {
     border-bottom: 1px dashed #F5F6F8; }
-  .single-page__footer > .field > .field-label {
+  .article__footer > .field > .field-label {
     background: #FAFAFA;
     margin-bottom: 5px; }
-  .single-page__footer > .field > .field-label, .single-page__footer > .field > .field-items {
+  .article__footer > .field > .field-label, .article__footer > .field > .field-items {
     width: 100%;
     padding: 5px 15px;
     text-align: center; }
-  .single-page__footer > .field > .field-items {
+  .article__footer > .field > .field-items {
     float: none; }
 
 @media (min-width: 768px) {
-  .single-page__media {
+  .article__media {
     float: left;
     margin-right: 30px; }
-    .single-page__media div {
+    .article__media div {
       float: left; } }
 
 @media (min-width: 992px) {
-  .single-page__footer > .field {
+  .article__footer > .field {
     display: table;
     padding: 15px 0; }
-    .single-page__footer > .field > div {
+    .article__footer > .field > div {
       display: table-cell;
       vertical-align: middle; }
-    .single-page__footer > .field > .field-label {
+    .article__footer > .field > .field-label {
       width: 35%;
       padding: 5px 15px;
       text-align: right;
       margin: 0; }
-    .single-page__footer > .field > .field-items {
+    .article__footer > .field > .field-items {
       width: 65%;
       padding: 5px 0 5px 30px;
       text-align: left;

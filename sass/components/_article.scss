@@ -1,33 +1,38 @@
-// Single page
+// Article
 //
-// Universal single page layout.
+// Universal single page layout to combine article header, body, floated image and footer.
 //
-// Markup: html/single-page.html
+// Markup: html/article.html
 //
-// Styleguide single-page
+// Styleguide article
 
 
 // Component
 // --------------------------------------------------
-.single-page {
+.article {
 }
 
 
 // Elements
 // --------------------------------------------------
-.single-page__header {
+.article__header {
    margin-bottom: $line-height-computed / 2;
 }
 
-.single-page__media {
+.article__media {
   margin-bottom: $line-height-computed / 2;
+  float: left;
   * {
     width: 100%;
     height: auto !important;
   }
 }
 
-.single-page__footer {
+.article__body {
+  @include clearfix();
+}
+
+.article__footer {
   > .field {
     display: table;
     width: 100%;
@@ -56,7 +61,7 @@
 }
 
 @include breakpoint(tablet) {
-  .single-page__media {
+  .article__media {
     float: left;
     margin-right: 30px;
     div {
@@ -66,7 +71,7 @@
 }
 
 @include breakpoint(desktop) {
-  .single-page__footer {
+  .article__footer {
     > .field {
       display: table;
       padding: 15px 0;
