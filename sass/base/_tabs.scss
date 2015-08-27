@@ -32,16 +32,16 @@
 // Elements
 // --------------------------------------------------
 
-.tabs > .tabs__tab {
+.tabs > li {
   background-color: $gray-lighter;
-  margin: 10px 2px 0 0;
+  margin: 10px 2px 0 0 !important;
   font-size: $font-size-base;
   padding: 0;
   &:first-of-type {
     margin-left: 20px !important;
   }
 
-  .tabs__tab-link {
+  a {
     color: darken($gray-light, 35%);
     line-height: $line-height-computed;
     padding: 13px 20px;
@@ -49,12 +49,12 @@
     border-radius: 0;
   }
   &.active {
-    margin: 6px 3px -1px 0;
+    margin: 6px 3px -1px 0 !important;
     z-index: 1;
     border-top: 5px solid $tabs-accent !important;
     @include shadow($gray-lighter, 0, 0, 5px, 2px);
 
-    .tabs__tab-link {
+    a {
       &,
       &:focus,
       &:hover {
@@ -77,49 +77,4 @@
 
 .tabs--primary {
   margin-bottom: 30px;
-}
-
-
-// Hacks to reuse styling on Drupal fieldgroup tabs.
-.horizontal-tabs ul.horizontal-tabs-list {
-  margin-top: $line-height-computed;
-  margin-bottom: 16px;
-  background: transparent;
-  border-right: none;
-  @extend .nav-tabs;
-  @extend .tabs;
-  li.horizontal-tab-button {
-    border: none;
-    line-height: $line-height-computed;
-    height: 34px;
-    @extend .tabs__tab;
-    a {
-      text-align: center;
-      color: $gray-light;
-      border-radius: 0;
-      @extend .tabs__tab-link;
-      &:hover {
-        border-bottom-color: #fff;
-      }
-      strong {
-        font-weight: $font-weight;
-      }
-    }
-    &.selected {
-      // Works as @extend .tabs__tab-link.active;
-      margin: 0 2px -1px 0;
-      font-size: $font-size-large;
-      a {
-        line-height: $line-height-computed !important;
-        // Works as @extend .tabs__tab-link.active tabs__tab-link;
-        border: 1px $gray-lighter solid;
-        border-bottom-color: #fff;
-        margin: 0;
-        padding-top: 7px;
-        color: $gray-base;
-        padding-bottom: 7px;
-        background-color: #fff;
-      }
-    }
-  }
 }
