@@ -1,15 +1,16 @@
 // Tabs
 //
-// Tabs to place a various content inside one region.
+// Override of Bootstrap Tabs
+// @see http://getbootstrap.com/components/#nav-tabs
 //
-// Markup: html/tabs.html
+// Markup: html/nav-tabs.html
 //
-// Styleguide tabs
+// Styleguide nav-tabs
 
 
 // Component
 // --------------------------------------------------
-.tabs {
+.nav-tabs {
   border: none;
   margin: -8px 0 0;
   overflow: hidden;
@@ -31,8 +32,7 @@
 
 // Elements
 // --------------------------------------------------
-
-.tabs > li {
+.nav-tabs > li {
   background-color: $gray-lighter;
   margin: 10px 2px 0 0 !important;
   font-size: $font-size-base;
@@ -66,15 +66,4 @@
       }
     }
   }
-}
-
-
-// Modifiers
-// --------------------------------------------------
-.tabs--listing-more {
-  margin-bottom: -30px;
-}
-
-.tabs--primary {
-  margin-bottom: 30px;
 }

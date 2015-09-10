@@ -59,7 +59,6 @@
               <li class="kss-menu-item"><a href="section-slogan.html"><span class="kss-ref">slogan</span><span class="kss-name">Slogan</span></a></li>
               <li class="kss-menu-item"><a href="section-subscribe.html"><span class="kss-ref">subscribe</span><span class="kss-name">Subscribe form</span></a></li>
               <li class="kss-menu-item"><a href="section-table.html"><span class="kss-ref">table</span><span class="kss-name">Tables</span></a></li>
-              <li class="kss-menu-item"><a href="section-tabs.html"><span class="kss-ref">tabs</span><span class="kss-name">Tabs</span></a></li>
             </ul>
             <ul class="kss-menu-child">
               <li class="kss-menu-item"><a href="#section-nav.nav-arrowbox"><span class="kss-ref">nav.nav-arrowbox</span><span class="kss-name">Arrow box navigation</span></a></li>
@@ -675,6 +674,60 @@ phone devices. Great to use with Navigation steps.</p>
   &lt;li role=&quot;presentation&quot; aria-controls=&quot;profile&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
   &lt;li role=&quot;presentation&quot; aria-controls=&quot;messages&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot;&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-nav-tabs" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">nav-tabs</span> Tabs</h1>
+            <div class="kss-description">
+              <p>Override of Bootstrap Tabs
+@see <a href="http://getbootstrap.com/components/#nav-tabs">http://getbootstrap.com/components/#nav-tabs</a></p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div role="tabpanel">
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+      <a href="#news" role="tab" data-toggle="tab" aria-controls="news">News</a>
+    </li>
+    <li role="presentation">
+      <a href="#events" role="tab" data-toggle="tab" aria-controls="events">Events</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="news">
+      <p>First tab content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="events">
+      <p>Second tab content. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div role=&quot;tabpanel&quot;&gt;
+  &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+    &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;
+      &lt;a href=&quot;#news&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;news&quot;&gt;News&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;
+      &lt;a href=&quot;#events&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;events&quot;&gt;Events&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;tab-content&quot;&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane active&quot; id=&quot;news&quot;&gt;
+      &lt;p&gt;First tab content. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane&quot; id=&quot;events&quot;&gt;
+      &lt;p&gt;Second tab content. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </code></pre>
               </div>
             </div>

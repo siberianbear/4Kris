@@ -4866,6 +4866,106 @@ ul {
 .label-default {
   background-color: #57c2f0; }
 
+.modal h2, .modal .title-more {
+  color: #4193A9;
+  font-weight: 300;
+  font-size: 34px;
+  border: none; }
+.modal h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #F5F6F8; }
+.modal .form-control {
+  background-color: #F5F6F8; }
+
+.nav-tabs {
+  border: none;
+  margin: -8px 0 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  z-index: 1; }
+  .nav-tabs:after {
+    content: '';
+    width: 100%;
+    display: block;
+    border-bottom: 1px #D8D8D8 solid;
+    position: absolute;
+    bottom: 0; }
+
+.nav-tabs > li {
+  background-color: #F5F6F8;
+  margin: 10px 2px 0 0 !important;
+  font-size: 16px;
+  padding: 0; }
+  .nav-tabs > li:first-of-type {
+    margin-left: 20px !important; }
+  .nav-tabs > li a {
+    color: #7f7f7f;
+    line-height: 26px;
+    padding: 13px 20px;
+    margin: 0;
+    border-radius: 0; }
+  .nav-tabs > li.active {
+    margin: 6px 3px -1px 0 !important;
+    z-index: 1;
+    border-top: 5px solid #4193A9 !important;
+    -webkit-box-shadow: 0 5px 0 2px #F5F6F8 ;
+    -moz-box-shadow: 0 5px 0 2px #F5F6F8 ;
+    box-shadow: 0 5px 0 2px #F5F6F8 ; }
+    .nav-tabs > li.active a, .nav-tabs > li.active a:focus, .nav-tabs > li.active a:hover {
+      border-left: 1px #D8D8D8 solid;
+      border-right: 1px #D8D8D8 solid;
+      margin: 0;
+      color: #101c27;
+      background-color: #f6fafb; }
+
+.nav-pills, .bootstrap-tabs-processed .vertical-tabs-list {
+  display: inline-block; }
+  .nav-pills > li > a, .bootstrap-tabs-processed .vertical-tabs-list > li > a {
+    color: #D8D8D8; }
+    .nav-pills > li > a:hover, .bootstrap-tabs-processed .vertical-tabs-list > li > a:hover {
+      background-color: transparent;
+      color: #101c27; }
+  .nav-pills > li.active > a, .bootstrap-tabs-processed .vertical-tabs-list > li.active > a, .nav-pills > li.active > a:hover, .bootstrap-tabs-processed .vertical-tabs-list > li.active > a:hover, .nav-pills > li.active > a:focus, .bootstrap-tabs-processed .vertical-tabs-list > li.active > a:focus {
+    color: #fff;
+    background-color: #337ab7; }
+
+.nav-pills--large > li > a {
+  font-family: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px; }
+
+.nav-pills--arrows:after {
+  border-bottom: 1px solid #D8D8D8;
+  width: 100%; }
+.nav-pills--arrows > li {
+  margin-bottom: -1px; }
+  .nav-pills--arrows > li.active > a, .nav-pills--arrows > li.active > a:hover, .nav-pills--arrows > li.active > a:focus {
+    position: relative;
+    border-bottom: 1px solid #D8D8D8; }
+    .nav-pills--arrows > li.active > a:before, .nav-pills--arrows > li.active > a:hover:before, .nav-pills--arrows > li.active > a:focus:before {
+      z-index: 101; }
+    .nav-pills--arrows > li.active > a:after, .nav-pills--arrows > li.active > a:hover:after, .nav-pills--arrows > li.active > a:focus:after {
+      z-index: 100; }
+    .nav-pills--arrows > li.active > a:before, .nav-pills--arrows > li.active > a:after, .nav-pills--arrows > li.active > a:hover:before, .nav-pills--arrows > li.active > a:hover:after, .nav-pills--arrows > li.active > a:focus:before, .nav-pills--arrows > li.active > a:focus:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0; }
+    .nav-pills--arrows > li.active > a:before, .nav-pills--arrows > li.active > a:hover:before, .nav-pills--arrows > li.active > a:focus:before {
+      right: 100px;
+      bottom: -1px;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-bottom: 10px solid #fff; }
+    .nav-pills--arrows > li.active > a:after, .nav-pills--arrows > li.active > a:hover:after, .nav-pills--arrows > li.active > a:focus:after {
+      right: 99px;
+      bottom: 0;
+      border-right: 11px solid transparent;
+      border-left: 11px solid transparent;
+      border-bottom: 11px solid #D8D8D8; }
+
 .pagination {
   display: inline-block;
   clear: both;
@@ -5047,112 +5147,6 @@ ul {
   .panel.is-active .panel-heading .panel-title {
     color: #fff;
     font-weight: 400; }
-
-.tabs {
-  border: none;
-  margin: -8px 0 0;
-  overflow: hidden;
-  text-transform: uppercase;
-  font-weight: 400;
-  position: relative;
-  z-index: 1; }
-  .tabs:after {
-    content: '';
-    width: 100%;
-    display: block;
-    border-bottom: 1px #D8D8D8 solid;
-    position: absolute;
-    bottom: 0; }
-
-.tabs > li {
-  background-color: #F5F6F8;
-  margin: 10px 2px 0 0 !important;
-  font-size: 16px;
-  padding: 0; }
-  .tabs > li:first-of-type {
-    margin-left: 20px !important; }
-  .tabs > li a {
-    color: #7f7f7f;
-    line-height: 26px;
-    padding: 13px 20px;
-    margin: 0;
-    border-radius: 0; }
-  .tabs > li.active {
-    margin: 6px 3px -1px 0 !important;
-    z-index: 1;
-    border-top: 5px solid #4193A9 !important;
-    -webkit-box-shadow: 0 5px 0 2px #F5F6F8 ;
-    -moz-box-shadow: 0 5px 0 2px #F5F6F8 ;
-    box-shadow: 0 5px 0 2px #F5F6F8 ; }
-    .tabs > li.active a, .tabs > li.active a:focus, .tabs > li.active a:hover {
-      border-left: 1px #D8D8D8 solid;
-      border-right: 1px #D8D8D8 solid;
-      margin: 0;
-      color: #101c27;
-      background-color: #f6fafb; }
-
-.tabs--listing-more {
-  margin-bottom: -30px; }
-
-.tabs--primary {
-  margin-bottom: 30px; }
-
-.modal h2, .modal .title-more {
-  color: #4193A9;
-  font-weight: 300;
-  font-size: 34px;
-  border: none; }
-.modal h3 {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #F5F6F8; }
-.modal .form-control {
-  background-color: #F5F6F8; }
-
-.nav-pills, .bootstrap-tabs-processed .vertical-tabs-list {
-  display: inline-block; }
-  .nav-pills > li > a, .bootstrap-tabs-processed .vertical-tabs-list > li > a {
-    color: #D8D8D8; }
-    .nav-pills > li > a:hover, .bootstrap-tabs-processed .vertical-tabs-list > li > a:hover {
-      background-color: transparent;
-      color: #101c27; }
-  .nav-pills > li.active > a, .bootstrap-tabs-processed .vertical-tabs-list > li.active > a, .nav-pills > li.active > a:hover, .bootstrap-tabs-processed .vertical-tabs-list > li.active > a:hover, .nav-pills > li.active > a:focus, .bootstrap-tabs-processed .vertical-tabs-list > li.active > a:focus {
-    color: #fff;
-    background-color: #337ab7; }
-
-.nav-pills--large > li > a {
-  font-family: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px; }
-
-.nav-pills--arrows:after {
-  border-bottom: 1px solid #D8D8D8;
-  width: 100%; }
-.nav-pills--arrows > li {
-  margin-bottom: -1px; }
-  .nav-pills--arrows > li.active > a, .nav-pills--arrows > li.active > a:hover, .nav-pills--arrows > li.active > a:focus {
-    position: relative;
-    border-bottom: 1px solid #D8D8D8; }
-    .nav-pills--arrows > li.active > a:before, .nav-pills--arrows > li.active > a:hover:before, .nav-pills--arrows > li.active > a:focus:before {
-      z-index: 101; }
-    .nav-pills--arrows > li.active > a:after, .nav-pills--arrows > li.active > a:hover:after, .nav-pills--arrows > li.active > a:focus:after {
-      z-index: 100; }
-    .nav-pills--arrows > li.active > a:before, .nav-pills--arrows > li.active > a:after, .nav-pills--arrows > li.active > a:hover:before, .nav-pills--arrows > li.active > a:hover:after, .nav-pills--arrows > li.active > a:focus:before, .nav-pills--arrows > li.active > a:focus:after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 0;
-      height: 0; }
-    .nav-pills--arrows > li.active > a:before, .nav-pills--arrows > li.active > a:hover:before, .nav-pills--arrows > li.active > a:focus:before {
-      right: 100px;
-      bottom: -1px;
-      border-right: 10px solid transparent;
-      border-left: 10px solid transparent;
-      border-bottom: 10px solid #fff; }
-    .nav-pills--arrows > li.active > a:after, .nav-pills--arrows > li.active > a:hover:after, .nav-pills--arrows > li.active > a:focus:after {
-      right: 99px;
-      bottom: 0;
-      border-right: 11px solid transparent;
-      border-left: 11px solid transparent;
-      border-bottom: 11px solid #D8D8D8; }
 
 .table, table {
   font-size: 14px; }
