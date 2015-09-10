@@ -28,7 +28,7 @@
             <h1 class="kss-doc-title"><a href="./">kss-node Styleguide</a></h1>
           </header>
           <nav class="kss-nav">
-            <ul class="kss-menu" data-kss-ref="fonts">
+            <ul class="kss-menu" data-kss-ref="btn-advanced">
               <li class="kss-menu-item"><a href="./"><span class="kss-ref">Overview</span></a></li>
               <li class="kss-menu-item"><a href="section-alert.html"><span class="kss-ref">alert</span><span class="kss-name">Alert</span></a></li>
               <li class="kss-menu-item"><a href="section-article.html"><span class="kss-ref">article</span><span class="kss-name">Article</span></a></li>
@@ -62,149 +62,196 @@
               <li class="kss-menu-item"><a href="section-tabs.html"><span class="kss-ref">tabs</span><span class="kss-name">Tabs</span></a></li>
             </ul>
             <ul class="kss-menu-child">
-              <li class="kss-menu-item"><a href="#section-fonts.blockquote"><span class="kss-ref">fonts.blockquote</span><span class="kss-name">Blockquote</span></a></li>
-              <li class="kss-menu-item"><a href="#section-fonts.color"><span class="kss-ref">fonts.color</span><span class="kss-name">Color classes</span></a></li>
-              <li class="kss-menu-item"><a href="#section-fonts.headers"><span class="kss-ref">fonts.headers</span><span class="kss-name">Headers</span></a></li>
-              <li class="kss-menu-item"><a href="#section-fonts.link"><span class="kss-ref">fonts.link</span><span class="kss-name">Link</span></a></li>
-              <li class="kss-menu-item"><a href="#section-fonts.list"><span class="kss-ref">fonts.list</span><span class="kss-name">List</span></a></li>
-              <li class="kss-menu-item"><a href="#section-fonts.paragraph"><span class="kss-ref">fonts.paragraph</span><span class="kss-name">Paragraphs</span></a></li>
             </ul>
           </nav>
         </div>
       </div>
       <div class="kss-content">
         <article class="kss-article">
-          <section id="section-fonts" class="kss-section kss-depth-1">
-            <h1 class="kss-title"><span class="kss-ref">fonts</span> Typography</h1>
+          <section id="section-btn-advanced" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">btn-advanced</span> Advanced button</h1>
             <div class="kss-description">
-              <p>Basic text components.</p>
+              <p>Button with special inner addon. Extension of Bootstrap button.</p>
 
             </div>
-          </section>
-          <section id="section-fonts.blockquote" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">fonts.blockquote</span> Blockquote</h1>
             <div class="kss-modifier-block">
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <blockquote><p>This is demo blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis semper est. Nam eget tempor enim, id vehicula dui.</p></blockquote>
-                </div>
-              </div>
-              <div class="kss-markup">
-                <pre><code data-language="html">&lt;blockquote&gt;&lt;p&gt;This is demo blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis semper est. Nam eget tempor enim, id vehicula dui.&lt;/p&gt;&lt;/blockquote&gt;</code></pre>
-              </div>
-            </div>
-          </section>
-          <section id="section-fonts.color" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">fonts.color</span> Color classes</h1>
-            <div class="kss-modifier-block">
-              <div class="kss-modifier kss-modifier-original">
-                <div class="kss-modifier-example">
-                  <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis semper est. Nam eget tempor enim, id vehicula dui.</p>
+                  <a class="btn btn-advanced btn-default ">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Default
+</a>
+<a class="btn btn-advanced btn-primary ">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Primary
+</a>
+<a class="btn btn-advanced btn-success ">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Success
+</a>
+<a class="btn btn-advanced btn-info ">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Info
+</a>
+<a class="btn btn-advanced btn-warning ">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Warning
+</a>
+<a class="btn btn-advanced btn-danger ">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Danger
+</a>
+<a class="btn btn-advanced btn-link ">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Link
+</a>
+
                 </div>
               </div>
               <div class="kss-modifier">
                 <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.light</div>
+                  <div class="kss-modifier-name">.btn-xs</div>
                   <div class="kss-modifier-description">
-                    Lighten
+                    Extreme small
                   </div>
                 </div>
                 <div class="kss-modifier-example">
-                  <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis semper est. Nam eget tempor enim, id vehicula dui.</p>
+                  <a class="btn btn-advanced btn-default btn-xs">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Default
+</a>
+<a class="btn btn-advanced btn-primary btn-xs">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Primary
+</a>
+<a class="btn btn-advanced btn-success btn-xs">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Success
+</a>
+<a class="btn btn-advanced btn-info btn-xs">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Info
+</a>
+<a class="btn btn-advanced btn-warning btn-xs">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Warning
+</a>
+<a class="btn btn-advanced btn-danger btn-xs">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Danger
+</a>
+<a class="btn btn-advanced btn-link btn-xs">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Link
+</a>
+
                 </div>
               </div>
               <div class="kss-modifier">
                 <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.success</div>
+                  <div class="kss-modifier-name">.btn-sm</div>
                   <div class="kss-modifier-description">
-                    Success
+                    Small
                   </div>
                 </div>
                 <div class="kss-modifier-example">
-                  <p class="success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis semper est. Nam eget tempor enim, id vehicula dui.</p>
+                  <a class="btn btn-advanced btn-default btn-sm">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Default
+</a>
+<a class="btn btn-advanced btn-primary btn-sm">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Primary
+</a>
+<a class="btn btn-advanced btn-success btn-sm">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Success
+</a>
+<a class="btn btn-advanced btn-info btn-sm">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Info
+</a>
+<a class="btn btn-advanced btn-warning btn-sm">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Warning
+</a>
+<a class="btn btn-advanced btn-danger btn-sm">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Danger
+</a>
+<a class="btn btn-advanced btn-link btn-sm">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Link
+</a>
+
                 </div>
               </div>
               <div class="kss-modifier">
                 <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.danger</div>
+                  <div class="kss-modifier-name">.btn-lg</div>
                   <div class="kss-modifier-description">
-                    Danger
+                    Large
                   </div>
                 </div>
                 <div class="kss-modifier-example">
-                  <p class="danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis semper est. Nam eget tempor enim, id vehicula dui.</p>
+                  <a class="btn btn-advanced btn-default btn-lg">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Default
+</a>
+<a class="btn btn-advanced btn-primary btn-lg">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Primary
+</a>
+<a class="btn btn-advanced btn-success btn-lg">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Success
+</a>
+<a class="btn btn-advanced btn-info btn-lg">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Info
+</a>
+<a class="btn btn-advanced btn-warning btn-lg">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Warning
+</a>
+<a class="btn btn-advanced btn-danger btn-lg">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Danger
+</a>
+<a class="btn btn-advanced btn-link btn-lg">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Link
+</a>
+
                 </div>
               </div>
-              <div class="kss-markup">
-                <pre><code data-language="html">&lt;p class=&quot;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis semper est. Nam eget tempor enim, id vehicula dui.&lt;/p&gt;</code></pre>
-              </div>
-            </div>
-          </section>
-          <section id="section-fonts.headers" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">fonts.headers</span> Headers</h1>
-            <div class="kss-modifier-block">
-              <div class="kss-modifier kss-modifier-original">
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.btn-block</div>
+                  <div class="kss-modifier-description">
+                    Block
+                  </div>
+                </div>
                 <div class="kss-modifier-example">
-                  <h1>This is demo h1.</h1>
-<h2>This is demo h2.</h2>
-<h3>This is demo h3.</h3>
-<h4>This is demo h4.</h4>
+                  <a class="btn btn-advanced btn-default btn-block">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Default
+</a>
+<a class="btn btn-advanced btn-primary btn-block">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Primary
+</a>
+<a class="btn btn-advanced btn-success btn-block">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Success
+</a>
+<a class="btn btn-advanced btn-info btn-block">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Info
+</a>
+<a class="btn btn-advanced btn-warning btn-block">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Warning
+</a>
+<a class="btn btn-advanced btn-danger btn-block">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Danger
+</a>
+<a class="btn btn-advanced btn-link btn-block">
+  <span class="btn-advanced__addon"><span class="icon icon--lock"></span></span>Link
+</a>
+
                 </div>
               </div>
               <div class="kss-markup">
-                <pre><code data-language="html">&lt;h1&gt;This is demo h1.&lt;/h1&gt;
-&lt;h2&gt;This is demo h2.&lt;/h2&gt;
-&lt;h3&gt;This is demo h3.&lt;/h3&gt;
-&lt;h4&gt;This is demo h4.&lt;/h4&gt;</code></pre>
-              </div>
-            </div>
-          </section>
-          <section id="section-fonts.link" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">fonts.link</span> Link</h1>
-            <div class="kss-modifier-block">
-              <div class="kss-modifier kss-modifier-original">
-                <div class="kss-modifier-example">
-                  This is <a href="#">demo link</a>.
-                </div>
-              </div>
-              <div class="kss-markup">
-                <pre><code data-language="html">This is &lt;a href=&quot;#&quot;&gt;demo link&lt;/a&gt;.</code></pre>
-              </div>
-            </div>
-          </section>
-          <section id="section-fonts.list" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">fonts.list</span> List</h1>
-            <div class="kss-modifier-block">
-              <div class="kss-modifier kss-modifier-original">
-                <div class="kss-modifier-example">
-                  <ul>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item</li>
-</ul>
-                </div>
-              </div>
-              <div class="kss-markup">
-                <pre><code data-language="html">&lt;ul&gt;
-  &lt;li&gt;First item&lt;/li&gt;
-  &lt;li&gt;Second item&lt;/li&gt;
-  &lt;li&gt;Third item&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-              </div>
-            </div>
-          </section>
-          <section id="section-fonts.paragraph" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">fonts.paragraph</span> Paragraphs</h1>
-            <div class="kss-modifier-block">
-              <div class="kss-modifier kss-modifier-original">
-                <div class="kss-modifier-example">
-                  <p>This is first demo paragraph.</p>
-<p>This is second demo paragraph.</p>
-                </div>
-              </div>
-              <div class="kss-markup">
-                <pre><code data-language="html">&lt;p&gt;This is first demo paragraph.&lt;/p&gt;
-&lt;p&gt;This is second demo paragraph.&lt;/p&gt;</code></pre>
+                <pre><code data-language="html">&lt;a class=&quot;btn btn-advanced btn-default &quot;&gt;
+  &lt;span class=&quot;btn-advanced__addon&quot;&gt;&lt;span class=&quot;icon icon--lock&quot;&gt;&lt;/span&gt;&lt;/span&gt;Default
+&lt;/a&gt;
+&lt;a class=&quot;btn btn-advanced btn-primary &quot;&gt;
+  &lt;span class=&quot;btn-advanced__addon&quot;&gt;&lt;span class=&quot;icon icon--lock&quot;&gt;&lt;/span&gt;&lt;/span&gt;Primary
+&lt;/a&gt;
+&lt;a class=&quot;btn btn-advanced btn-success &quot;&gt;
+  &lt;span class=&quot;btn-advanced__addon&quot;&gt;&lt;span class=&quot;icon icon--lock&quot;&gt;&lt;/span&gt;&lt;/span&gt;Success
+&lt;/a&gt;
+&lt;a class=&quot;btn btn-advanced btn-info &quot;&gt;
+  &lt;span class=&quot;btn-advanced__addon&quot;&gt;&lt;span class=&quot;icon icon--lock&quot;&gt;&lt;/span&gt;&lt;/span&gt;Info
+&lt;/a&gt;
+&lt;a class=&quot;btn btn-advanced btn-warning &quot;&gt;
+  &lt;span class=&quot;btn-advanced__addon&quot;&gt;&lt;span class=&quot;icon icon--lock&quot;&gt;&lt;/span&gt;&lt;/span&gt;Warning
+&lt;/a&gt;
+&lt;a class=&quot;btn btn-advanced btn-danger &quot;&gt;
+  &lt;span class=&quot;btn-advanced__addon&quot;&gt;&lt;span class=&quot;icon icon--lock&quot;&gt;&lt;/span&gt;&lt;/span&gt;Danger
+&lt;/a&gt;
+&lt;a class=&quot;btn btn-advanced btn-link &quot;&gt;
+  &lt;span class=&quot;btn-advanced__addon&quot;&gt;&lt;span class=&quot;icon icon--lock&quot;&gt;&lt;/span&gt;&lt;/span&gt;Link
+&lt;/a&gt;
+</code></pre>
               </div>
             </div>
           </section>

@@ -216,7 +216,20 @@
   @if $side == 'bottom' {
     border-bottom: 1px solid $border-color;
     @if $direction == 'in' {
-      // TODO: Bottom side in
+      &:before {
+        right: $distance;
+        bottom: -1px;
+        border-right: $size solid transparent;
+        border-left: $size solid transparent;
+        border-bottom: $size solid $bg-color;
+      }
+      &:after {
+        right: $distance - 1;
+        bottom: 0;
+        border-right: $size + 1 solid transparent;
+        border-left: $size + 1 solid transparent;
+        border-bottom: $size + 1 solid $border-color;
+      }
     }
     @elseif $direction == 'out' {
       &:before {

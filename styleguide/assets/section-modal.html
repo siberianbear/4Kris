@@ -28,7 +28,7 @@
             <h1 class="kss-doc-title"><a href="./">kss-node Styleguide</a></h1>
           </header>
           <nav class="kss-nav">
-            <ul class="kss-menu" data-kss-ref="date">
+            <ul class="kss-menu" data-kss-ref="modal">
               <li class="kss-menu-item"><a href="./"><span class="kss-ref">Overview</span></a></li>
               <li class="kss-menu-item"><a href="section-alert.html"><span class="kss-ref">alert</span><span class="kss-name">Alert</span></a></li>
               <li class="kss-menu-item"><a href="section-article.html"><span class="kss-ref">article</span><span class="kss-name">Article</span></a></li>
@@ -68,46 +68,67 @@
       </div>
       <div class="kss-content">
         <article class="kss-article">
-          <section id="section-date" class="kss-section kss-depth-1">
-            <h1 class="kss-title"><span class="kss-ref">date</span> Date select</h1>
+          <section id="section-modal" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">modal</span> Modal</h1>
             <div class="kss-description">
-              <p>Month - Day - Year</p>
-<div class="date">
-   <h4>Text</h4>
-   <div class="date__item">
-     <label>Month</label>
-     <select class="form-control">
-       <option value selected="selected"></option>
-       <option value="1">1</option>
-       <option value="2">2</option>
-     </select>
-   </div>
-   <div class="date__item">
-     <label>Day</label>
-     <select class="form-control">
-       <option value selected="selected"></option>
-       <option value="1">1</option>
-       <option value="2">2</option>
-     </select>
-   </div>
-   <div class="date__item">
-     <label>Year</label>
-     <select class="form-control">
-       <option value selected="selected"></option>
-       <option value="1998">1998</option>
-       <option value="1999">1999</option>
-     </select>
-   </div>
-</div>
+              <p>Override of Bootstrap Modals
+@see <a href="http://getbootstrap.com/javascript/#modals">http://getbootstrap.com/javascript/#modals</a></p>
+
             </div>
             <div class="kss-modifier-block">
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  Markup:
+                  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        Modal body
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
                 </div>
               </div>
               <div class="kss-markup">
-                <pre><code data-language="html">Markup:</code></pre>
+                <pre><code data-language="html">&lt;!-- Button trigger modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;
+  Launch demo modal
+&lt;/button&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Modal title&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        Modal body
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
               </div>
             </div>
           </section>

@@ -5,7 +5,8 @@
 // Markup: html/middle-align.html
 //
 // .middle-align--mobile-media-below - One collumn layout on mobile
-// .middle-align--paddings - More space around the element
+// .middle-align--paddings - More paddings around the element
+// .middle-align--nopaddings - Almost paddings
 // .middle-align--condensed - Condensed space between collumns
 //
 // Styleguide midle-align
@@ -44,6 +45,7 @@
   @include breakpoint(desktop) {
     .middle-align__col {
       display: table-cell;
+      text-align: inherit;
       &:not(:last-child) {
         padding-right: 30px;
       }
@@ -67,6 +69,13 @@
 .middle-align--condensed {
   .middle-align__col:not(:last-child) {
     padding-right: 5px;
+  }
+}
+
+.middle-align--nopaddings {
+  &,
+  & .middle-align__col:not(:last-child) {
+    padding-right: 0;
   }
 }
 

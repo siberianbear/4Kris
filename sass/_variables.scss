@@ -9,16 +9,18 @@ $gray-lightest: #FAFAFA;
 $almost-white:  #FDFDFD;
 
 $azure:         #57c2f0;
-$blue:          #205EA1;
-$blue-dark:     #1E4289;
+
+$blue:          #4193A9;
+$blue-dark:     #0A1B2B;
 $blue-light:    #f6fafb;
-$green:         #aac80a;
-$green-2:       #00a651;
-$green-dark:    #5a8228;
+$lime:          #74AE23;
+$green:         #00a651;
+$olive:         #5a8228;
 $brown:         #be6e14;
-$orange:        #ff9100;
-$green:         #aac80a;
+$orange:        #E75404;
 $yellow:        #ffd429;
+$puprle:        #A3418C;
+$red:           #E50038;
 
 $brand-primary: $blue;
 $brand-primary-dark: $blue-dark;
@@ -55,6 +57,7 @@ $font-size-h4:            16px;
 
 $font-weight: 300;
 $text-color: $gray-base;
+$link-color: $brand-primary;
 
 $line-height-computed: 26px;
 
@@ -107,11 +110,11 @@ $social-links-size: 50px;
 $social-links-color: $brand-primary;
 
 // Ornament
-$ornament-default: $azure;
+$ornament-default: $brand-primary;
 
 // Tabs
 $tabs-active-background: $brand-primary-lighter;
-$tabs-accent: $azure;
+$tabs-accent: $brand-primary;
 
 // Carousel
 $carousel-caption-bg: $brand-primary;

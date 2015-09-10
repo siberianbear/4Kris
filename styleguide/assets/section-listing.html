@@ -51,6 +51,7 @@
               <li class="kss-menu-item"><a href="section-listing.html"><span class="kss-ref">listing</span><span class="kss-name">Listing</span></a></li>
               <li class="kss-menu-item"><a href="section-logo.html"><span class="kss-ref">logo</span><span class="kss-name">Logo</span></a></li>
               <li class="kss-menu-item"><a href="section-map.html"><span class="kss-ref">map</span><span class="kss-name">Map</span></a></li>
+              <li class="kss-menu-item"><a href="section-modal.html"><span class="kss-ref">modal</span><span class="kss-name">Modal</span></a></li>
               <li class="kss-menu-item"><a href="section-nav.html"><span class="kss-ref">nav</span><span class="kss-name">Navigation</span></a></li>
               <li class="kss-menu-item"><a href="section-ornament.html"><span class="kss-ref">ornament</span><span class="kss-name">Ornament</span></a></li>
               <li class="kss-menu-item"><a href="section-pagination.html"><span class="kss-ref">pagination</span><span class="kss-name">Pagination</span></a></li>
@@ -63,6 +64,7 @@
             <ul class="kss-menu-child">
               <li class="kss-menu-item"><a href="#section-listing.blog"><span class="kss-ref">listing.blog</span><span class="kss-name">Listing blog</span></a></li>
               <li class="kss-menu-item"><a href="#section-listing.middlealign"><span class="kss-ref">listing.middlealign</span><span class="kss-name">Listing middle align</span></a></li>
+              <li class="kss-menu-item"><a href="#section-listing.numbered"><span class="kss-ref">listing.numbered</span><span class="kss-name">Listing numbered</span></a></li>
               <li class="kss-menu-item"><a href="#section-listing.stream"><span class="kss-ref">listing.stream</span><span class="kss-name">Listing stream</span></a></li>
             </ul>
           </nav>
@@ -630,6 +632,49 @@
 
                 </div>
               </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--zebra</div>
+                  <div class="kss-modifier-description">
+                    Zebra styling
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--zebra">
+  <div class="listing__label">Calls for projects</div>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
               <div class="kss-markup">
                 <pre><code data-language="html">&lt;div class=&quot;listing &quot;&gt;
   &lt;div class=&quot;listing__label&quot;&gt;Calls for projects&lt;/div&gt;
@@ -907,6 +952,190 @@ fine in sidebar or 2-3 collumn layout.</p>
       &lt;div class=&quot;listing__item-col&quot;&gt;&lt;span class=&quot;label label-success pull-right&quot;&gt;Ready&lt;/laber&gt;&lt;/div&gt;
     &lt;/div&gt;
   &lt;/article&gt;
+&lt;/div&gt;
+</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-listing.numbered" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">listing.numbered</span> Listing numbered</h1>
+            <div class="kss-description">
+              <p>Listing with big full height numbers at the left.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="listing listing--numbered ">
+  <div class="listing__label">Calls for projects</div>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+
+  <article class="listing__item">
+    <div class="listing__item-text">
+      <big><strong>Self-assessment type:</strong> Erasmus+ coordinators</big>
+      <p><strong>Created:</strong> 11 march 2015</p>
+    </div>
+    <div class="listing__item-footer clearfix">
+      <a href="#" class="btn btn-link btn-sm "><big><span class="icon icon--share"></span></big>Share my results</a>
+      <div class="btn-toolbar pull-right" role="toolbar" aria-label="actions">
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--eye"></span></big>View results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--download"></span></big>Download results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--bin"></span></big>Delete</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="listing__item">
+    <div class="listing__item-text">
+      <big><strong>Self-assessment type:</strong> Erasmus+ coordinators</big>
+      <p><strong>Created:</strong> 11 march 2015</p>
+    </div>
+    <div class="listing__item-footer clearfix">
+      <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--share"></span></big>Share my results</a>
+      <div class="btn-toolbar pull-right" role="toolbar" aria-label="actions">
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--eye"></span></big>View results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--download"></span></big>Download results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--bin"></span></big>Delete</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="listing__item">
+    <div class="listing__item-text">
+      <big><strong>Self-assessment type:</strong> Erasmus+ coordinators</big>
+      <p><strong>Created:</strong> 11 march 2015</p>
+    </div>
+    <div class="listing__item-footer clearfix">
+      <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--share"></span></big>Share my results</a>
+      <div class="btn-toolbar pull-right" role="toolbar" aria-label="actions">
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--eye"></span></big>View results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--download"></span></big>Download results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--bin"></span></big>Delete</a>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--condensed</div>
+                  <div class="kss-modifier-description">
+                    Layout for single row, simple listings
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--numbered listing--condensed">
+  <div class="listing__label">Calls for projects</div>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+
+  <article class="listing__item">
+    <div class="listing__item-text">
+      <big><strong>Self-assessment type:</strong> Erasmus+ coordinators</big>
+      <p><strong>Created:</strong> 11 march 2015</p>
+    </div>
+    <div class="listing__item-footer clearfix">
+      <a href="#" class="btn btn-link btn-sm "><big><span class="icon icon--share"></span></big>Share my results</a>
+      <div class="btn-toolbar pull-right" role="toolbar" aria-label="actions">
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--eye"></span></big>View results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--download"></span></big>Download results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--bin"></span></big>Delete</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="listing__item">
+    <div class="listing__item-text">
+      <big><strong>Self-assessment type:</strong> Erasmus+ coordinators</big>
+      <p><strong>Created:</strong> 11 march 2015</p>
+    </div>
+    <div class="listing__item-footer clearfix">
+      <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--share"></span></big>Share my results</a>
+      <div class="btn-toolbar pull-right" role="toolbar" aria-label="actions">
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--eye"></span></big>View results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--download"></span></big>Download results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--bin"></span></big>Delete</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="listing__item">
+    <div class="listing__item-text">
+      <big><strong>Self-assessment type:</strong> Erasmus+ coordinators</big>
+      <p><strong>Created:</strong> 11 march 2015</p>
+    </div>
+    <div class="listing__item-footer clearfix">
+      <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--share"></span></big>Share my results</a>
+      <div class="btn-toolbar pull-right" role="toolbar" aria-label="actions">
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--eye"></span></big>View results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--download"></span></big>Download results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--bin"></span></big>Delete</a>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;listing listing--numbered &quot;&gt;
+  &lt;div class=&quot;listing__label&quot;&gt;Calls for projects&lt;/div&gt;
+  &lt;div class=&quot;listing__header&quot;&gt;
+    &lt;p&gt;Additional description paragraph above listing items.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;article class=&quot;listing__item&quot;&gt;
+    &lt;div class=&quot;listing__item-text&quot;&gt;
+      &lt;big&gt;&lt;strong&gt;Self-assessment type:&lt;/strong&gt; Erasmus+ coordinators&lt;/big&gt;
+      &lt;p&gt;&lt;strong&gt;Created:&lt;/strong&gt; 11 march 2015&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;listing__item-footer clearfix&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-sm &quot;&gt;&lt;big&gt;&lt;span class=&quot;icon icon--share&quot;&gt;&lt;/span&gt;&lt;/big&gt;Share my results&lt;/a&gt;
+      &lt;div class=&quot;btn-toolbar pull-right&quot; role=&quot;toolbar&quot; aria-label=&quot;actions&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class=&quot;icon icon--eye&quot;&gt;&lt;/span&gt;&lt;/big&gt;View results&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class=&quot;icon icon--download&quot;&gt;&lt;/span&gt;&lt;/big&gt;Download results&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class=&quot;icon icon--bin&quot;&gt;&lt;/span&gt;&lt;/big&gt;Delete&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+
+  &lt;article class=&quot;listing__item&quot;&gt;
+    &lt;div class=&quot;listing__item-text&quot;&gt;
+      &lt;big&gt;&lt;strong&gt;Self-assessment type:&lt;/strong&gt; Erasmus+ coordinators&lt;/big&gt;
+      &lt;p&gt;&lt;strong&gt;Created:&lt;/strong&gt; 11 march 2015&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;listing__item-footer clearfix&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class=&quot;icon icon--share&quot;&gt;&lt;/span&gt;&lt;/big&gt;Share my results&lt;/a&gt;
+      &lt;div class=&quot;btn-toolbar pull-right&quot; role=&quot;toolbar&quot; aria-label=&quot;actions&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class=&quot;icon icon--eye&quot;&gt;&lt;/span&gt;&lt;/big&gt;View results&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class=&quot;icon icon--download&quot;&gt;&lt;/span&gt;&lt;/big&gt;Download results&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class=&quot;icon icon--bin&quot;&gt;&lt;/span&gt;&lt;/big&gt;Delete&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+
+  &lt;article class=&quot;listing__item&quot;&gt;
+    &lt;div class=&quot;listing__item-text&quot;&gt;
+      &lt;big&gt;&lt;strong&gt;Self-assessment type:&lt;/strong&gt; Erasmus+ coordinators&lt;/big&gt;
+      &lt;p&gt;&lt;strong&gt;Created:&lt;/strong&gt; 11 march 2015&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;listing__item-footer clearfix&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class=&quot;icon icon--share&quot;&gt;&lt;/span&gt;&lt;/big&gt;Share my results&lt;/a&gt;
+      &lt;div class=&quot;btn-toolbar pull-right&quot; role=&quot;toolbar&quot; aria-label=&quot;actions&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class=&quot;icon icon--eye&quot;&gt;&lt;/span&gt;&lt;/big&gt;View results&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class=&quot;icon icon--download&quot;&gt;&lt;/span&gt;&lt;/big&gt;Download results&lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class=&quot;icon icon--bin&quot;&gt;&lt;/span&gt;&lt;/big&gt;Delete&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+
 &lt;/div&gt;
 </code></pre>
               </div>

@@ -16,6 +16,7 @@
 // .listing--image-corner-radius   - Create border radius for bottom left corner of the media
 // .listing--tabs-spacer           - Moves the whole listing up to correspond with tabs component above
 // .listing--side-title            - Listing label at the left
+// .listing--zebra                 - Zebra styling
 //
 // Styleguide listing
 
@@ -376,6 +377,12 @@
 .listing--condensed-lineheight {
   p {
     line-height: $line-height-computed - 4;
+  }
+}
+
+.listing--zebra {
+  .listing__item:nth-of-type(even) {
+    background-color: $gray-lightest;
   }
 }
 

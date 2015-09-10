@@ -17,6 +17,7 @@
 // .icon--circle-minus - .icon--circle-minus
 // .icon--arrows - .icon--arrows
 // .icon--bell - .icon--bell
+// .icon--bin - .icon--bin
 // .icon--book-bookmark - .icon--book-bookmark
 // .icon--bookmark - .icon--bookmark
 // .icon--books - .icon--books
@@ -33,10 +34,15 @@
 // .icon--envelope-plus - .icon--envelope-plus
 // .icon--eu - .icon--eu
 // .icon--europe - .icon--europe
+// .icon--eye - .icon--eye
 // .icon--fb - .icon--fb
 // .icon--fill-doc - .icon--fill-doc
+// .icon--flag - .icon--flag
+// .icon--flag-slat - .icon--flag-slat
 // .icon--globe - .icon--globe
 // .icon--helpdesk - .icon--helpdesk
+// .icon--in - .icon--in
+// .icon--out - .icon--out
 // .icon--ok - .icon--ok
 // .icon--open-paper - .icon--open-paper
 // .icon--link - .icon--link
@@ -54,6 +60,7 @@
 // .icon--scope - .icon--scope
 // .icon--search - .icon--search
 // .icon--send - .icon--send
+// .icon--share - .icon--share
 // .icon--square-ok - .icon--square-ok
 // .icon--square-left - .icon--square-left
 // .icon--square-right - .icon--square-right
@@ -62,6 +69,10 @@
 // .icon--twitter - .icon--twitter
 // .icon--umbrela - .icon--umbrela
 // .icon--user - .icon--user
+// .icon--user-check - .icon--user-check
+// .icon--user-plus - .icon--user-plus
+// .icon--user-minus - .icon--user-minus
+// .icon--user-x - .icon--user-x
 // .icon--user-suit - .icon--user-suit
 // .icon--world - .icon--world
 // .icon--mime-default - .icon--mime-default
@@ -119,6 +130,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+big .icon {
+  font-size: 225%;
+  top: 12px;
+  margin-top: -20px;
+}
+
 
 // Modifiers
 // --------------------------------------------------
@@ -133,6 +150,7 @@
 .icon--circle-minus:before { content: "\e60d"; }
 .icon--arrows:before { content: "\e648"; }
 .icon--bell:before { content: "\e61a"; }
+.icon--bin:before { content: "\e657"; }
 .icon--book-bookmark:before { content: "\e64c"; }
 .icon--bookmark:before { content: "\e64d"; }
 .icon--books:before { content: "\e64b"; }
@@ -149,10 +167,15 @@
 .icon--envelope-plus:before { content: "\e637"; }
 .icon--eu:before { content: "\e64a"; }
 .icon--europe:before { content: "\e62f"; }
+.icon--eye:before { content: "\e7ab"; }
 .icon--fb:before { content: "\e61f"; }
 .icon--fill-doc:before { content: "\e62d"; }
+.icon--flag:before { content: "\e67e"; }
+.icon--flag-slat:before { content: "\e680"; }
 .icon--globe:before { content: "\e602"; }
 .icon--helpdesk:before { content: "\e647"; }
+.icon--in:before { content: "\e664"; }
+.icon--out:before { content: "\e665"; }
 .icon--ok:before { content: "\e66b"; }
 .icon--open-paper:before { content: "\e628"; }
 .icon--link:before { content: "\e62b"; }
@@ -171,6 +194,7 @@
 .icon--scope:before { content: "\e621"; }
 .icon--search:before { content: "\e603"; }
 .icon--send:before { content: "\e635"; }
+.icon--share:before { content: "\e7c5"; }
 .icon--square-ok:before { content: "\e877"; }
 .icon--square-left:before { content: "\e873"; }
 .icon--square-right:before { content: "\e874"; }
@@ -181,6 +205,10 @@
 .icon--triangle-left:before { content: "\e608"; }
 .icon--umbrela:before { content: "\e619"; }
 .icon--user:before { content: "\e60a"; }
+.icon--user-check:before { content: "\e74a"; }
+.icon--user-plus:before { content: "\e747"; }
+.icon--user-minus:before { content: "\e748"; }
+.icon--user-x:before { content: "\e749"; }
 .icon--user-suit:before { content: "\e60b"; }
 .icon--world:before { content: "\e62e"; }
 // File mime icons:
