@@ -146,19 +146,3 @@ ul {
     }
   }
 }
-
-
-// Color classes
-//
-// Markup:
-// <p class="{{modifier_class}}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis semper est. Nam eget tempor enim, id vehicula dui.</p>
-//
-// .light   - Lighten
-// .success - Success
-// .danger  - Danger
-//
-// Styleguide fonts.color
-
-.light   { color: darken($gray-light, 20%) !important; border-color: darken($gray-light, 20%) !important; }
-.success { color: $brand-success !important; border-color: $brand-success !important; }
-.danger { color: $brand-danger !important; border-color: $brand-danger !important; }

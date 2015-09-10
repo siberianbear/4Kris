@@ -4782,18 +4782,6 @@ ul {
       top: 10.4px;
       left: -20px; }
 
-.light {
-  color: #a5a5a5 !important;
-  border-color: #a5a5a5 !important; }
-
-.success {
-  color: #00a651 !important;
-  border-color: #00a651 !important; }
-
-.danger {
-  color: #E50038 !important;
-  border-color: #E50038 !important; }
-
 .alert {
   border-radius: 0; }
 
