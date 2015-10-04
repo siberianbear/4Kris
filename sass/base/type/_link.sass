@@ -1,0 +1,19 @@
+// Link
+//
+// Markup: html/link.html
+//
+// Styleguide type.link
+
+a
+  color: $link-color
+  text-underline: none
+  &:hover,
+  &:active,
+  &:focus
+    color: $link-hover-color
+    text-decoration: underline
+
+p,
+.paragraph
+  a:not(.btn)
+    text-decoration: underline
