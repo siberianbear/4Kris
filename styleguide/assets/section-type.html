@@ -28,7 +28,7 @@
             <h1 class="kss-doc-title"><a href="./">kss-node Styleguide</a></h1>
           </header>
           <nav class="kss-nav">
-            <ul class="kss-menu" data-kss-ref="fonts">
+            <ul class="kss-menu" data-kss-ref="type">
               <li class="kss-menu-item"><a href="./"><span class="kss-ref">Overview</span></a></li>
               <li class="kss-menu-item"><a href="section-alert.html"><span class="kss-ref">alert</span><span class="kss-name">Alert</span></a></li>
               <li class="kss-menu-item"><a href="section-article.html"><span class="kss-ref">article</span><span class="kss-name">Article</span></a></li>
@@ -42,7 +42,6 @@
               <li class="kss-menu-item"><a href="section-faq.html"><span class="kss-ref">faq</span><span class="kss-name">FAQ</span></a></li>
               <li class="kss-menu-item"><a href="section-featured.html"><span class="kss-ref">featured</span><span class="kss-name">Featured</span></a></li>
               <li class="kss-menu-item"><a href="section-file.html"><span class="kss-ref">file</span><span class="kss-name">File link</span></a></li>
-              <li class="kss-menu-item"><a href="section-fonts.html"><span class="kss-ref">fonts</span><span class="kss-name">Typography</span></a></li>
               <li class="kss-menu-item"><a href="section-form.html"><span class="kss-ref">form</span><span class="kss-name">Form</span></a></li>
               <li class="kss-menu-item"><a href="section-highlight.html"><span class="kss-ref">highlight</span><span class="kss-name">Highlight</span></a></li>
               <li class="kss-menu-item"><a href="section-icon.html"><span class="kss-ref">icon</span><span class="kss-name">Icons</span></a></li>
@@ -58,73 +57,84 @@
               <li class="kss-menu-item"><a href="section-slogan.html"><span class="kss-ref">slogan</span><span class="kss-name">Slogan</span></a></li>
               <li class="kss-menu-item"><a href="section-subscribe.html"><span class="kss-ref">subscribe</span><span class="kss-name">Subscribe form</span></a></li>
               <li class="kss-menu-item"><a href="section-table.html"><span class="kss-ref">table</span><span class="kss-name">Tables</span></a></li>
+              <li class="kss-menu-item"><a href="section-type.html"><span class="kss-ref">type</span><span class="kss-name">Typography</span></a></li>
             </ul>
             <ul class="kss-menu-child">
-              <li class="kss-menu-item"><a href="#section-fonts.blockquote"><span class="kss-ref">fonts.blockquote</span><span class="kss-name">Blockquote</span></a></li>
-              <li class="kss-menu-item"><a href="#section-fonts.headers"><span class="kss-ref">fonts.headers</span><span class="kss-name">Headers</span></a></li>
-              <li class="kss-menu-item"><a href="#section-fonts.link"><span class="kss-ref">fonts.link</span><span class="kss-name">Link</span></a></li>
-              <li class="kss-menu-item"><a href="#section-fonts.list"><span class="kss-ref">fonts.list</span><span class="kss-name">List</span></a></li>
-              <li class="kss-menu-item"><a href="#section-fonts.paragraph"><span class="kss-ref">fonts.paragraph</span><span class="kss-name">Paragraphs</span></a></li>
+              <li class="kss-menu-item"><a href="#section-type.blockquote"><span class="kss-ref">type.blockquote</span><span class="kss-name">Blockquote</span></a></li>
+              <li class="kss-menu-item"><a href="#section-type.headers"><span class="kss-ref">type.headers</span><span class="kss-name">Headers</span></a></li>
+              <li class="kss-menu-item"><a href="#section-type.link"><span class="kss-ref">type.link</span><span class="kss-name">Link</span></a></li>
+              <li class="kss-menu-item"><a href="#section-type.list"><span class="kss-ref">type.list</span><span class="kss-name">List</span></a></li>
+              <li class="kss-menu-item"><a href="#section-type.paragraph"><span class="kss-ref">type.paragraph</span><span class="kss-name">Paragraphs</span></a></li>
             </ul>
           </nav>
         </div>
       </div>
       <div class="kss-content">
         <article class="kss-article">
-          <section id="section-fonts" class="kss-section kss-depth-1">
-            <h1 class="kss-title"><span class="kss-ref">fonts</span> Typography</h1>
+          <section id="section-type" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">type</span> Typography</h1>
             <div class="kss-description">
               <p>Basic text components.</p>
 
             </div>
           </section>
-          <section id="section-fonts.blockquote" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">fonts.blockquote</span> Blockquote</h1>
+          <section id="section-type.blockquote" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">type.blockquote</span> Blockquote</h1>
             <div class="kss-modifier-block">
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <blockquote><p>This is demo blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis semper est. Nam eget tempor enim, id vehicula dui.</p></blockquote>
+                  <blockquote>
+  <p>This is demo blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis semper est. Nam eget tempor enim, id vehicula dui.</p>
+</blockquote>
+
                 </div>
               </div>
               <div class="kss-markup">
-                <pre><code data-language="html">&lt;blockquote&gt;&lt;p&gt;This is demo blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis semper est. Nam eget tempor enim, id vehicula dui.&lt;/p&gt;&lt;/blockquote&gt;</code></pre>
+                <pre><code data-language="html">&lt;blockquote&gt;
+  &lt;p&gt;This is demo blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis semper est. Nam eget tempor enim, id vehicula dui.&lt;/p&gt;
+&lt;/blockquote&gt;
+</code></pre>
               </div>
             </div>
           </section>
-          <section id="section-fonts.headers" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">fonts.headers</span> Headers</h1>
+          <section id="section-type.headers" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">type.headers</span> Headers</h1>
             <div class="kss-modifier-block">
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <h1>This is demo h1.</h1>
-<h2>This is demo h2.</h2>
-<h3>This is demo h3.</h3>
-<h4>This is demo h4.</h4>
+                  <h1>This is demo h1</h1>
+<h2>This is demo h2</h2>
+<h3>This is demo h3</h3>
+<h4>This is demo h4</h4>
+
                 </div>
               </div>
               <div class="kss-markup">
-                <pre><code data-language="html">&lt;h1&gt;This is demo h1.&lt;/h1&gt;
-&lt;h2&gt;This is demo h2.&lt;/h2&gt;
-&lt;h3&gt;This is demo h3.&lt;/h3&gt;
-&lt;h4&gt;This is demo h4.&lt;/h4&gt;</code></pre>
+                <pre><code data-language="html">&lt;h1&gt;This is demo h1&lt;/h1&gt;
+&lt;h2&gt;This is demo h2&lt;/h2&gt;
+&lt;h3&gt;This is demo h3&lt;/h3&gt;
+&lt;h4&gt;This is demo h4&lt;/h4&gt;
+</code></pre>
               </div>
             </div>
           </section>
-          <section id="section-fonts.link" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">fonts.link</span> Link</h1>
+          <section id="section-type.link" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">type.link</span> Link</h1>
             <div class="kss-modifier-block">
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
                   This is <a href="#">demo link</a>.
+
                 </div>
               </div>
               <div class="kss-markup">
-                <pre><code data-language="html">This is &lt;a href=&quot;#&quot;&gt;demo link&lt;/a&gt;.</code></pre>
+                <pre><code data-language="html">This is &lt;a href=&quot;#&quot;&gt;demo link&lt;/a&gt;.
+</code></pre>
               </div>
             </div>
           </section>
-          <section id="section-fonts.list" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">fonts.list</span> List</h1>
+          <section id="section-type.list" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">type.list</span> List</h1>
             <div class="kss-modifier-block">
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
@@ -133,6 +143,7 @@
   <li>Second item</li>
   <li>Third item</li>
 </ul>
+
                 </div>
               </div>
               <div class="kss-markup">
@@ -140,22 +151,25 @@
   &lt;li&gt;First item&lt;/li&gt;
   &lt;li&gt;Second item&lt;/li&gt;
   &lt;li&gt;Third item&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+&lt;/ul&gt;
+</code></pre>
               </div>
             </div>
           </section>
-          <section id="section-fonts.paragraph" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">fonts.paragraph</span> Paragraphs</h1>
+          <section id="section-type.paragraph" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">type.paragraph</span> Paragraphs</h1>
             <div class="kss-modifier-block">
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
                   <p>This is first demo paragraph.</p>
 <p>This is second demo paragraph.</p>
+
                 </div>
               </div>
               <div class="kss-markup">
                 <pre><code data-language="html">&lt;p&gt;This is first demo paragraph.&lt;/p&gt;
-&lt;p&gt;This is second demo paragraph.&lt;/p&gt;</code></pre>
+&lt;p&gt;This is second demo paragraph.&lt;/p&gt;
+</code></pre>
               </div>
             </div>
           </section>

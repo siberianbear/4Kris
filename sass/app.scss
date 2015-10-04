@@ -13,6 +13,11 @@
 @import "base/helper_classes";
 @import "base/responsive-utilities";
 @import "base/type";
+@import "base/type/blockquote";
+@import "base/type/headers";
+@import "base/type/link";
+@import "base/type/list";
+@import "base/type/paragraph";
 
 // Bootstrap component overrides
 @import "bootstrap/alert";

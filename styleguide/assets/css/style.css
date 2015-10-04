@@ -4719,6 +4719,17 @@ label {
   .pull-lg-right {
     float: right; } }
 
+blockquote {
+  font-size: 16px;
+  font-style: italic;
+  border-left: 5px solid #F5F6F8;
+  margin: 0 0 20px;
+  padding: 12px 24px;
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  text-align: justify; }
+
 h1, .h1, h2, .title-more, .h2, h3, .h3, h4, .h4, .panel-default .panel-title {
   color: #101c27;
   margin: 24px 0 12px 0;
@@ -4752,20 +4763,6 @@ a {
 p a:not(.btn), .paragraph a:not(.btn), p a:not(.btn) {
   text-decoration: underline; }
 
-.paragraph, p {
-  margin-bottom: 16px; }
-
-blockquote {
-  font-size: 16px;
-  font-style: italic;
-  border-left: 5px solid #F5F6F8;
-  margin: 0 0 20px;
-  padding: 12px 24px;
-  position: relative;
-  overflow: hidden;
-  clear: both;
-  text-align: justify; }
-
 ul {
   padding-left: 20px; }
   ul li {
@@ -4781,6 +4778,9 @@ ul {
       position: absolute;
       top: 10.4px;
       left: -20px; }
+
+.paragraph, p {
+  margin-bottom: 16px; }
 
 .alert {
   border-radius: 0; }
