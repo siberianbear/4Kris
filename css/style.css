@@ -5162,6 +5162,22 @@ ul {
 .table-striped > tbody > tr:nth-child(even) {
   background-color: #FDFDFD; }
 
+.section--header {
+  margin-bottom: 40px;
+  background-color: #FAFAFA; }
+
+.section--content {
+  background-color: #FAFAFA;
+  padding: 20px; }
+
+.section--sidebar {
+  background-color: #FAFAFA;
+  padding: 20px; }
+
+.section--footer {
+  margin-top: 40px;
+  background-color: #D8D8D8; }
+
 .links-inline__link, .links-inline a {
   margin-right: 10px; }
 
@@ -5577,7 +5593,6 @@ ul {
 .nav-horizontal {
   margin: 0;
   font-size: 14px;
-  text-align: center;
   line-height: 49.4px; }
 
 .nav-horizontal .nav-horizontal__item {
