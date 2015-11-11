@@ -4767,17 +4767,16 @@ ul {
   padding-left: 20px; }
   ul li {
     padding-bottom: 8.6666666667px;
-    list-style: none;
-    position: relative; }
-    ul li:not([class]):before {
-      color: #4193a9;
-      content: "\2022";
-      padding-right: 15px;
-      font-size: 3em;
-      line-height: 1px;
-      position: absolute;
-      top: 10.4px;
-      left: -20px; }
+    list-style: none; }
+
+ul:not(.dropdown):not(.contextual-links) li:not([class]):before, ul:not(.dropdown):not(.contextual-links) li.first:not(.leaf):not(.expanded):before, ul:not(.dropdown):not(.contextual-links) li.last:not(.leaf):not(.expanded):before {
+  color: #4193a9;
+  content: "\2022";
+  font-size: 3em;
+  line-height: 1px;
+  position: relative;
+  top: 10.4px;
+  left: -15px; }
 
 .paragraph, p {
   margin-bottom: 16px; }

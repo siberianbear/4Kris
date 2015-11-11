@@ -8,7 +8,6 @@ ul
   li
     padding-bottom: $line-height-computed / 3
     list-style: none
-    position: relative
 
 // Style elements only without any class - prevent affecting various components
 ul:not(.dropdown):not(.contextual-links) li
@@ -16,10 +15,9 @@ ul:not(.dropdown):not(.contextual-links) li
   &.first:not(.leaf):not(.expanded), &.last:not(.leaf):not(.expanded)
     &:before
       color: $brand-primary
-      content: "\2022"
-      padding-right: 15px
+      content:"\2022"
       font-size: 3em
       line-height: 1px
-      position: absolute
+      position: relative
       top: $line-height-computed / 2.5
-      left: -20px
+      left: -15px
