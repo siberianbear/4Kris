@@ -10,44 +10,66 @@
 // Component
 // --------------------------------------------------
 .pagination
-  display: inline-block
-  clear: both
   padding: 0
-  margin: 20px 0
+  margin: 50px 0 40px !important
 
-// Elements
-// --------------------------------------------------
+  & > li
+    padding: 0 !important
+    margin: 0 !important
+    &:before
+      display: none
 
-.pager-previous,
-.pager-next,
-.pager-item,
-.pager-current,
-.pager-ellipsis
-  display: inline
-  a,
-  & > span
-    position: relative
-    float: left
-    min-width: 40px
-    height: 40px
-    padding: 8px
-    margin-left: 5px
-    text-align: center
-    text-decoration: none
-    background: #fff
-    color: #d9d9d9
-    border-radius: 0
-    border: 1px solid #d9d9d9
+    & > a,
+    & > span
+      border: none
+      border-radius: 25px !important
+      color: $gray-lighter
 
-.pager-current
-  a
-    color: $gray-base
-    border: 2px solid $brand-primary
-    padding: 7px
-    cursor: default
+      &:hover,
+      &:active,
+      &:focus
+        background: none
+        text-decoration: underline
+        color: $gray-darker
 
-.pager-item
-  a
-    display: none
-    +breakpoint(tablet)
-      display: block
+    &.active
+      & > span
+       background-color: $blue-dark
+       color: #fff !important
+
+    &.prev,
+    &.next
+      & > a
+        color: $gray-darker
+        line-height: 8px
+        &:before,
+        &:after
+          font-size: 34px
+          position: relative
+          top: 4px
+          display: inline-block
+
+    &.prev
+      & > a
+        &:before
+          content: "‹"
+          right: 10px
+
+    &.next
+      & > a
+        &:after
+          content: "›"
+          left: 10px
+
+    @media (max-width: $screen-xxs-max)
+      &.prev,
+      &.next
+        & > a
+          display: block
+          width: 100%
+          text-align: left
+      &.prev > a
+          margin-bottom: 20px
+
+      &.next > a
+          margin-top: 10px

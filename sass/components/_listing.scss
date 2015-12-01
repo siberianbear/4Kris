@@ -69,7 +69,6 @@
 
 .listing__item-title {
   margin: 0 0 $line-height-computed / 3;
-  font-size: $font-size-base;
   font-weight: 400;
   text-transform: none;
   a {
@@ -82,7 +81,7 @@
 
 .listing__item-meta {
   font-size: $font-size-small;
-  color: $gray-base;
+  color: $gray-light;
   width: 100%;
   margin-bottom: $line-height-computed / 3;
 }
@@ -115,7 +114,8 @@
   text-align: center;
 }
 
-.listing__header {
+.listing__header,
+.listing__footer {
   padding-top: 30px;
 }
 

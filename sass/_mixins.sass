@@ -100,6 +100,21 @@
       &:not(:last-child)
         padding-right: 30px
 
+// Colours half of a site background with specified color
+=twoface-background($bg: $brand-primary-light, $side: "right")
+  +breakpoint(phone)
+    &:before
+      position: fixed
+      top: 0
+      width: 50%
+      height: 100%
+      background-color: $bg
+      z-index: -100
+      @if $side == "right"
+        right: 0
+      @else
+        left: 0
+
 // Add triangle arrow to element with pseudoclasses.
 =arrow($border-color: $gray-light, $bg-color: white, $side: "left", $direction: "in", $size: 25px, $distance: 50px)
   position: relative

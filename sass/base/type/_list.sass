@@ -4,20 +4,23 @@
 //
 // Styleguide type.list
 ul
-  padding-left: 20px
+  padding-left: 0
   li
     padding-bottom: $line-height-computed / 3
     list-style: none
 
 // Style elements only without any class - prevent affecting various components
-ul:not(.dropdown):not(.contextual-links) li
+ul:not(.dropdown):not(.dropdown-menu):not(.contextual-links) li
   &:not([class]),
   &.first:not(.leaf):not(.expanded), &.last:not(.leaf):not(.expanded)
     &:before
       color: $brand-primary
       content:"\2022"
-      font-size: 3em
+      font-size: 1.5em
       line-height: 1px
       position: relative
-      top: $line-height-computed / 2.5
-      left: -15px
+      top: $line-height-computed / 15
+      left: 0
+      margin-right: 15px
+    & > ul
+      margin: $line-height-computed / 3 0 0 30px

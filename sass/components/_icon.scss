@@ -6,7 +6,6 @@
 //
 // Markup: html/icon.html
 //
-// .icon--add - .icon--add
 // .icon--arrow-right - .icon--arrow-right
 // .icon--arrow-left - .icon--arrow-left
 // .icon--arrow-top - .icon--arrow-top
@@ -26,7 +25,10 @@
 // .icon--calendar - .icon--calendar
 // .icon--calendar-check - .icon--calendar-check
 // .icon--close - .icon--close
+// .icon--cloud - .icon--cloud
 // .icon--clusters - .icon--clusters
+// .icon--database - .icon--database
+// .icon--doc - .icon--doc
 // .icon--docs - .icon--docs
 // .icon--download - .icon--download
 // .icon--envelope - .icon--envelope
@@ -53,6 +55,8 @@
 // .icon--pencil - .icon--pencil
 // .icon--phone - .icon--phone
 // .icon--phone-question-mark - .icon--phone-question-mark
+// .icon--plus - .icon--plus
+// .icon--power - .icon--power
 // .icon--print - .icon--print
 // .icon--printer - .icon--printer
 // .icon--puzzle - .icon--puzzle
@@ -74,6 +78,7 @@
 // .icon--user-minus - .icon--user-minus
 // .icon--user-x - .icon--user-x
 // .icon--user-suit - .icon--user-suit
+// .icon--users - .icon--users
 // .icon--world - .icon--world
 // .icon--mime-default - .icon--mime-default
 // .icon--mime-doc - .icon--mime-doc
@@ -139,7 +144,6 @@ big .icon {
 
 // Modifiers
 // --------------------------------------------------
-.icon--add:before { content: "\e60c"; }
 .icon--arrow-right:before { content: "\e615"; }
 .icon--arrow-left:before { content: "\e613"; }
 .icon--arrow-top:before { content: "\e611"; }
@@ -159,7 +163,10 @@ big .icon {
 .icon--calendar:before { content: "\e61b"; }
 .icon--calendar-check:before { content: "\e649"; }
 .icon--close:before { content: "\e617"; }
+.icon--cloud:before { content: "\e77b"; }
 .icon--clusters:before { content: "\e607"; }
+.icon--database:before { content: "\e884"; }
+.icon--doc:before { content: "\e6f4"; }
 .icon--docs:before { content: "\e604"; }
 .icon--download:before { content: "\e847"; }
 .icon--envelope:before { content: "\e629"; }
@@ -187,6 +194,7 @@ big .icon {
 .icon--pencil:before { content: "\e63b"; }
 .icon--phone:before { content: "\e62c"; }
 .icon--phone-question-mark:before { content: "\e638"; }
+.icon--power:before { content: "\e64f"; }
 .icon--print:before { content: "\e6c7"; }
 .icon--printer:before { content: "\e6c6"; }
 .icon--puzzle:before { content: "\e620"; }
@@ -210,6 +218,7 @@ big .icon {
 .icon--user-minus:before { content: "\e748"; }
 .icon--user-x:before { content: "\e749"; }
 .icon--user-suit:before { content: "\e60b"; }
+.icon--users:before { content: "\e74b"; }
 .icon--world:before { content: "\e62e"; }
 // File mime icons:
 .icon--mime-default:before { content: "\e63c"; }
