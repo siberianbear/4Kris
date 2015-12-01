@@ -7,3 +7,6 @@ npm-debug.log
 
 # CSS maps
 css/*.map
+
+# Ruby
+Gemfile.lock
