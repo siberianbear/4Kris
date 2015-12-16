@@ -37,7 +37,7 @@
 .listing__item,
 .listing__pagination {
   overflow: hidden;
-  padding-top: 30px;
+  padding-top: 45px;
   p {
     margin: 0;
     text-align: justify;
@@ -68,9 +68,7 @@
 }
 
 .listing__item-title {
-  margin: 0 0 $line-height-computed / 3;
-  font-weight: 400;
-  text-transform: none;
+  margin-top: 0;
   a {
     color: $gray-base;
   }
@@ -315,7 +313,7 @@
 // --------------------------------------------------
 .listing--separators:not(.listing--2-col-layout) {
   .listing__item {
-    border-bottom: 1px darken($gray-light, 1%) solid;
+    border-bottom: 1px $gray-lighter solid;
     padding-bottom: 30px;
 
     &:last-of-type {
@@ -360,6 +358,18 @@
 .listing--condensed {
   .listing__item {
     padding-top: 15px;
+    font-size: $font-size-small;
+    h3.listing__item-title {
+      font-size: $font-size-base;
+    }
+    h4.listing__item-title {
+      font-size: $font-size-small;
+    }
+  }
+
+  .listing__item-meta {
+    font-family: $font-family-sans-condensed;
+    font-weight: $headings-font-weight;
   }
 
   &.listing--separators,

@@ -102,8 +102,11 @@
 
 // Colours half of a site background with specified color
 =twoface-background($bg: $brand-primary-light, $side: "right")
-  +breakpoint(phone)
+  @media (max-width: $screen-xs-max)
+    background-color: $bg
+  +breakpoint(tablet)
     &:before
+      content: ''
       position: fixed
       top: 0
       width: 50%

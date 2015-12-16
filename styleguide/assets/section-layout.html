@@ -28,7 +28,7 @@
             <h1 class="kss-doc-title"><a href="./">kss-node Styleguide</a></h1>
           </header>
           <nav class="kss-nav">
-            <ul class="kss-menu" data-kss-ref="alert">
+            <ul class="kss-menu" data-kss-ref="layout">
               <li class="kss-menu-item"><a href="./"><span class="kss-ref">Overview</span></a></li>
               <li class="kss-menu-item"><a href="section-alert.html"><span class="kss-ref">alert</span><span class="kss-name">Alert</span></a></li>
               <li class="kss-menu-item"><a href="section-article.html"><span class="kss-ref">article</span><span class="kss-name">Article</span></a></li>
@@ -62,93 +62,197 @@
               <li class="kss-menu-item"><a href="section-type.html"><span class="kss-ref">type</span><span class="kss-name">Typography</span></a></li>
             </ul>
             <ul class="kss-menu-child">
+              <li class="kss-menu-item"><a href="#section-layout.fullwidth-header-isolated-sidebar-right"><span class="kss-ref">layout.fullwidth-header-isolated-sidebar-right</span><span class="kss-name">Layout with fullwidth header and isolated right sidebar</span></a></li>
             </ul>
           </nav>
         </div>
       </div>
       <div class="kss-content">
         <article class="kss-article">
-          <section id="section-alert" class="kss-section kss-depth-1">
-            <h1 class="kss-title"><span class="kss-ref">alert</span> Alert</h1>
-            <div class="kss-description">
-              <p>Override of Bootstrap&#39;s alerts
-@see <a href="http://getbootstrap.com/components/#alerts">http://getbootstrap.com/components/#alerts</a></p>
-
-            </div>
+          <section id="section-layout" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">layout</span> Layout</h1>
             <div class="kss-modifier-block">
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <div class="alert  alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Hey!</strong> What's up? I'm a message. I need your attention!
+                  html/layout.html NOT FOUND!
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">Simplest layout ever</div>
+                  <div class="kss-modifier-description">
+                    should evolve to something more than component in the future.
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  html/layout.html NOT FOUND!
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">html/layout.html NOT FOUND!</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-layout.fullwidth-header-isolated-sidebar-right" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">layout.fullwidth-header-isolated-sidebar-right</span> Layout with fullwidth header and isolated right sidebar</h1>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="layout layout--fullwidth-header-isolated-sidebar-right">
+
+  <div class="layout__header-wrapper">
+    <div class="container">
+      <div class="middle-align middle-align--mobile-media-below">
+        <div class="middle-align__row">
+          <div class="layout__header middle-align__col">
+            .layout__header
+          </div>
+          <div class="layout_header-sidebar middle-align__col text-right">
+            .layout__header-sidebar
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="layout__meta-wrapper">
+      <div class="container">
+        <div class="layout__meta">
+          .layout__meta
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row row-equal-md">
+      <div class="layout__content-wrapper col-sm-8">
+        <div class="layout__content">
+          <div class="row">
+            <div class="layout__sidebar-left col-sm-3">
+              .layout__sidebar-left
+            </div>
+            <div class="col-sm-9">
+              .layout__content
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="layout__sidebar-right">
+          .layout__sidebar-right
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
                 </div>
               </div>
               <div class="kss-modifier">
                 <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.alert-success</div>
+                  <div class="kss-modifier-name">Page layout</div>
                   <div class="kss-modifier-description">
-                    Success
+                    should evolve to something more than component in the future.
                   </div>
                 </div>
                 <div class="kss-modifier-example">
-                  <div class="alert alert-success alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Hey!</strong> What's up? I'm a message. I need your attention!
-</div>
+                  <div class="layout layout--fullwidth-header-isolated-sidebar-right">
 
-                </div>
-              </div>
-              <div class="kss-modifier">
-                <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.alert-info</div>
-                  <div class="kss-modifier-description">
-                    Info
-                  </div>
-                </div>
-                <div class="kss-modifier-example">
-                  <div class="alert alert-info alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Hey!</strong> What's up? I'm a message. I need your attention!
-</div>
+  <div class="layout__header-wrapper">
+    <div class="container">
+      <div class="middle-align middle-align--mobile-media-below">
+        <div class="middle-align__row">
+          <div class="layout__header middle-align__col">
+            .layout__header
+          </div>
+          <div class="layout_header-sidebar middle-align__col text-right">
+            .layout__header-sidebar
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="layout__meta-wrapper">
+      <div class="container">
+        <div class="layout__meta">
+          .layout__meta
+        </div>
+      </div>
+    </div>
+  </div>
 
-                </div>
-              </div>
-              <div class="kss-modifier">
-                <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.alert-warning</div>
-                  <div class="kss-modifier-description">
-                    Warning
-                  </div>
-                </div>
-                <div class="kss-modifier-example">
-                  <div class="alert alert-warning alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Hey!</strong> What's up? I'm a message. I need your attention!
-</div>
+  <div class="container">
+    <div class="row row-equal-md">
+      <div class="layout__content-wrapper col-sm-8">
+        <div class="layout__content">
+          <div class="row">
+            <div class="layout__sidebar-left col-sm-3">
+              .layout__sidebar-left
+            </div>
+            <div class="col-sm-9">
+              .layout__content
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="layout__sidebar-right">
+          .layout__sidebar-right
+        </div>
+      </div>
+    </div>
+  </div>
 
-                </div>
-              </div>
-              <div class="kss-modifier">
-                <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.alert-danger</div>
-                  <div class="kss-modifier-description">
-                    Danger
-                  </div>
-                </div>
-                <div class="kss-modifier-example">
-                  <div class="alert alert-danger alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Hey!</strong> What's up? I'm a message. I need your attention!
 </div>
 
                 </div>
               </div>
               <div class="kss-markup">
-                <pre><code data-language="html">&lt;div class=&quot;alert  alert-dismissible&quot; role=&quot;alert&quot;&gt;
-  &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
-  &lt;strong&gt;Hey!&lt;/strong&gt; What&#x27;s up? I&#x27;m a message. I need your attention!
+                <pre><code data-language="html">&lt;div class=&quot;layout layout--fullwidth-header-isolated-sidebar-right&quot;&gt;
+
+  &lt;div class=&quot;layout__header-wrapper&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;middle-align middle-align--mobile-media-below&quot;&gt;
+        &lt;div class=&quot;middle-align__row&quot;&gt;
+          &lt;div class=&quot;layout__header middle-align__col&quot;&gt;
+            .layout__header
+          &lt;/div&gt;
+          &lt;div class=&quot;layout_header-sidebar middle-align__col text-right&quot;&gt;
+            .layout__header-sidebar
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;layout__meta-wrapper&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;layout__meta&quot;&gt;
+          .layout__meta
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row row-equal-md&quot;&gt;
+      &lt;div class=&quot;layout__content-wrapper col-sm-8&quot;&gt;
+        &lt;div class=&quot;layout__content&quot;&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;layout__sidebar-left col-sm-3&quot;&gt;
+              .layout__sidebar-left
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-9&quot;&gt;
+              .layout__content
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;div class=&quot;layout__sidebar-right&quot;&gt;
+          .layout__sidebar-right
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
 &lt;/div&gt;
 </code></pre>
               </div>
