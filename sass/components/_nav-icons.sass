@@ -1,0 +1,71 @@
+// Navigation with icons
+//
+// Inline icons with labels placed below. Good as user links in page header. Text labels are hidden on phone devices and icon size is then increased.
+//
+// Markup: html/nav-icons.html
+//
+// .nav-icons--mobile-inline - icons inline on mobile
+//
+// Styleguide nav.nav-icons
+
+// Component
+// --------------------------------------------------
+.nav-icons
+  text-transform: uppercase
+  font-size: $font-size-small
+  margin-bottom: 0
+
+// Elements
+// --------------------------------------------------
+.nav-icons__item
+  text-align: center
+  padding-left: 0
+  padding-right: 0
+  padding-bottom: 0
+
+.nav-icons__link
+  color: $gray-base
+  &:hover
+    text-decoration: none !important
+    color: $gray-light
+  .icon
+    margin: 0 auto 4px
+    +icon-size(25px)
+
+.nav-icons__label
+
++breakpoint(tablet)
+  .nav-icons
+    .nav-icons__item
+      padding-left: 5px
+      padding-right: 5px
+
+
+// Modifiers
+// --------------------------------------------------
+.nav-icons--mobile-inline
+  display: table
+  width: 100%
+  .nav-icons__item
+    display: table-cell
+  .nav-icons__link
+    height: 45px
+    line-height: 45px
+    display: block
+  br
+    display: none
+  +breakpoint(tablet)
+    display: block
+    float: right
+    width: auto
+    .nav-icons__item
+      display: inline-block
+
+  +breakpoint(lg-desktop)
+    .nav-icons__link
+      line-height: $line-height-computed
+      height: auto
+      .icon
+        +icon-size(25px)
+    br
+      display: inline

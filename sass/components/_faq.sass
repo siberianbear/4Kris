@@ -1,0 +1,65 @@
+// FAQ
+//
+// Frequently Asked Questions section. Colors for equivalent Eurostars section are navy blue.
+// Naming convention inside this component should be improved.
+// COMPONENT TO BE REVIEWED SINCE IT USES DRUPAL CLASSES
+//
+// Markup: html/faq.html
+//
+// Styleguide faq
+
+// Component
+// --------------------------------------------------
+.without-listing-header
+  .listing__header
+    display: none
+
+// Elements
+// --------------------------------------------------
+.views-fieldset
+  height: 100% !important
+  margin-bottom: 2px
+  legend
+    background: $brand-primary
+    margin: 0
+    border-radius: 4px
+    border-bottom: none
+    a
+      display: block
+      width: 100%
+      color: #fff
+      padding: 4px 8px
+      font-size: $font-size-base
+      font-weight: bold
+      &:hover,
+      &:focus,
+      &:active
+        text-decoration: none
+  .fieldset-wrapper
+    margin: 8px 0
+    padding-bottom: 8px
+    border-bottom: 1px solid $gray-lighter
+  .top
+    text-align: right
+  .icon,
+  .title
+    vertical-align: middle
+  .icon
+    font-size: 20px
+    margin-right: 5px
+
+.collapsed
+  legend
+    background: $gray-lightest
+    a
+      color: $brand-primary
+      font-weight: normal
+
+.view-grouping-header
+  font-size: $font-size-large
+  border-bottom: 1px solid $gray-lighter
+  margin-bottom: 20px
+  text-transform: uppercase
+
+.view-grouping
+  margin-bottom: 20px

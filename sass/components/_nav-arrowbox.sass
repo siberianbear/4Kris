@@ -1,0 +1,59 @@
+// Arrow box navigation
+//
+// Horizontal navigation. Each element is a box with arrow on background and
+// icon near the label.
+//
+// Markup: html/nav-arrowbox.html
+//
+// Styleguide nav.nav-arrowbox
+
+// Component
+// --------------------------------------------------
+.nav-arrowbox
+  display: block
+  list-style: none
+  padding: 0
+  margin: 0
+
+// Elements
+// --------------------------------------------------
+.nav-arrowbox__item
+  display: table
+  width: 100%
+  background-color: #fff
+  border-left: 4px solid $brand-primary-light
+  padding: 0
+  margin-bottom: 20px
+
+.nav-arrowbox__link
+  height: 85px
+  display: table-row
+  color: $gray-base
+  font-family: $headings-font-family
+  text-transform: uppercase
+
+.nav-arrowbox__icon,
+.nav-arrowbox__label,
+.nav-arrowbox__bg
+  display: table-cell
+  vertical-align: middle
+
+.nav-arrowbox__icon
+  padding: 20px
+  .icon
+    +icon-size(30px)
+
+.nav-arrowbox__label
+
+.nav-arrowbox__bg
+  color: $gray-lighter
+  padding: 10px
+  text-align: right
+  .icon
+    +icon-size(20px)
+
+// Elements
+// --------------------------------------------------
+.nav-arrowbox__link:hover
+  text-decoration: none
+  color: $gray-light
