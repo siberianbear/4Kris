@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['**/*.{scss,sass}', 'sass/**/*.html'],
-        tasks: ['clean', 'sass', 'kss', 'copy:main']
+        tasks: ['clean', 'sass', 'shell', 'copy:main']
       },
     },
 
@@ -22,20 +22,11 @@ module.exports = function(grunt) {
         }
       }
     },
-
-    // TASKS
-    kss: {
-      options: {
-        template: 'styleguide/template/custom',
-        // css: 'css/style.css'
-      },
-      dist: {
-        files: {
-          'styleguide/assets': ['sass']
-        }
+    shell: {
+      kss: {
+        command: './node_modules/.bin/kss-node sass styleguide/assets --template styleguide/template/custom'
       }
     },
-
     copy: {
       main: {
         files: [
@@ -52,7 +43,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-kss');
+  grunt.loadNpmTasks('grunt-shell');
 
   grunt.registerTask('default', ['watch:sass']);
 };
