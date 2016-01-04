@@ -2518,7 +2518,8 @@ label { font-weight: 300; }
 
 .no-gutters > [class^="col-"], .no-gutters > [class*=" col-"], .no-gutters > * { padding-right: 0 !important; padding-left: 0 !important; }
 
-@media (min-width: 768px) { .row-equal-md { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; } }
+@media (min-width: 768px) { .row-md-equal { display: table; }
+  .row-md-equal > [class*="col-"] { float: none; display: table-cell; vertical-align: top; } }
 
 @media (max-width: 767px) { .pull-xs-left { float: left; }
   .pull-xs-right { float: right; } }
@@ -3712,10 +3713,6 @@ big .icon { font-size: 225%; top: 12px; margin-top: -20px; }
 .title-more__col .btn { font-family: "Roboto", Helvetica, Arial, sans-serif; }
 
 .title-more h1, .title-more h2, .title-more .title-more, .title-more h3, .title-more h4, .title-more h5, .title-more h6 { padding-bottom: 0; }
-
-.row-height { display: table; }
-
-.row-height [class*="col-"] { float: none; display: table-cell; vertical-align: top; background-color: #eee; background-color: rgba(86, 61, 124, 0.15); border: 1px solid #ddd; border: 1px solid rgba(86, 61, 124, 0.2); }
 
 .file { padding-left: 30px; position: relative; display: block; }
 

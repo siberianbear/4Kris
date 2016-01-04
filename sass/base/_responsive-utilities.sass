@@ -33,12 +33,13 @@
 //
 // Responsive: Rows with equal height
 // --------------------------------------------------
-.row-equal-md
+.row-md-equal
   +breakpoint(tablet)
-    display: -webkit-box
-    display: -webkit-flex
-    display: -ms-flexbox
-    display: flex
+    display: table
+    & > [class*="col-"]
+      float: none
+      display: table-cell
+      vertical-align: top
 // TODO: For other breakpoints
 
 //
