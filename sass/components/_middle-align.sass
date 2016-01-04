@@ -5,8 +5,8 @@
 // Markup: html/middle-align.html
 //
 // .middle-align--mobile-single-column - Single column layout on mobile
-// .middle-align--paddings - More paddings around the element
-// .middle-align--no-paddings - Almost paddings
+// .middle-align--more-paddings - More spacing around the element
+// .middle-align--no-paddings - No upper and bottom paddings
 // .middle-align--condensed - Condensed space between columns
 //
 // Styleguide midle-align
@@ -43,7 +43,7 @@
       .middle-align__media
         width: auto
 
-.middle-align--paddings
+.middle-align--more-paddings
   padding: 25px 0
 
   +breakpoint(tablet)
@@ -52,18 +52,9 @@
   +breakpoint(desktop)
     padding: 40px 0
 
+.middle-align--no-paddings
+  padding: 0
+
 .middle-align--condensed
   .middle-align__col:not(:last-child)
     padding-right: 5px
-
-.middle-align--no-paddings
-  &,
-  & .middle-align__col:not(:last-child)
-    padding-right: 0
-
-// Dependencies
-// --------------------------------------------------
-//
-.middle-align
-  h2
-    border: none
