@@ -3621,12 +3621,6 @@ big .icon { font-size: 225%; top: 12px; margin-top: -20px; }
 
 .field--margin { margin-bottom: 20px; }
 
-.img-floated { float: left; display: block; overflow: hidden; margin: 0 15px 15px 0; }
-
-.img-floated--right { float: right; margin: 0 0 15px 15px; }
-
-.img-floated--large { width: 100%; margin: 0 0 30px; }
-
 .featured { display: table; width: 100%; padding-left: 0; margin-bottom: 26px; }
 
 .featured__item { display: table-row; vertical-align: middle; }
