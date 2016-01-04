@@ -1,21 +1,20 @@
-// Layout with fullwidth header and isolated right sidebar
+// Layout 4
 //
-// Page layout - should evolve to something more than component in the future.
+// Page layout with fullwidth header and isolated right sidebar.
 //
-// Markup: html/layout--fullwidth-header-isolated-sidebar-right.html
+// Markup: html/layout--4.html
 //
-// Styleguide layout.fullwidth-header-isolated-sidebar-right
+// Styleguide layout.4
 
 
 // Component
 // --------------------------------------------------
-.layout--fullwidth-header-isolated-sidebar-right
+.layout--4
   +twoface-background()
-
 
 // Elements
 // --------------------------------------------------
-.layout--fullwidth-header-isolated-sidebar-right
+.layout--4
   .layout__header-wrapper
     background: url('../images/jpg/header.jpg') center no-repeat
     background-position: top
@@ -62,10 +61,9 @@
       +breakpoint(tablet)
         margin-bottom: 80px
 
-
 // Dependencies
 // --------------------------------------------------
-.layout--fullwidth-header-isolated-sidebar-right .layout__header-wrapper
+.layout--4 .layout__header-wrapper
   .middle-align
     width: 100%
 
@@ -77,5 +75,5 @@
 // Theme
 // --------------------------------------------------
 .front
-  .layout--fullwidth-header-isolated-sidebar-right .layout__header-wrapper
+  .layout--4 .layout__header-wrapper
     padding: 50px 0 40px
