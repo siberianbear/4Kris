@@ -4,17 +4,7 @@
 //
 // Markup: html/ornament.html
 //
-// .ornament--blue - Blue
 // .ornament--azure - Azure
-// .ornament--blue - Blue
-// .ornament--blue-dark - Dark blue
-// .ornament--brown - Brown
-// .ornament--gray-light - Light gray
-// .ornament--gray-lighter - Lighter gray
-// .ornament--green - Green
-// .ornament--olive - Olive
-// .ornament--orange - Orange
-// .ornament--white - White
 //
 // Styleguide ornament
 
@@ -36,15 +26,6 @@
 // Modifiers
 // --------------------------------------------------
 .ornament--azure:before {background-color: $azure; }
-.ornament--blue:before {background-color: $blue; }
-.ornament--blue-dark:before {background-color: $blue-dark; }
-.ornament--brown:before {background-color: $brown; }
-.ornament--gray-light:before {background-color: $gray-light; }
-.ornament--gray-lighter:before {background-color: $gray-lighter; }
-.ornament--green:before {background-color: $green; }
-.ornament--olive:before {background-color: $olive; }
-.ornament--orange:before {background-color: $orange; }
-.ornament--white:before {background-color: #fff; }
 
 
 // Dependencies
