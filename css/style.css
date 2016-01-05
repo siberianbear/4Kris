@@ -2992,6 +2992,12 @@ dl dd { width: 70%; margin-left: 30%; padding-bottom: 8.6666666667px; }
 
 .section--footer { margin-top: 40px; background-color: #d8d8d8; }
 
+.block__title { font-size: 16px; position: relative; }
+
+.block__title:after { content: ''; border-top: 1px solid #f5f6f8; width: 100%; display: block; position: absolute; top: 50%; z-index: 1; }
+
+.block__title span { display: inline-block; position: relative; z-index: 10; background: #fff; padding-right: 10px; }
+
 .logo { display: block; width: 172px; height: 118px; background: url("../images/logo.png") no-repeat; background-size: 100%; }
 
 @media (min-width: 768px) { .logo { width: 172px; height: 118px; } }

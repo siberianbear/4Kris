@@ -28,7 +28,7 @@
             <h1 class="kss-doc-title"><a href="./">kss-node Styleguide</a></h1>
           </header>
           <nav class="kss-nav">
-            <ul class="kss-menu" data-kss-ref="featured">
+            <ul class="kss-menu" data-kss-ref="block">
               <li class="kss-menu-item"><a href="./"><span class="kss-ref">Overview</span></a></li>
               <li class="kss-menu-item"><a href="section-alert.html"><span class="kss-ref">alert</span><span class="kss-name">Alert</span></a></li>
               <li class="kss-menu-item"><a href="section-block.html"><span class="kss-ref">block</span><span class="kss-name">Block</span></a></li>
@@ -72,72 +72,27 @@
       </div>
       <div class="kss-content">
         <article class="kss-article">
-          <section id="section-featured" class="kss-section kss-depth-1">
-            <h1 class="kss-title"><span class="kss-ref">featured</span> Featured</h1>
+          <section id="section-block" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">block</span> Block</h1>
             <div class="kss-description">
-              <p>List of featured items. Good for pricing plans and point by point
-descriptions.</p>
+              <p>Block component used for wrapping block content.</p>
 
             </div>
             <div class="kss-modifier-block">
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <ul class="featured">
-  <li class="featured__item">
-    <div class="featured__text">I am an R&D performing SME</div>
-    <div class="featured__icon">
-      <div class="featured__circle">
-        <span class="icon icon--ok"></span>
-      </div>
-    </div>
-  </li>
-  <li class="featured__item">
-    <div class="featured__text">I plan to develop an innovative new product, process or service</div>
-    <div class="featured__icon">
-      <div class="featured__circle">
-        <span class="icon icon--ok"></span>
-      </div>
-    </div>
-  </li>
-  <li class="featured__item">
-    <div class="featured__text">I want to gain access to new markets</div>
-    <div class="featured__icon">
-      <div class="featured__circle">
-        <span class="icon icon--ok"></span>
-      </div>
-    </div>
-  </li>
-</ul>
+                  <section class="block">
+  <h2 class="block__title"><span>Example block title</span></h2>
+  <p> Block content does not contain wrapper so that .block__title can remove it's top margin or padding</p>
+</section>
 
                 </div>
               </div>
               <div class="kss-markup">
-                <pre><code data-language="html">&lt;ul class&#x3D;&quot;featured&quot;&gt;
-  &lt;li class&#x3D;&quot;featured__item&quot;&gt;
-    &lt;div class&#x3D;&quot;featured__text&quot;&gt;I am an R&amp;D performing SME&lt;/div&gt;
-    &lt;div class&#x3D;&quot;featured__icon&quot;&gt;
-      &lt;div class&#x3D;&quot;featured__circle&quot;&gt;
-        &lt;span class&#x3D;&quot;icon icon--ok&quot;&gt;&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li class&#x3D;&quot;featured__item&quot;&gt;
-    &lt;div class&#x3D;&quot;featured__text&quot;&gt;I plan to develop an innovative new product, process or service&lt;/div&gt;
-    &lt;div class&#x3D;&quot;featured__icon&quot;&gt;
-      &lt;div class&#x3D;&quot;featured__circle&quot;&gt;
-        &lt;span class&#x3D;&quot;icon icon--ok&quot;&gt;&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li class&#x3D;&quot;featured__item&quot;&gt;
-    &lt;div class&#x3D;&quot;featured__text&quot;&gt;I want to gain access to new markets&lt;/div&gt;
-    &lt;div class&#x3D;&quot;featured__icon&quot;&gt;
-      &lt;div class&#x3D;&quot;featured__circle&quot;&gt;
-        &lt;span class&#x3D;&quot;icon icon--ok&quot;&gt;&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+                <pre><code data-language="html">&lt;section class&#x3D;&quot;block&quot;&gt;
+  &lt;h2 class&#x3D;&quot;block__title&quot;&gt;&lt;span&gt;Example block title&lt;/span&gt;&lt;/h2&gt;
+  &lt;p&gt; Block content does not contain wrapper so that .block__title can remove it&#x27;s top margin or padding&lt;/p&gt;
+&lt;/section&gt;
 </code></pre>
               </div>
             </div>
