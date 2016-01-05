@@ -65,10 +65,9 @@
               <li class="kss-menu-item"><a href="section-type.html"><span class="kss-ref">type</span><span class="kss-name">Typography</span></a></li>
             </ul>
             <ul class="kss-menu-child">
-              <li class="kss-menu-item"><a href="#section-nav.nav-blocktitle"><span class="kss-ref">nav.nav-blocktitle</span><span class="kss-name">Block title navigation</span></a></li>
               <li class="kss-menu-item"><a href="#section-nav.nav-horizontal"><span class="kss-ref">nav.nav-horizontal</span><span class="kss-name">Horizontal navigation</span></a></li>
-              <li class="kss-menu-item"><a href="#section-nav.nav-icons"><span class="kss-ref">nav.nav-icons</span><span class="kss-name">Navigation with icons</span></a></li>
-              <li class="kss-menu-item"><a href="#section-nav.nav-metro"><span class="kss-ref">nav.nav-metro</span><span class="kss-name">Metro navigation</span></a></li>
+              <li class="kss-menu-item"><a href="#section-nav.nav-sectiontitles"><span class="kss-ref">nav.nav-sectiontitles</span><span class="kss-name">Section titles navigation</span></a></li>
+              <li class="kss-menu-item"><a href="#section-nav.nav-subway"><span class="kss-ref">nav.nav-subway</span><span class="kss-name">Subway navigation</span></a></li>
               <li class="kss-menu-item"><a href="#section-nav.nav-tiles"><span class="kss-ref">nav.nav-tiles</span><span class="kss-name">Navigation tiles</span></a></li>
               <li class="kss-menu-item"><a href="#section-nav.nav-vertical"><span class="kss-ref">nav.nav-vertical</span><span class="kss-name">Vertical navigation</span></a></li>
             </ul>
@@ -84,69 +83,38 @@
 
             </div>
           </section>
-          <section id="section-nav.nav-blocktitle" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">nav.nav-blocktitle</span> Block title navigation</h1>
-            <div class="kss-description">
-              <p>Inline navigation with bigger paddings dedicated for footer. Text aligned to the left on desktop and centered on mobile.</p>
-
-            </div>
-            <div class="kss-modifier-block">
-              <div class="kss-modifier kss-modifier-original">
-                <div class="kss-modifier-example">
-                  <ul class="nav-blocktitle list-inline">
-  <li class="nav-blocktitle__item">
-    <div class="ornament"></div>
-    <a href="#" class="nav-blocktitle__link">The network</a>
-  </li>
-  <li class="nav-blocktitle__item">
-    <div class="ornament"></div>
-    <a href="#" class="nav-blocktitle__link">Manage your contact</a>
-  </li>
-  <li class="nav-blocktitle__item">
-    <div class="ornament"></div>
-    <a href="#" class="nav-blocktitle__link">Promote the network</a>
-  </li>
-  <li class="nav-blocktitle__item">
-    <div class="ornament"></div>
-    <a href="#" class="nav-blocktitle__link">Help your clients</a>
-  </li>
-</ul>
-
-                </div>
-              </div>
-              <div class="kss-markup">
-                <pre><code data-language="html">&lt;ul class&#x3D;&quot;nav-blocktitle list-inline&quot;&gt;
-  &lt;li class&#x3D;&quot;nav-blocktitle__item&quot;&gt;
-    &lt;div class&#x3D;&quot;ornament&quot;&gt;&lt;/div&gt;
-    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-blocktitle__link&quot;&gt;The network&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class&#x3D;&quot;nav-blocktitle__item&quot;&gt;
-    &lt;div class&#x3D;&quot;ornament&quot;&gt;&lt;/div&gt;
-    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-blocktitle__link&quot;&gt;Manage your contact&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class&#x3D;&quot;nav-blocktitle__item&quot;&gt;
-    &lt;div class&#x3D;&quot;ornament&quot;&gt;&lt;/div&gt;
-    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-blocktitle__link&quot;&gt;Promote the network&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class&#x3D;&quot;nav-blocktitle__item&quot;&gt;
-    &lt;div class&#x3D;&quot;ornament&quot;&gt;&lt;/div&gt;
-    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-blocktitle__link&quot;&gt;Help your clients&lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-              </div>
-            </div>
-          </section>
           <section id="section-nav.nav-horizontal" class="kss-section kss-depth-2">
             <h1 class="kss-title"><span class="kss-ref">nav.nav-horizontal</span> Horizontal navigation</h1>
             <div class="kss-description">
-              <p>Inline navigation with bigger paddings dedicated for footer. Text aligned to the left on desktop and centered on mobile.</p>
+              <p>Inline navigation. Prepared also to use with icons.</p>
 
             </div>
             <div class="kss-modifier-block">
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <ul class="nav-horizontal [modifier class]">
+                  <!-- Standard -->
+<ul class="nav-horizontal [modifier class]">
+  <li class="nav-horizontal__item">
+    <a href="#" class="nav-horizontal__link">
+      <span class="icon icon--search"></span><br/>
+      Search
+    </a>
+  </li>
+  <li class="nav-horizontal__item">
+    <a href="#" class="nav-horizontal__link">
+      <span class="icon icon--envelope"></span><br/>
+      Contact
+    </a>
+  </li>
+  <li class="nav-horizontal__item">
+    <a href="#" class="nav-horizontal__link">
+      <span class="icon icon--question-mark"></span><br/>
+      FAQ
+    </a>
+  </li>
+</ul>
+<!-- With icons -->
+<ul class="nav-horizontal [modifier class]">
   <li class="nav-horizontal__item">
     <a href="#" class="nav-horizontal__link">Sitemap</a>
   </li>
@@ -168,7 +136,29 @@
                   </div>
                 </div>
                 <div class="kss-modifier-example">
-                  <ul class="nav-horizontal nav-horizontal--condensed">
+                  <!-- Standard -->
+<ul class="nav-horizontal nav-horizontal--condensed">
+  <li class="nav-horizontal__item">
+    <a href="#" class="nav-horizontal__link">
+      <span class="icon icon--search"></span><br/>
+      Search
+    </a>
+  </li>
+  <li class="nav-horizontal__item">
+    <a href="#" class="nav-horizontal__link">
+      <span class="icon icon--envelope"></span><br/>
+      Contact
+    </a>
+  </li>
+  <li class="nav-horizontal__item">
+    <a href="#" class="nav-horizontal__link">
+      <span class="icon icon--question-mark"></span><br/>
+      FAQ
+    </a>
+  </li>
+</ul>
+<!-- With icons -->
+<ul class="nav-horizontal nav-horizontal--condensed">
   <li class="nav-horizontal__item">
     <a href="#" class="nav-horizontal__link">Sitemap</a>
   </li>
@@ -183,7 +173,29 @@
                 </div>
               </div>
               <div class="kss-markup">
-                <pre><code data-language="html">&lt;ul class&#x3D;&quot;nav-horizontal [modifier class]&quot;&gt;
+                <pre><code data-language="html">&lt;!-- Standard --&gt;
+&lt;ul class&#x3D;&quot;nav-horizontal [modifier class]&quot;&gt;
+  &lt;li class&#x3D;&quot;nav-horizontal__item&quot;&gt;
+    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-horizontal__link&quot;&gt;
+      &lt;span class&#x3D;&quot;icon icon--search&quot;&gt;&lt;/span&gt;&lt;br/&gt;
+      Search
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class&#x3D;&quot;nav-horizontal__item&quot;&gt;
+    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-horizontal__link&quot;&gt;
+      &lt;span class&#x3D;&quot;icon icon--envelope&quot;&gt;&lt;/span&gt;&lt;br/&gt;
+      Contact
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class&#x3D;&quot;nav-horizontal__item&quot;&gt;
+    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-horizontal__link&quot;&gt;
+      &lt;span class&#x3D;&quot;icon icon--question-mark&quot;&gt;&lt;/span&gt;&lt;br/&gt;
+      FAQ
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- With icons --&gt;
+&lt;ul class&#x3D;&quot;nav-horizontal [modifier class]&quot;&gt;
   &lt;li class&#x3D;&quot;nav-horizontal__item&quot;&gt;
     &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-horizontal__link&quot;&gt;Sitemap&lt;/a&gt;
   &lt;/li&gt;
@@ -198,123 +210,106 @@
               </div>
             </div>
           </section>
-          <section id="section-nav.nav-icons" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">nav.nav-icons</span> Navigation with icons</h1>
+          <section id="section-nav.nav-sectiontitles" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">nav.nav-sectiontitles</span> Section titles navigation</h1>
             <div class="kss-description">
-              <p>Inline icons with labels placed below. Good as user links in page header. Text labels are hidden on phone devices and icon size is then increased.</p>
+              <p>Justified navigation in style of section title. Looks good with ornament component that might indicate color of site section.</p>
 
             </div>
             <div class="kss-modifier-block">
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <ul class="nav-icons list-inline [modifier class]">
-  <li class="nav-icons__item">
-    <a href="#" class="nav-icons__link">
-      <span class="icon icon--user"></span><br/>
-      <span class="nav-icons__label visible-md visible-lg">Sign in</span>
-    </a>
+                  <ul class="nav-sectiontitles list-inline">
+  <li class="nav-sectiontitles__item">
+    <div class="ornament"></div>
+    <a href="#" class="nav-sectiontitles__link">The network</a>
   </li>
-  <li class="nav-icons__item">
-    <a href="#" class="nav-icons__link">
-      <span class="icon icon--question-mark"></span><br/>
-      <span class="nav-icons__label visible-md visible-lg">FAQ</span>
-    </a>
+  <li class="nav-sectiontitles__item">
+    <div class="ornament"></div>
+    <a href="#" class="nav-sectiontitles__link">Manage your contact</a>
   </li>
-</ul>
-
-                </div>
-              </div>
-              <div class="kss-modifier">
-                <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.nav-icons--mobile-inline</div>
-                  <div class="kss-modifier-description">
-                    icons inline on mobile
-                  </div>
-                </div>
-                <div class="kss-modifier-example">
-                  <ul class="nav-icons list-inline nav-icons--mobile-inline">
-  <li class="nav-icons__item">
-    <a href="#" class="nav-icons__link">
-      <span class="icon icon--user"></span><br/>
-      <span class="nav-icons__label visible-md visible-lg">Sign in</span>
-    </a>
+  <li class="nav-sectiontitles__item">
+    <div class="ornament"></div>
+    <a href="#" class="nav-sectiontitles__link">Promote the network</a>
   </li>
-  <li class="nav-icons__item">
-    <a href="#" class="nav-icons__link">
-      <span class="icon icon--question-mark"></span><br/>
-      <span class="nav-icons__label visible-md visible-lg">FAQ</span>
-    </a>
+  <li class="nav-sectiontitles__item">
+    <div class="ornament"></div>
+    <a href="#" class="nav-sectiontitles__link">Help your clients</a>
   </li>
 </ul>
 
                 </div>
               </div>
               <div class="kss-markup">
-                <pre><code data-language="html">&lt;ul class&#x3D;&quot;nav-icons list-inline [modifier class]&quot;&gt;
-  &lt;li class&#x3D;&quot;nav-icons__item&quot;&gt;
-    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-icons__link&quot;&gt;
-      &lt;span class&#x3D;&quot;icon icon--user&quot;&gt;&lt;/span&gt;&lt;br/&gt;
-      &lt;span class&#x3D;&quot;nav-icons__label visible-md visible-lg&quot;&gt;Sign in&lt;/span&gt;
-    &lt;/a&gt;
+                <pre><code data-language="html">&lt;ul class&#x3D;&quot;nav-sectiontitles list-inline&quot;&gt;
+  &lt;li class&#x3D;&quot;nav-sectiontitles__item&quot;&gt;
+    &lt;div class&#x3D;&quot;ornament&quot;&gt;&lt;/div&gt;
+    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-sectiontitles__link&quot;&gt;The network&lt;/a&gt;
   &lt;/li&gt;
-  &lt;li class&#x3D;&quot;nav-icons__item&quot;&gt;
-    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-icons__link&quot;&gt;
-      &lt;span class&#x3D;&quot;icon icon--question-mark&quot;&gt;&lt;/span&gt;&lt;br/&gt;
-      &lt;span class&#x3D;&quot;nav-icons__label visible-md visible-lg&quot;&gt;FAQ&lt;/span&gt;
-    &lt;/a&gt;
+  &lt;li class&#x3D;&quot;nav-sectiontitles__item&quot;&gt;
+    &lt;div class&#x3D;&quot;ornament&quot;&gt;&lt;/div&gt;
+    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-sectiontitles__link&quot;&gt;Manage your contact&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class&#x3D;&quot;nav-sectiontitles__item&quot;&gt;
+    &lt;div class&#x3D;&quot;ornament&quot;&gt;&lt;/div&gt;
+    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-sectiontitles__link&quot;&gt;Promote the network&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class&#x3D;&quot;nav-sectiontitles__item&quot;&gt;
+    &lt;div class&#x3D;&quot;ornament&quot;&gt;&lt;/div&gt;
+    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-sectiontitles__link&quot;&gt;Help your clients&lt;/a&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
               </div>
             </div>
           </section>
-          <section id="section-nav.nav-metro" class="kss-section kss-depth-2">
-            <h1 class="kss-title"><span class="kss-ref">nav.nav-metro</span> Metro navigation</h1>
+          <section id="section-nav.nav-subway" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">nav.nav-subway</span> Subway navigation</h1>
             <div class="kss-description">
-              <p>Inline navigation with bigger paddings dedicated for footer. Text aligned to the left on desktop and centered on mobile.</p>
+              <p>Navigation that looks like the subway map.</p>
 
             </div>
             <div class="kss-modifier-block">
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <ul class="nav-metro">
-  <li class="nav-metro__item">
-    <div class="nav-metro__station"></div>
-    <a href="#" class="nav-metro__link">Latest partnering opportunities</a>
+                  <ul class="nav-subway">
+  <li class="nav-subway__item">
+    <div class="nav-subway__station"></div>
+    <a href="#" class="nav-subway__link">Latest partnering opportunities</a>
   </li>
-  <li class="nav-metro__item">
-    <div class="nav-metro__station"></div>
-    <a href="#" class="nav-metro__link">Going international</a>
+  <li class="nav-subway__item">
+    <div class="nav-subway__station"></div>
+    <a href="#" class="nav-subway__link">Going international</a>
   </li>
-  <li class="nav-metro__item">
-    <div class="nav-metro__station"></div>
-    <a href="#" class="nav-metro__link">Calls</a>
+  <li class="nav-subway__item">
+    <div class="nav-subway__station"></div>
+    <a href="#" class="nav-subway__link">Calls</a>
   </li>
-  <li class="nav-metro__item">
-    <div class="nav-metro__station"></div>
-    <a href="#" class="nav-metro__link">Events</a>
+  <li class="nav-subway__item">
+    <div class="nav-subway__station"></div>
+    <a href="#" class="nav-subway__link">Events</a>
   </li>
 </ul>
 
                 </div>
               </div>
               <div class="kss-markup">
-                <pre><code data-language="html">&lt;ul class&#x3D;&quot;nav-metro&quot;&gt;
-  &lt;li class&#x3D;&quot;nav-metro__item&quot;&gt;
-    &lt;div class&#x3D;&quot;nav-metro__station&quot;&gt;&lt;/div&gt;
-    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-metro__link&quot;&gt;Latest partnering opportunities&lt;/a&gt;
+                <pre><code data-language="html">&lt;ul class&#x3D;&quot;nav-subway&quot;&gt;
+  &lt;li class&#x3D;&quot;nav-subway__item&quot;&gt;
+    &lt;div class&#x3D;&quot;nav-subway__station&quot;&gt;&lt;/div&gt;
+    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-subway__link&quot;&gt;Latest partnering opportunities&lt;/a&gt;
   &lt;/li&gt;
-  &lt;li class&#x3D;&quot;nav-metro__item&quot;&gt;
-    &lt;div class&#x3D;&quot;nav-metro__station&quot;&gt;&lt;/div&gt;
-    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-metro__link&quot;&gt;Going international&lt;/a&gt;
+  &lt;li class&#x3D;&quot;nav-subway__item&quot;&gt;
+    &lt;div class&#x3D;&quot;nav-subway__station&quot;&gt;&lt;/div&gt;
+    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-subway__link&quot;&gt;Going international&lt;/a&gt;
   &lt;/li&gt;
-  &lt;li class&#x3D;&quot;nav-metro__item&quot;&gt;
-    &lt;div class&#x3D;&quot;nav-metro__station&quot;&gt;&lt;/div&gt;
-    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-metro__link&quot;&gt;Calls&lt;/a&gt;
+  &lt;li class&#x3D;&quot;nav-subway__item&quot;&gt;
+    &lt;div class&#x3D;&quot;nav-subway__station&quot;&gt;&lt;/div&gt;
+    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-subway__link&quot;&gt;Calls&lt;/a&gt;
   &lt;/li&gt;
-  &lt;li class&#x3D;&quot;nav-metro__item&quot;&gt;
-    &lt;div class&#x3D;&quot;nav-metro__station&quot;&gt;&lt;/div&gt;
-    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-metro__link&quot;&gt;Events&lt;/a&gt;
+  &lt;li class&#x3D;&quot;nav-subway__item&quot;&gt;
+    &lt;div class&#x3D;&quot;nav-subway__station&quot;&gt;&lt;/div&gt;
+    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-subway__link&quot;&gt;Events&lt;/a&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
@@ -325,50 +320,13 @@
             <h1 class="kss-title"><span class="kss-ref">nav.nav-tiles</span> Navigation tiles</h1>
             <div class="kss-description">
               <p>Justified, fully responsive navigation with icons. Menu becomes horizontal on
-phone devices. Great to use with Navigation steps.</p>
+phone devices.</p>
 
             </div>
             <div class="kss-modifier-block">
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
                   <ul class="nav-tiles [modifier class]">
-  <li class="nav-tiles__item">
-    <a class="nav-tiles__link" href="#">
-      <div class="nav-tiles__icon-collumn">
-        <div class="nav-tiles__icon-wrapper">
-          <span class="icon icon--scope"></span>
-        </div>
-      </div>
-      <div class="nav-tiles__label-collumn">
-        <div class="nav-tiles__label">First item</div>
-      </div>
-    </a>
-  </li>
-  <li class="nav-tiles__item">
-    <a class="nav-tiles__link" href="#">
-      <div class="nav-tiles__icon-collumn">
-        <div class="nav-tiles__icon-wrapper">
-          <span class="icon icon--star"></span>
-        </div>
-      </div>
-      <div class="nav-tiles__label-collumn">
-        <div class="nav-tiles__label">Second item</div>
-      </div>
-    </a>
-  </li>
-</ul>
-
-                </div>
-              </div>
-              <div class="kss-modifier">
-                <div class="kss-modifier-head">
-                  <div class="kss-modifier-name">.nav-tiles--gradient</div>
-                  <div class="kss-modifier-description">
-                    Gradient in background
-                  </div>
-                </div>
-                <div class="kss-modifier-example">
-                  <ul class="nav-tiles nav-tiles--gradient">
   <li class="nav-tiles__item">
     <a class="nav-tiles__link" href="#">
       <div class="nav-tiles__icon-collumn">

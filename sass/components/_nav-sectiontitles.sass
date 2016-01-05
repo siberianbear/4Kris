@@ -1,41 +1,41 @@
-// Block title navigation
+// Section titles navigation
 //
-// Inline navigation with bigger paddings dedicated for footer. Text aligned to the left on desktop and centered on mobile.
+// Justified navigation in style of section title. Looks good with ornament component that might indicate color of site section.
 //
-// Markup: html/nav-blocktitle.html
+// Markup: html/nav-sectiontitles.html
 //
-// Styleguide nav.nav-blocktitle
+// Styleguide nav.nav-sectiontitles
 
 // Component
 // --------------------------------------------------
-.nav-blocktitle
+.nav-sectiontitles
   display: table
   list-style-type: none
   padding: 0
 
 // Elements
 // --------------------------------------------------
-.nav-blocktitle > .nav-blocktitle__item
+.nav-sectiontitles > .nav-sectiontitles__item
   display: table-cell
-  &:not(:last-child) .nav-blocktitle__link
+  &:not(:last-child) .nav-sectiontitles__link
     padding-right: 30px
 
-.nav-blocktitle > .nav-blocktitle__item
-  & > .nav-blocktitle__link,
-  & > * > .nav-blocktitle__link
+.nav-sectiontitles > .nav-sectiontitles__item
+  & > .nav-sectiontitles__link,
+  & > * > .nav-sectiontitles__link
     font-family: $font-family-sans-condensed
     text-transform: uppercase
     color: $gray-base
     .icon
       display: none
 
-.nav-blocktitle .nav-blocktitle__item .nav-blocktitle__link
+.nav-sectiontitles .nav-sectiontitles__item .nav-sectiontitles__link
   font-weight: $font-weight
   color: $gray-base
 
 // Dependencies
 // --------------------------------------------------
-.nav-blocktitle .dropdown
+.nav-sectiontitles .dropdown
   position: relative
   .dropdown-menu
     position: absolute !important
@@ -47,21 +47,21 @@
     margin-left: -72px
     top: 91px
     border-bottom: 10px solid $brand-primary
-    .nav-blocktitle__item
+    .nav-sectiontitles__item
       padding-bottom: 0
       &:not(:last-child)
         border-bottom: 1px solid $gray-light
       .dropdown
         padding: 15px 0
-    .nav-blocktitle__link
+    .nav-sectiontitles__link
       padding: 15px 20px
       text-decoration: none
       &:hover
         background: none
-    .nav-blocktitle__item:hover
+    .nav-sectiontitles__item:hover
       background-color: $brand-primary
       font-weight: $headings-font-weight
-      .nav-blocktitle__link
+      .nav-sectiontitles__link
         color: #fff
     // Deeper dropdown level.
     .dropdown > .dropdown-menu
@@ -71,7 +71,7 @@
       margin-top: 0
       margin-left: -1px
       border: none
-      .nav-blocktitle__item
+      .nav-sectiontitles__item
         border-color: $brand-primary-dark
         &:hover
           background-color: $brand-primary-dark
@@ -79,11 +79,11 @@
       display: block
 
 // Deeeper level of last item displayed at left instead of right.
-.nav-blocktitle .nav-blocktitle__item:last-child .dropdown-menu .dropdown > .dropdown-menu
+.nav-sectiontitles .nav-sectiontitles__item:last-child .dropdown-menu .dropdown > .dropdown-menu
   left: -100%
 
-.nav-blocktitle > .nav-blocktitle__item > .dropdown > .dropdown-menu
+.nav-sectiontitles > .nav-sectiontitles__item > .dropdown > .dropdown-menu
   +arrow($gray-light, $gray-lighter, "top", "out", 10px, 102px)
 
-.nav-blocktitle .ornament:before
+.nav-sectiontitles .ornament:before
   margin-bottom: 5px

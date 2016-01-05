@@ -5,8 +5,8 @@
 //
 // Markup: html/nav-pills.html
 //
-// .nav-pills--large - Header like tabs
-// .nav-pills--arrows - Arrow indicators in active tab
+// .nav-pills--large - Header sized tabs
+// .nav-pills--arrows - Active tab indicated by arrow instead of background
 //
 // Styleguide nav-pills
 
@@ -46,4 +46,6 @@
       &,
       &:hover,
       &:focus
-        +arrow($gray-light, white, "bottom", "in", 10px, 100px)
+        +arrow($gray-light, white, "bottom", "in", 10px, 25px)
+        background: transparent
+        color: $nav-pills-active-link-hover-bg
