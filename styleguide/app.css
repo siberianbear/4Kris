@@ -6015,9 +6015,7 @@ h1 {
   font-size: 48px; }
 
 h2, .title-more {
-  font-size: 30px;
-  padding: 0 0 20px;
-  border-bottom: 1px solid #d8d8d8; }
+  font-size: 30px; }
 
 h3,
 .h3 {
@@ -6031,18 +6029,21 @@ h4,
 
 a {
   color: #4193a9;
-  text-underline: none; }
+  text-underline: none;
+  font-weight: 400; }
   a:hover, a:active, a:focus,
   a a:visited {
     color: #23527c; }
 
+ul li,
+ol li {
+  padding-bottom: 8.66667px; }
+
 ul {
   padding-left: 0; }
-  ul li {
-    list-style: none; }
 
-ul:not(.dropdown):not(.dropdown-menu):not(.contextual-links):not(.nav) li:not([class]), ul:not(.dropdown):not(.dropdown-menu):not(.contextual-links):not(.nav) li.first:not(.leaf):not(.expanded), ul:not(.dropdown):not(.dropdown-menu):not(.contextual-links):not(.nav) li.last:not(.leaf):not(.expanded) {
-  padding-bottom: 8.66667px; }
+ul:not(.dropdown):not(.dropdown-menu):not(.contextual-links):not(.nav) li {
+  list-style: none; }
   ul:not(.dropdown):not(.dropdown-menu):not(.contextual-links):not(.nav) li:not([class]):before, ul:not(.dropdown):not(.dropdown-menu):not(.contextual-links):not(.nav) li.first:not(.leaf):not(.expanded):before, ul:not(.dropdown):not(.dropdown-menu):not(.contextual-links):not(.nav) li.last:not(.leaf):not(.expanded):before {
     color: #4193a9;
     content: "\2022";
@@ -6057,7 +6058,8 @@ ul:not(.dropdown):not(.dropdown-menu):not(.contextual-links):not(.nav) li:not([c
 
 dl {
   width: 100%;
-  padding-bottom: 8.66667px; }
+  padding-bottom: 8.66667px;
+  margin-bottom: 13px; }
   dl dt {
     float: left;
     clear: left;
