@@ -1,0 +1,89 @@
+// Block title navigation
+//
+// Inline navigation with bigger paddings dedicated for footer. Text aligned to the left on desktop and centered on mobile.
+//
+// Markup: html/nav-blocktitle.html
+//
+// Styleguide nav.nav-blocktitle
+
+// Component
+// --------------------------------------------------
+.nav-blocktitle
+  display: table
+  list-style-type: none
+  padding: 0
+
+// Elements
+// --------------------------------------------------
+.nav-blocktitle > .nav-blocktitle__item
+  display: table-cell
+  &:not(:last-child) .nav-blocktitle__link
+    padding-right: 30px
+
+.nav-blocktitle > .nav-blocktitle__item
+  & > .nav-blocktitle__link,
+  & > * > .nav-blocktitle__link
+    font-family: $font-family-sans-condensed
+    text-transform: uppercase
+    color: $gray-base
+    .icon
+      display: none
+
+.nav-blocktitle .nav-blocktitle__item .nav-blocktitle__link
+  font-weight: $font-weight
+  color: $gray-base
+
+// Dependencies
+// --------------------------------------------------
+.nav-blocktitle .dropdown
+  position: relative
+  .dropdown-menu
+    position: absolute !important
+    background-color: $gray-lighter
+    font-size: $font-size-small
+    border-radius: 0
+    padding: 1px 0 0
+    width: 215px
+    margin-left: -72px
+    top: 91px
+    border-bottom: 10px solid $brand-primary
+    .nav-blocktitle__item
+      padding-bottom: 0
+      &:not(:last-child)
+        border-bottom: 1px solid $gray-light
+      .dropdown
+        padding: 15px 0
+    .nav-blocktitle__link
+      padding: 15px 20px
+      text-decoration: none
+      &:hover
+        background: none
+    .nav-blocktitle__item:hover
+      background-color: $brand-primary
+      font-weight: $headings-font-weight
+      .nav-blocktitle__link
+        color: #fff
+    // Deeper dropdown level.
+    .dropdown > .dropdown-menu
+      background-color: $brand-primary
+      top: 0
+      left: 100%
+      margin-top: 0
+      margin-left: -1px
+      border: none
+      .nav-blocktitle__item
+        border-color: $brand-primary-dark
+        &:hover
+          background-color: $brand-primary-dark
+    .dropdown:hover>.dropdown-menu
+      display: block
+
+// Deeeper level of last item displayed at left instead of right.
+.nav-blocktitle .nav-blocktitle__item:last-child .dropdown-menu .dropdown > .dropdown-menu
+  left: -100%
+
+.nav-blocktitle > .nav-blocktitle__item > .dropdown > .dropdown-menu
+  +arrow($gray-light, $gray-lighter, "top", "out", 10px, 102px)
+
+.nav-blocktitle .ornament:before
+  margin-bottom: 5px

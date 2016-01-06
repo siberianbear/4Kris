@@ -1,0 +1,30 @@
+// Social links
+//
+// Social media icons.
+//
+// Markup: html/social-links.html
+//
+// Styleguide social-links
+
+// Component
+// --------------------------------------------------
+.social-links
+  line-height: $line-height-computed * 0.65
+  text-align: center
+  margin-left: 35px
+
+// Elements
+// --------------------------------------------------
+.social-links__item
+  line-height: $social-links-size * 2 / 3
+  text-align: center
+
+// Dependencies
+// --------------------------------------------------
+.social-links .icon
+  +circle(transparent, 1px, $social-links-color)
+  +icon-size($social-links-size * 2 / 3)
+  color: $social-links-color
+  width: $social-links-size
+  height: $social-links-size
+  line-height: $social-links-size

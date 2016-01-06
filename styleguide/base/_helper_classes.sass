@@ -1,0 +1,22 @@
+// Set cursor on hover.
+.cursor-pointer
+  cursor: pointer
+
+// Set all children in given element to inline.
+.content-inline
+  *
+    display: inline !important
+
+// Make element inside a container full page width.
+.full-page-width
+  margin-left: -$grid-gutter-width / 2
+  margin-right: -$grid-gutter-width / 2
+  & > *
+    margin-left: auto !important
+    margin-right: auto !important
+    @extend .container-fluid
+
++breakpoint(screen-lg-min)
+  .full-page-width
+    margin-left: -100%
+    margin-right: -100%
