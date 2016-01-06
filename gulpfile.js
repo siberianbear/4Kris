@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 var paths = {
   sass: ['sass/**/*.+(scss|sass)'],
-  sassComponents: ['sass/**/*.+(scss|sass)', '!sass/*.+(scss|sass)'],
+  sassStyleguide: ['sass/**/*.+(scss|sass)', '!sass/_mixins.+(scss|sass)'],
   html: ['sass/**/*.html'],
   styleguide: 'styleguide'
 };
@@ -18,28 +18,34 @@ gulp.task('sass', function () {
       {outputStyle: 'compressed'}
     ).on('error', sass.logError))
     .pipe(rename('style.css'))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('css'))
+    .pipe(livereload());
 });
 
 gulp.task('styleguide:generate', function() {
-  return gulp.src(paths.sassComponents)
+  return gulp.src(paths.sassStyleguide)
     .pipe(styleguide.generate({
         title: 'Bootsmacss',
         server: true,
         rootPath: paths.styleguide,
-        overviewPath: 'README.md'
+        overviewPath: 'README.md',
+        commonClass: 'body'
       }))
     .pipe(gulp.dest(paths.styleguide));
 });
 
-gulp.task('styleguide:applystyles', ['sass'], function() {
-  return gulp.src('css/style.css')
+gulp.task('styleguide:applystyles', function() {
+  return gulp.src('sass/app.sass')
+    .pipe(sass({
+      errLogToConsole: true
+    }))
     .pipe(styleguide.applyStyles())
     .pipe(gulp.dest(paths.styleguide));
 });
 
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
 
-gulp.task('watch', ['styleguide'], function() {
-  gulp.watch([paths.sass, paths.html], ['styleguide']);
+gulp.task('default', ['styleguide', 'sass'], function() {
+  livereload.listen();
+  gulp.watch([paths.sass, paths.html], ['styleguide', 'sass']);
 });

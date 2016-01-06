@@ -1,0 +1,38 @@
+// List
+//
+// Markup: html/list.html
+//
+// Styleguide type.list
+ul
+  padding-left: 0
+  li
+    list-style: none
+
+// Style elements only without any class - prevent affecting various components
+ul:not(.dropdown):not(.dropdown-menu):not(.contextual-links):not(.nav) li
+  &:not([class]),
+  &.first:not(.leaf):not(.expanded), &.last:not(.leaf):not(.expanded)
+    padding-bottom: $line-height-computed / 3
+    &:before
+      color: $brand-primary
+      content: "\2022"
+      font-size: 1.5em
+      line-height: 1px
+      position: relative
+      top: $line-height-computed / 15
+      left: 0
+      margin-right: 15px
+    & > ul
+      margin: $line-height-computed / 3 0 0 30px
+
+dl
+  width: 100%
+  padding-bottom: $line-height-computed / 3
+  dt
+    float: left
+    clear: left
+    width: 30%
+  dd
+    width: 70%
+    margin-left: 30%
+    padding-bottom: $line-height-computed / 3
