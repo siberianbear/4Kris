@@ -1,0 +1,30 @@
+// Block
+//
+// Block component used for wrapping block content.
+//
+// Markup: html/block.html
+//
+// Styleguide block
+
+
+.block
+
+.block__title
+  font-size: $font-size-h4
+  position: relative
+
+  &:after
+    content: ''
+    border-top: 1px solid $gray-lighter
+    width: 100%
+    display: block
+    position: absolute
+    top: 50%
+    z-index: 1
+
+  span
+    display: inline-block
+    position: relative
+    z-index: 10
+    background: #fff
+    padding-right: 10px
