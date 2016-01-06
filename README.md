@@ -24,7 +24,8 @@ Here are the examples of sites we created using BootSMACSS and Drupal:
 * [eurekanetwork.org](http://eurekanetwork.org/) - EUREKA Network
 * [eurostars-eureka.eu](http://eurostars-eureka.eu/) - Eurostars joint programme
 * [smartcities-infosystem.eu](http://smartcities-infosystem.eu/) - Smart Cities Information System
-* European Commission intranet (not deployed yet)
+* [een.ec.europa.eu](http://een.ec.europa.eu/) - Enterprise Europe Network
+* [ec.europa.eu/eurostat/cros](http://ec.europa.eu/eurostat/cros/) - CROS portal
 
 ### How to work with BootSMACSS?
 
