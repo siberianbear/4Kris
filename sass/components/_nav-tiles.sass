@@ -1,11 +1,9 @@
 // Navigation tiles
 //
 // Justified, fully responsive navigation with icons. Menu becomes horizontal on
-// phone devices. Great to use with Navigation steps.
+// phone devices.
 //
 // Markup: html/nav-tiles.html
-//
-// .nav-tiles--gradient - Gradient in background
 //
 // Styleguide nav.nav-tiles
 
@@ -36,14 +34,14 @@
   margin: 5px 20px 5px 0
   position: relative
   display: inline-block
-  +circle($brand-primary-dark)
+  +circle($brand-primary-light)
   .icon
     position: absolute
-    margin: -14px
+    margin: -17px
     top: 50%
     left: 50%
     color: $gray-base
-    +icon-size(28px)
+    +icon-size(35px)
 
 .nav-tiles__item
   &:not(:last-child)
@@ -90,8 +88,8 @@
     height: 50px
     margin: 10px 0
     .icon
-      margin: -16px
-      +icon-size(32px)
+      margin: -19.5px
+      +icon-size(40px)
   .nav-tiles .nav-tiles__item
     vertical-align: middle
     .nav-tiles__link
@@ -111,7 +109,6 @@
 
 // States
 // --------------------------------------------------
-
 .nav-tiles .nav-tiles__link:hover,
 .nav-tiles .nav-tiles__link:focus,
 .nav-tiles .nav-tiles__link.active,
@@ -119,13 +116,4 @@
   text-decoration: none
   background-color: darken($brand-primary, 6%)
   .nav-tiles__icon-wrapper
-    +circle(darken($brand-primary-dark, 4%))
-
-// Skins
-// --------------------------------------------------
-.nav-tiles--gradient
-  +breakpoint(tablet)
-    background-image: url("../images/png/nav-tiles-bg.png")
-    background-position: center center
-    background-repeat: no-repeat
-    background-size: 100% auto
+    +circle(darken($brand-primary-light, 4%))

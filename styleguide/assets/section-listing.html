@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>kss-node Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+    
+
+    <!-- Scripts placed in head to use them in Component examples -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Scripts placed in head to use them in Component examples -->
+    <script src="../../bootstrap-sass/javascripts/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">kss-node Styleguide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="listing">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">Overview</span></a></li>
+              <li class="kss-menu-item"><a href="section-alert.html"><span class="kss-ref">alert</span><span class="kss-name">Alert</span></a></li>
+              <li class="kss-menu-item"><a href="section-block.html"><span class="kss-ref">block</span><span class="kss-name">Block</span></a></li>
+              <li class="kss-menu-item"><a href="section-bookmark.html"><span class="kss-ref">bookmark</span><span class="kss-name">Bookmark</span></a></li>
+              <li class="kss-menu-item"><a href="section-box.html"><span class="kss-ref">box</span><span class="kss-name">Box</span></a></li>
+              <li class="kss-menu-item"><a href="section-breadcrumb.html"><span class="kss-ref">breadcrumb</span><span class="kss-name">Breadcrumb</span></a></li>
+              <li class="kss-menu-item"><a href="section-buttons.html"><span class="kss-ref">buttons</span><span class="kss-name">Buttons</span></a></li>
+              <li class="kss-menu-item"><a href="section-carousel.html"><span class="kss-ref">carousel</span><span class="kss-name">Carousel</span></a></li>
+              <li class="kss-menu-item"><a href="section-counter.html"><span class="kss-ref">counter</span><span class="kss-name">Counter</span></a></li>
+              <li class="kss-menu-item"><a href="section-featured.html"><span class="kss-ref">featured</span><span class="kss-name">Featured</span></a></li>
+              <li class="kss-menu-item"><a href="section-field.html"><span class="kss-ref">field</span><span class="kss-name">Field</span></a></li>
+              <li class="kss-menu-item"><a href="section-file.html"><span class="kss-ref">file</span><span class="kss-name">File link</span></a></li>
+              <li class="kss-menu-item"><a href="section-form.html"><span class="kss-ref">form</span><span class="kss-name">Form</span></a></li>
+              <li class="kss-menu-item"><a href="section-icon.html"><span class="kss-ref">icon</span><span class="kss-name">Icons</span></a></li>
+              <li class="kss-menu-item"><a href="section-input-inner-addon.html"><span class="kss-ref">input-inner-addon</span><span class="kss-name">Input inner addon</span></a></li>
+              <li class="kss-menu-item"><a href="section-label.html"><span class="kss-ref">label</span><span class="kss-name">Label</span></a></li>
+              <li class="kss-menu-item"><a href="section-layout.html"><span class="kss-ref">layout</span><span class="kss-name">Layout</span></a></li>
+              <li class="kss-menu-item"><a href="section-listing.html"><span class="kss-ref">listing</span><span class="kss-name">Listing</span></a></li>
+              <li class="kss-menu-item"><a href="section-logo.html"><span class="kss-ref">logo</span><span class="kss-name">Logo</span></a></li>
+              <li class="kss-menu-item"><a href="section-midle-align.html"><span class="kss-ref">midle-align</span><span class="kss-name">Middle align</span></a></li>
+              <li class="kss-menu-item"><a href="section-modal.html"><span class="kss-ref">modal</span><span class="kss-name">Modal</span></a></li>
+              <li class="kss-menu-item"><a href="section-nav.html"><span class="kss-ref">nav</span><span class="kss-name">Navigation</span></a></li>
+              <li class="kss-menu-item"><a href="section-nav-pills.html"><span class="kss-ref">nav-pills</span><span class="kss-name">Pills</span></a></li>
+              <li class="kss-menu-item"><a href="section-nav-tabs.html"><span class="kss-ref">nav-tabs</span><span class="kss-name">Tabs</span></a></li>
+              <li class="kss-menu-item"><a href="section-news-carousel.html"><span class="kss-ref">news-carousel</span><span class="kss-name">News carousel</span></a></li>
+              <li class="kss-menu-item"><a href="section-notification-counter.html"><span class="kss-ref">notification-counter</span><span class="kss-name">Notification counter</span></a></li>
+              <li class="kss-menu-item"><a href="section-ornament.html"><span class="kss-ref">ornament</span><span class="kss-name">Ornament</span></a></li>
+              <li class="kss-menu-item"><a href="section-page-title.html"><span class="kss-ref">page-title</span><span class="kss-name">Page title</span></a></li>
+              <li class="kss-menu-item"><a href="section-pagination.html"><span class="kss-ref">pagination</span><span class="kss-name">Pagination</span></a></li>
+              <li class="kss-menu-item"><a href="section-panel.html"><span class="kss-ref">panel</span><span class="kss-name">Panel</span></a></li>
+              <li class="kss-menu-item"><a href="section-slogan.html"><span class="kss-ref">slogan</span><span class="kss-name">Slogan</span></a></li>
+              <li class="kss-menu-item"><a href="section-social-links.html"><span class="kss-ref">social-links</span><span class="kss-name">Social links</span></a></li>
+              <li class="kss-menu-item"><a href="section-table.html"><span class="kss-ref">table</span><span class="kss-name">Tables</span></a></li>
+              <li class="kss-menu-item"><a href="section-title-more.html"><span class="kss-ref">title-more</span><span class="kss-name">Title more</span></a></li>
+              <li class="kss-menu-item"><a href="section-type.html"><span class="kss-ref">type</span><span class="kss-name">Typography</span></a></li>
+            </ul>
+            <ul class="kss-menu-child">
+              <li class="kss-menu-item"><a href="#section-listing.blog"><span class="kss-ref">listing.blog</span><span class="kss-name">Listing blog</span></a></li>
+              <li class="kss-menu-item"><a href="#section-listing.middlealign"><span class="kss-ref">listing.middlealign</span><span class="kss-name">Listing middle align</span></a></li>
+              <li class="kss-menu-item"><a href="#section-listing.numbered"><span class="kss-ref">listing.numbered</span><span class="kss-name">Listing numbered</span></a></li>
+              <li class="kss-menu-item"><a href="#section-listing.stream"><span class="kss-ref">listing.stream</span><span class="kss-name">Listing stream</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          <section id="section-listing" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">listing</span> Listing</h1>
+            <div class="kss-description">
+              <p>Default, universal type of listings called Article listing. A list of articles including teaser image, title, short description, meta data and footer. Listings might have own header or header with read more button optionally. Read more about .title-more component.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="listing [modifier class]">
+  <h2 class="listing__label">Calls for projects</h2>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--phone-media-hidding</div>
+                  <div class="kss-modifier-description">
+                    Hide media on phone devices (change window width to see the effects)
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--phone-media-hidding">
+  <h2 class="listing__label">Calls for projects</h2>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--phone-media-above</div>
+                  <div class="kss-modifier-description">
+                    Move media above the text on phone devices
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--phone-media-above">
+  <h2 class="listing__label">Calls for projects</h2>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--tablet-media-above</div>
+                  <div class="kss-modifier-description">
+                    Move media above the text on tablet devices
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--tablet-media-above">
+  <h2 class="listing__label">Calls for projects</h2>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--separators</div>
+                  <div class="kss-modifier-description">
+                    Border separator between every entry
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--separators">
+  <h2 class="listing__label">Calls for projects</h2>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--separators-dashed</div>
+                  <div class="kss-modifier-description">
+                    Dashed border separator between every entry
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--separators-dashed">
+  <h2 class="listing__label">Calls for projects</h2>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--condensed</div>
+                  <div class="kss-modifier-description">
+                    Condended spacings between each items
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--condensed">
+  <h2 class="listing__label">Calls for projects</h2>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--condensed-lineheight</div>
+                  <div class="kss-modifier-description">
+                    Condended line height of text
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--condensed-lineheight">
+  <h2 class="listing__label">Calls for projects</h2>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--2-col-layout</div>
+                  <div class="kss-modifier-description">
+                    Two collumn layout
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--2-col-layout">
+  <h2 class="listing__label">Calls for projects</h2>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--3-col-layout</div>
+                  <div class="kss-modifier-description">
+                    Three collumn layout
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--3-col-layout">
+  <h2 class="listing__label">Calls for projects</h2>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--image-corner-radius</div>
+                  <div class="kss-modifier-description">
+                    Create border radius for bottom left corner of the media
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--image-corner-radius">
+  <h2 class="listing__label">Calls for projects</h2>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--tabs-spacer</div>
+                  <div class="kss-modifier-description">
+                    Moves the whole listing up to correspond with tabs component above
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--tabs-spacer">
+  <h2 class="listing__label">Calls for projects</h2>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--side-title</div>
+                  <div class="kss-modifier-description">
+                    Listing label at the left
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--side-title">
+  <h2 class="listing__label">Calls for projects</h2>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--zebra</div>
+                  <div class="kss-modifier-description">
+                    Zebra styling
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--zebra">
+  <h2 class="listing__label">Calls for projects</h2>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/270x145" />
+    </div>
+    <div class="listing__item-text">
+      <span class="listing__item-meta">Creation date</span>
+      <h3 class="listing__item-title">Featured article name</h3>
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+    <div class="listing__item-footer">
+      <a href="#" class="btn btn-primary btn-xs pull-right">More information</a>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class&#x3D;&quot;listing [modifier class]&quot;&gt;
+  &lt;h2 class&#x3D;&quot;listing__label&quot;&gt;Calls for projects&lt;/h2&gt;
+  &lt;div class&#x3D;&quot;listing__header&quot;&gt;
+    &lt;p&gt;Additional description paragraph above listing items.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;article class&#x3D;&quot;listing__item&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__item-media&quot;&gt;
+      &lt;img src&#x3D;&quot;http://placehold.it/270x145&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-text&quot;&gt;
+      &lt;span class&#x3D;&quot;listing__item-meta&quot;&gt;Creation date&lt;/span&gt;
+      &lt;h3 class&#x3D;&quot;listing__item-title&quot;&gt;Featured article name&lt;/h3&gt;
+      &lt;p&gt;Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-footer&quot;&gt;
+      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-primary btn-xs pull-right&quot;&gt;More information&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+  &lt;article class&#x3D;&quot;listing__item&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__item-media&quot;&gt;
+      &lt;img src&#x3D;&quot;http://placehold.it/270x145&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-text&quot;&gt;
+      &lt;span class&#x3D;&quot;listing__item-meta&quot;&gt;Creation date&lt;/span&gt;
+      &lt;h3 class&#x3D;&quot;listing__item-title&quot;&gt;Featured article name&lt;/h3&gt;
+      &lt;p&gt;Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-footer&quot;&gt;
+      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-primary btn-xs pull-right&quot;&gt;More information&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+&lt;/div&gt;
+</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-listing.blog" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">listing.blog</span> Listing blog</h1>
+            <div class="kss-description">
+              <p>Blog-like listing. Teasers becomes tiles with image and title. This modifier
+uses the same semantic as default, but footer serves here in a litte
+different way. It is visually appropriate to place pragraph into it. It looks
+fine in sidebar or 2-3 collumn layout.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="listing listing--blog [modifier class]">
+  <div class="listing__label">
+    <div class="listing__label-row">
+      <div class="listing__label-col">Blog</div>
+      <div class="listing__label-col">
+        <a role="button" class="btn btn-default btn-sm pull-right" href="/calls-for-projects">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/250x100" />
+    </div>
+    <div class="listing__item-text">
+      <h3 class="listing__item-title">Featured blog entry name</h3>
+    </div>
+    <div class="listing__item-footer">
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/250x100" />
+    </div>
+    <div class="listing__item-text">
+      <h3 class="listing__item-title">Featured blog entry name</h3>
+    </div>
+    <div class="listing__item-footer">
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--2-col-layout</div>
+                  <div class="kss-modifier-description">
+                    Blog style in 2-collumn layout
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--blog listing--2-col-layout">
+  <div class="listing__label">
+    <div class="listing__label-row">
+      <div class="listing__label-col">Blog</div>
+      <div class="listing__label-col">
+        <a role="button" class="btn btn-default btn-sm pull-right" href="/calls-for-projects">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/250x100" />
+    </div>
+    <div class="listing__item-text">
+      <h3 class="listing__item-title">Featured blog entry name</h3>
+    </div>
+    <div class="listing__item-footer">
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/250x100" />
+    </div>
+    <div class="listing__item-text">
+      <h3 class="listing__item-title">Featured blog entry name</h3>
+    </div>
+    <div class="listing__item-footer">
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class&#x3D;&quot;listing listing--blog [modifier class]&quot;&gt;
+  &lt;div class&#x3D;&quot;listing__label&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__label-row&quot;&gt;
+      &lt;div class&#x3D;&quot;listing__label-col&quot;&gt;Blog&lt;/div&gt;
+      &lt;div class&#x3D;&quot;listing__label-col&quot;&gt;
+        &lt;a role&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-sm pull-right&quot; href&#x3D;&quot;/calls-for-projects&quot;&gt;Read more&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;listing__header&quot;&gt;
+    &lt;p&gt;Additional description paragraph above listing items.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;article class&#x3D;&quot;listing__item&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__item-media&quot;&gt;
+      &lt;img src&#x3D;&quot;http://placehold.it/250x100&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-text&quot;&gt;
+      &lt;h3 class&#x3D;&quot;listing__item-title&quot;&gt;Featured blog entry name&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-footer&quot;&gt;
+      &lt;p&gt;Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+  &lt;article class&#x3D;&quot;listing__item&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__item-media&quot;&gt;
+      &lt;img src&#x3D;&quot;http://placehold.it/250x100&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-text&quot;&gt;
+      &lt;h3 class&#x3D;&quot;listing__item-title&quot;&gt;Featured blog entry name&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-footer&quot;&gt;
+      &lt;p&gt;Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+&lt;/div&gt;
+</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-listing.middlealign" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">listing.middlealign</span> Listing middle align</h1>
+            <div class="kss-description">
+              <p>Miminalisting listing with vertically centered collumns. It&#39;s primary purpose is to list files.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="listing listing--middlealign listing--separators-dashed [modifier class]">
+  <div class="listing__label">
+    <div class="listing__label-row">
+      <h3 class="listing__label-col">Related documents <span>(5)</span></h3>
+      <div class="listing__label-col">
+        <a role="button" class="btn btn-default btn-sm pull-right" href="/calls-for-projects">Download all</a>
+      </div>
+    </div>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-row">
+      <div class="listing__item-col">
+        <div class="file">
+          <a href="#"><span class="icon icon--mime-pdf"></span> Important documment</a>
+        </div>
+      </div>
+      <div class="listing__item-col">12/03/15, John Doe</div>
+      <div class="listing__item-col">Version - 1.0</div>
+      <div class="listing__item-col"><span class="label label-warning pull-right">Draft</laber></div>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-row">
+      <div class="listing__item-col">
+        <div class="file">
+          <a href="#"><span class="icon icon--mime-pdf"></span> Another important documment</a>
+        </div>
+      </div>
+      <div class="listing__item-col">12/03/15, John Doe</div>
+      <div class="listing__item-col">Version - 2.4.2</div>
+      <div class="listing__item-col"><span class="label label-success pull-right">Ready</laber></div>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-row">
+      <div class="listing__item-col">
+        <div class="file">
+          <a href="#"><span class="icon icon--mime-pdf"></span> Documment to download</a>
+        </div>
+      </div>
+      <div class="listing__item-col">12/03/15, John Doe</div>
+      <div class="listing__item-col">Version - 1.0</div>
+      <div class="listing__item-col"><span class="label label-success pull-right">Ready</laber></div>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class&#x3D;&quot;listing listing--middlealign listing--separators-dashed [modifier class]&quot;&gt;
+  &lt;div class&#x3D;&quot;listing__label&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__label-row&quot;&gt;
+      &lt;h3 class&#x3D;&quot;listing__label-col&quot;&gt;Related documents &lt;span&gt;(5)&lt;/span&gt;&lt;/h3&gt;
+      &lt;div class&#x3D;&quot;listing__label-col&quot;&gt;
+        &lt;a role&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-sm pull-right&quot; href&#x3D;&quot;/calls-for-projects&quot;&gt;Download all&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;article class&#x3D;&quot;listing__item&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__item-row&quot;&gt;
+      &lt;div class&#x3D;&quot;listing__item-col&quot;&gt;
+        &lt;div class&#x3D;&quot;file&quot;&gt;
+          &lt;a href&#x3D;&quot;#&quot;&gt;&lt;span class&#x3D;&quot;icon icon--mime-pdf&quot;&gt;&lt;/span&gt; Important documment&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;listing__item-col&quot;&gt;12/03/15, John Doe&lt;/div&gt;
+      &lt;div class&#x3D;&quot;listing__item-col&quot;&gt;Version - 1.0&lt;/div&gt;
+      &lt;div class&#x3D;&quot;listing__item-col&quot;&gt;&lt;span class&#x3D;&quot;label label-warning pull-right&quot;&gt;Draft&lt;/laber&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+  &lt;article class&#x3D;&quot;listing__item&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__item-row&quot;&gt;
+      &lt;div class&#x3D;&quot;listing__item-col&quot;&gt;
+        &lt;div class&#x3D;&quot;file&quot;&gt;
+          &lt;a href&#x3D;&quot;#&quot;&gt;&lt;span class&#x3D;&quot;icon icon--mime-pdf&quot;&gt;&lt;/span&gt; Another important documment&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;listing__item-col&quot;&gt;12/03/15, John Doe&lt;/div&gt;
+      &lt;div class&#x3D;&quot;listing__item-col&quot;&gt;Version - 2.4.2&lt;/div&gt;
+      &lt;div class&#x3D;&quot;listing__item-col&quot;&gt;&lt;span class&#x3D;&quot;label label-success pull-right&quot;&gt;Ready&lt;/laber&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+  &lt;article class&#x3D;&quot;listing__item&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__item-row&quot;&gt;
+      &lt;div class&#x3D;&quot;listing__item-col&quot;&gt;
+        &lt;div class&#x3D;&quot;file&quot;&gt;
+          &lt;a href&#x3D;&quot;#&quot;&gt;&lt;span class&#x3D;&quot;icon icon--mime-pdf&quot;&gt;&lt;/span&gt; Documment to download&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;listing__item-col&quot;&gt;12/03/15, John Doe&lt;/div&gt;
+      &lt;div class&#x3D;&quot;listing__item-col&quot;&gt;Version - 1.0&lt;/div&gt;
+      &lt;div class&#x3D;&quot;listing__item-col&quot;&gt;&lt;span class&#x3D;&quot;label label-success pull-right&quot;&gt;Ready&lt;/laber&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+&lt;/div&gt;
+</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-listing.numbered" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">listing.numbered</span> Listing numbered</h1>
+            <div class="kss-description">
+              <p>Listing with big full height numbers at the left.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="listing listing--numbered [modifier class]">
+  <div class="listing__label">Calls for projects</div>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+
+  <article class="listing__item">
+    <div class="listing__item-text">
+      <big><strong>Self-assessment type:</strong> Erasmus+ coordinators</big>
+      <p><strong>Created:</strong> 11 march 2015</p>
+    </div>
+    <div class="listing__item-footer clearfix">
+      <a href="#" class="btn btn-link btn-sm "><big><span class="icon icon--share"></span></big>Share my results</a>
+      <div class="btn-toolbar pull-right" role="toolbar" aria-label="actions">
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--eye"></span></big>View results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--download"></span></big>Download results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--bin"></span></big>Delete</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="listing__item">
+    <div class="listing__item-text">
+      <big><strong>Self-assessment type:</strong> Erasmus+ coordinators</big>
+      <p><strong>Created:</strong> 11 march 2015</p>
+    </div>
+    <div class="listing__item-footer clearfix">
+      <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--share"></span></big>Share my results</a>
+      <div class="btn-toolbar pull-right" role="toolbar" aria-label="actions">
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--eye"></span></big>View results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--download"></span></big>Download results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--bin"></span></big>Delete</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="listing__item">
+    <div class="listing__item-text">
+      <big><strong>Self-assessment type:</strong> Erasmus+ coordinators</big>
+      <p><strong>Created:</strong> 11 march 2015</p>
+    </div>
+    <div class="listing__item-footer clearfix">
+      <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--share"></span></big>Share my results</a>
+      <div class="btn-toolbar pull-right" role="toolbar" aria-label="actions">
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--eye"></span></big>View results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--download"></span></big>Download results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--bin"></span></big>Delete</a>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+                </div>
+              </div>
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">.listing--condensed</div>
+                  <div class="kss-modifier-description">
+                    Layout for single row, simple listings
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  <div class="listing listing--numbered listing--condensed">
+  <div class="listing__label">Calls for projects</div>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+
+  <article class="listing__item">
+    <div class="listing__item-text">
+      <big><strong>Self-assessment type:</strong> Erasmus+ coordinators</big>
+      <p><strong>Created:</strong> 11 march 2015</p>
+    </div>
+    <div class="listing__item-footer clearfix">
+      <a href="#" class="btn btn-link btn-sm "><big><span class="icon icon--share"></span></big>Share my results</a>
+      <div class="btn-toolbar pull-right" role="toolbar" aria-label="actions">
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--eye"></span></big>View results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--download"></span></big>Download results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--bin"></span></big>Delete</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="listing__item">
+    <div class="listing__item-text">
+      <big><strong>Self-assessment type:</strong> Erasmus+ coordinators</big>
+      <p><strong>Created:</strong> 11 march 2015</p>
+    </div>
+    <div class="listing__item-footer clearfix">
+      <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--share"></span></big>Share my results</a>
+      <div class="btn-toolbar pull-right" role="toolbar" aria-label="actions">
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--eye"></span></big>View results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--download"></span></big>Download results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--bin"></span></big>Delete</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="listing__item">
+    <div class="listing__item-text">
+      <big><strong>Self-assessment type:</strong> Erasmus+ coordinators</big>
+      <p><strong>Created:</strong> 11 march 2015</p>
+    </div>
+    <div class="listing__item-footer clearfix">
+      <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--share"></span></big>Share my results</a>
+      <div class="btn-toolbar pull-right" role="toolbar" aria-label="actions">
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--eye"></span></big>View results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--download"></span></big>Download results</a>
+        <a href="#" class="btn btn-link btn-sm"><big><span class="icon icon--bin"></span></big>Delete</a>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class&#x3D;&quot;listing listing--numbered [modifier class]&quot;&gt;
+  &lt;div class&#x3D;&quot;listing__label&quot;&gt;Calls for projects&lt;/div&gt;
+  &lt;div class&#x3D;&quot;listing__header&quot;&gt;
+    &lt;p&gt;Additional description paragraph above listing items.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;article class&#x3D;&quot;listing__item&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__item-text&quot;&gt;
+      &lt;big&gt;&lt;strong&gt;Self-assessment type:&lt;/strong&gt; Erasmus+ coordinators&lt;/big&gt;
+      &lt;p&gt;&lt;strong&gt;Created:&lt;/strong&gt; 11 march 2015&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-footer clearfix&quot;&gt;
+      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link btn-sm &quot;&gt;&lt;big&gt;&lt;span class&#x3D;&quot;icon icon--share&quot;&gt;&lt;/span&gt;&lt;/big&gt;Share my results&lt;/a&gt;
+      &lt;div class&#x3D;&quot;btn-toolbar pull-right&quot; role&#x3D;&quot;toolbar&quot; aria-label&#x3D;&quot;actions&quot;&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class&#x3D;&quot;icon icon--eye&quot;&gt;&lt;/span&gt;&lt;/big&gt;View results&lt;/a&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class&#x3D;&quot;icon icon--download&quot;&gt;&lt;/span&gt;&lt;/big&gt;Download results&lt;/a&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class&#x3D;&quot;icon icon--bin&quot;&gt;&lt;/span&gt;&lt;/big&gt;Delete&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+
+  &lt;article class&#x3D;&quot;listing__item&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__item-text&quot;&gt;
+      &lt;big&gt;&lt;strong&gt;Self-assessment type:&lt;/strong&gt; Erasmus+ coordinators&lt;/big&gt;
+      &lt;p&gt;&lt;strong&gt;Created:&lt;/strong&gt; 11 march 2015&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-footer clearfix&quot;&gt;
+      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class&#x3D;&quot;icon icon--share&quot;&gt;&lt;/span&gt;&lt;/big&gt;Share my results&lt;/a&gt;
+      &lt;div class&#x3D;&quot;btn-toolbar pull-right&quot; role&#x3D;&quot;toolbar&quot; aria-label&#x3D;&quot;actions&quot;&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class&#x3D;&quot;icon icon--eye&quot;&gt;&lt;/span&gt;&lt;/big&gt;View results&lt;/a&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class&#x3D;&quot;icon icon--download&quot;&gt;&lt;/span&gt;&lt;/big&gt;Download results&lt;/a&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class&#x3D;&quot;icon icon--bin&quot;&gt;&lt;/span&gt;&lt;/big&gt;Delete&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+
+  &lt;article class&#x3D;&quot;listing__item&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__item-text&quot;&gt;
+      &lt;big&gt;&lt;strong&gt;Self-assessment type:&lt;/strong&gt; Erasmus+ coordinators&lt;/big&gt;
+      &lt;p&gt;&lt;strong&gt;Created:&lt;/strong&gt; 11 march 2015&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-footer clearfix&quot;&gt;
+      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class&#x3D;&quot;icon icon--share&quot;&gt;&lt;/span&gt;&lt;/big&gt;Share my results&lt;/a&gt;
+      &lt;div class&#x3D;&quot;btn-toolbar pull-right&quot; role&#x3D;&quot;toolbar&quot; aria-label&#x3D;&quot;actions&quot;&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class&#x3D;&quot;icon icon--eye&quot;&gt;&lt;/span&gt;&lt;/big&gt;View results&lt;/a&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class&#x3D;&quot;icon icon--download&quot;&gt;&lt;/span&gt;&lt;/big&gt;Download results&lt;/a&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link btn-sm&quot;&gt;&lt;big&gt;&lt;span class&#x3D;&quot;icon icon--bin&quot;&gt;&lt;/span&gt;&lt;/big&gt;Delete&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+
+&lt;/div&gt;
+</code></pre>
+              </div>
+            </div>
+          </section>
+          <section id="section-listing.stream" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">listing.stream</span> Listing stream</h1>
+            <div class="kss-description">
+              <p>Social media stream. This modifier uses the same semantic as default, but
+elements are used a little other way.</p>
+
+            </div>
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="listing listing--stream">
+  <div class="listing__label">
+    <div class="listing__label-row">
+      <div class="listing__label-col">Blog</div>
+      <div class="listing__label-col">
+        <a role="button" class="btn btn-default btn-sm pull-right" href="/calls-for-projects">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="listing__header">
+    <p>Additional description paragraph above listing items.</p>
+  </div>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/250x100" />
+    </div>
+    <div class="listing__item-text">
+      <h3 class="listing__item-title">Featured blog entry name</h3>
+    </div>
+    <div class="listing__item-footer">
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+  </article>
+  <article class="listing__item">
+    <div class="listing__item-media">
+      <img src="http://placehold.it/250x100" />
+    </div>
+    <div class="listing__item-text">
+      <h3 class="listing__item-title">Featured blog entry name</h3>
+    </div>
+    <div class="listing__item-footer">
+      <p>Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+  </article>
+</div>
+
+                </div>
+              </div>
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class&#x3D;&quot;listing listing--stream&quot;&gt;
+  &lt;div class&#x3D;&quot;listing__label&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__label-row&quot;&gt;
+      &lt;div class&#x3D;&quot;listing__label-col&quot;&gt;Blog&lt;/div&gt;
+      &lt;div class&#x3D;&quot;listing__label-col&quot;&gt;
+        &lt;a role&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-sm pull-right&quot; href&#x3D;&quot;/calls-for-projects&quot;&gt;Read more&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;listing__header&quot;&gt;
+    &lt;p&gt;Additional description paragraph above listing items.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;article class&#x3D;&quot;listing__item&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__item-media&quot;&gt;
+      &lt;img src&#x3D;&quot;http://placehold.it/250x100&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-text&quot;&gt;
+      &lt;h3 class&#x3D;&quot;listing__item-title&quot;&gt;Featured blog entry name&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-footer&quot;&gt;
+      &lt;p&gt;Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+  &lt;article class&#x3D;&quot;listing__item&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__item-media&quot;&gt;
+      &lt;img src&#x3D;&quot;http://placehold.it/250x100&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-text&quot;&gt;
+      &lt;h3 class&#x3D;&quot;listing__item-title&quot;&gt;Featured blog entry name&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;listing__item-footer&quot;&gt;
+      &lt;p&gt;Teaser text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+&lt;/div&gt;
+</code></pre>
+              </div>
+            </div>
+          </section>
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/rainbow.min.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+  </body>
+</html>

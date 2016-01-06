@@ -50,7 +50,7 @@
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url("../images/icons/glyphicons-halflings-regular.eot");
-  src: url("../images/icons/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),url("../images/icons/glyphicons-halflings-regular.woff") format("woff"),url("../images/icons/glyphicons-halflings-regular.ttf") format("truetype"),url("../images/icons/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("../images/icons/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),url("../images/icons/glyphicons-halflings-regular.woff2") format("woff2"),url("../images/icons/glyphicons-halflings-regular.woff") format("woff"),url("../images/icons/glyphicons-halflings-regular.ttf") format("truetype"),url("../images/icons/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
 @-webkit-keyframes progress-bar-stripes {
