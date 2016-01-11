@@ -1,0 +1,56 @@
+// Navbar
+//
+// Override of Bootstrap's navbar
+// @see http://getbootstrap.com/components/#navbar
+//
+// Markup: html/navbar.html
+//
+// Styleguide 2.11
+
+// Component
+// --------------------------------------------------
+.navbar
+  margin: 0
+  background-color: #fff
+
+
+// Elements
+// --------------------------------------------------
+.navbar
+  .navbar-toggle
+    float: left
+    margin: 30px 20px
+    width: 40px
+    height: 40px
+    border: 3px $brand-primary solid
+    border-radius: 0
+    padding: 7px
+    .icon-bar
+      width: 21px
+      height: 4px
+      border-radius: 0
+      background-color: $brand-primary
+
+  .navbar-nav
+    text-transform: uppercase
+    font-weight: $headings-font-weight
+    font-size: $font-size-base
+    & > li
+      padding-bottom: 0
+      & > a
+        color: #4d515b
+
+        &:hover,
+        &:active,
+        &:focus
+          color: $brand-primary
+
+        +breakpoint(tablet)
+          padding: 34px 20px
+
+    & > .active > a
+      &,
+      &:hover,
+      &:focus
+        color: $brand-primary
+        background-color: transparent

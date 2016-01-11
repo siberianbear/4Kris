@@ -1237,19 +1237,6 @@ a a.pseudo-class-visited {
   text-decoration: none;
 }
 
-.nav-tabs > li.pseudo-class-first-of-type {
-  margin-left: 20px !important;
-}
-
-.nav-tabs > li.active a.pseudo-class-focus,
-.nav-tabs > li.active a.pseudo-class-hover {
-  border-left: 1px #d8d8d8 solid;
-  border-right: 1px #d8d8d8 solid;
-  margin: 0;
-  color: #101c27;
-  background-color: #f6fafb;
-}
-
 .nav-pills > li > a.pseudo-class-hover,
 .bootstrap-tabs-processed .vertical-tabs-list > li > a.pseudo-class-hover {
   background-color: transparent;
@@ -1309,6 +1296,31 @@ a a.pseudo-class-visited {
   border-right: 11px solid transparent;
   border-left: 11px solid transparent;
   border-bottom: 11px solid #d8d8d8;
+}
+
+.nav-tabs > li.pseudo-class-first-of-type {
+  margin-left: 20px !important;
+}
+
+.nav-tabs > li.active a.pseudo-class-focus,
+.nav-tabs > li.active a.pseudo-class-hover {
+  border-left: 1px #d8d8d8 solid;
+  border-right: 1px #d8d8d8 solid;
+  margin: 0;
+  color: #101c27;
+  background-color: #f6fafb;
+}
+
+.navbar .navbar-nav > li > a.pseudo-class-hover,
+.navbar .navbar-nav > li > a.pseudo-class-active,
+.navbar .navbar-nav > li > a.pseudo-class-focus {
+  color: #4193a9;
+}
+
+.navbar .navbar-nav > .active > a.pseudo-class-hover,
+.navbar .navbar-nav > .active > a.pseudo-class-focus {
+  color: #4193a9;
+  background-color: transparent;
 }
 
 .pagination > li > a.pseudo-class-hover,
