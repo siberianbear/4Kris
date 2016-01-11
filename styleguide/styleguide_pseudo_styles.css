@@ -1332,27 +1332,56 @@ a a.pseudo-class-visited {
   border-bottom: none;
 }
 
-.nav-tiles .nav-tiles__link.pseudo-class-hover,
-.nav-tiles .nav-tiles__link.pseudo-class-focus {
+.bookmark__link.pseudo-class-hover,
+.bookmark__link.pseudo-class-visited {
+  color: #fff;
   text-decoration: none;
-  background-color: #398093;
 }
 
-.nav-tiles .nav-tiles__link.pseudo-class-hover .nav-tiles__icon-wrapper,
-.nav-tiles .nav-tiles__link.pseudo-class-focus .nav-tiles__icon-wrapper {
-  background-color: #44bbee;
-  border: 0 #4193a9 solid;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+.box a.pseudo-class-hover,
+.box a.pseudo-class-active,
+.box a.pseudo-class-focus {
+  color: #101c27;
+  text-decoration: none;
 }
 
-.nav-vertical__link.pseudo-class-hover {
-  padding-left: 10px;
-  border-left: 5px solid #4193a9;
-  background-color: #fff;
-  text-decoration: none;
-  font-weight: 500;
+.box p.pseudo-class-last-child {
+  margin-bottom: 0;
+}
+
+.listing--grid .listing__item.pseudo-class-hover .listing__item-text,
+.listing--grid .listing__item.pseudo-class-focus .listing__item-text {
+  border-color: #4193a9;
+  background: #4193a9 url("../images/png/angle-gradient.png") 45% center no-repeat;
+}
+
+.listing--grid .listing__item.pseudo-class-hover .listing__item-text:after,
+.listing--grid .listing__item.pseudo-class-focus .listing__item-text:after {
+  border-left-color: #4193a9;
+}
+
+.listing--grid .listing__item.pseudo-class-hover .listing__item-title,
+.listing--grid .listing__item.pseudo-class-focus .listing__item-title {
+  color: #fff;
+}
+
+.listing--middlealign .listing__item.pseudo-class-first-child {
+  padding-top: 0;
+}
+
+.listing--separators:not(.listing--2-col-layout) .listing__item.pseudo-class-last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.listing--separators-dashed .listing__item.pseudo-class-last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.listing--condensed.listing--separators .listing__item.pseudo-class-last-child,
+.listing--condensed.listing--separators-dashed .listing__item.pseudo-class-last-child {
+  padding-bottom: 0;
 }
 
 .nav-horizontal--activeoverlined .nav-horizontal__link.pseudo-class-hover {
@@ -1386,56 +1415,27 @@ a a.pseudo-class-visited {
   left: -100%;
 }
 
-.listing--separators:not(.listing--2-col-layout) .listing__item.pseudo-class-last-of-type {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.listing--separators-dashed .listing__item.pseudo-class-last-of-type {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.listing--condensed.listing--separators .listing__item.pseudo-class-last-child,
-.listing--condensed.listing--separators-dashed .listing__item.pseudo-class-last-child {
-  padding-bottom: 0;
-}
-
-.listing--grid .listing__item.pseudo-class-hover .listing__item-text,
-.listing--grid .listing__item.pseudo-class-focus .listing__item-text {
-  border-color: #4193a9;
-  background: #4193a9 url("../images/png/angle-gradient.png") 45% center no-repeat;
-}
-
-.listing--grid .listing__item.pseudo-class-hover .listing__item-text:after,
-.listing--grid .listing__item.pseudo-class-focus .listing__item-text:after {
-  border-left-color: #4193a9;
-}
-
-.listing--grid .listing__item.pseudo-class-hover .listing__item-title,
-.listing--grid .listing__item.pseudo-class-focus .listing__item-title {
-  color: #fff;
-}
-
-.listing--middlealign .listing__item.pseudo-class-first-child {
-  padding-top: 0;
-}
-
-.bookmark__link.pseudo-class-hover,
-.bookmark__link.pseudo-class-visited {
-  color: #fff;
+.nav-tiles .nav-tiles__link.pseudo-class-hover,
+.nav-tiles .nav-tiles__link.pseudo-class-focus {
   text-decoration: none;
+  background-color: #398093;
 }
 
-.box a.pseudo-class-hover,
-.box a.pseudo-class-active,
-.box a.pseudo-class-focus {
-  color: #101c27;
+.nav-tiles .nav-tiles__link.pseudo-class-hover .nav-tiles__icon-wrapper,
+.nav-tiles .nav-tiles__link.pseudo-class-focus .nav-tiles__icon-wrapper {
+  background-color: #44bbee;
+  border: 0 #4193a9 solid;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.nav-vertical__link.pseudo-class-hover {
+  padding-left: 10px;
+  border-left: 5px solid #4193a9;
+  background-color: #fff;
   text-decoration: none;
-}
-
-.box p.pseudo-class-last-child {
-  margin-bottom: 0;
+  font-weight: 500;
 }
 
 .news-carousel__list-group-item.pseudo-class-hover,
