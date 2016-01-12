@@ -17,6 +17,7 @@
 // Elements
 // --------------------------------------------------
 .navbar
+  // Hamburger icon
   .navbar-toggle
     float: left
     margin: 30px 20px
@@ -31,26 +32,34 @@
       border-radius: 0
       background-color: $brand-primary
 
+  // Navigation
   .navbar-nav
-    text-transform: uppercase
     font-weight: $headings-font-weight
-    font-size: $font-size-base
+    font-size: $font-size-large
     & > li
       padding-bottom: 0
       & > a
-        color: #4d515b
+        color: $gray-base
 
-        &:hover,
-        &:active,
-        &:focus
-          color: $brand-primary
+      +breakpoint(tablet)
+        border-left: 1px $gray-lighter solid
+        &:last-of-type
+          border-right: 1px $gray-lighter solid
+        & > a
+          padding: 32px 40px
 
-        +breakpoint(tablet)
-          padding: 34px 20px
 
-    & > .active > a
-      &,
-      &:hover,
-      &:focus
-        color: $brand-primary
-        background-color: transparent
+// States
+// --------------------------------------------------
+.navbar .navbar-nav
+    & > .active > a,
+    & > .active > a:focus,
+    & > li > a:active,
+    & > li > a:focus
+        color: $gray-base
+        font-weight: $font-weight-medium
+        border-bottom: 5px $brand-primary solid
+        margin-bottom: -5px
+
+    & > li > a
+      background-color: transparent !important

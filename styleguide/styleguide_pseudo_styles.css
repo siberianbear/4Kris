@@ -1311,16 +1311,13 @@ a a.pseudo-class-visited {
   background-color: #f6fafb;
 }
 
-.navbar .navbar-nav > li > a.pseudo-class-hover,
+.navbar .navbar-nav > .active > a.pseudo-class-focus,
 .navbar .navbar-nav > li > a.pseudo-class-active,
 .navbar .navbar-nav > li > a.pseudo-class-focus {
-  color: #4193a9;
-}
-
-.navbar .navbar-nav > .active > a.pseudo-class-hover,
-.navbar .navbar-nav > .active > a.pseudo-class-focus {
-  color: #4193a9;
-  background-color: transparent;
+  color: #101c27;
+  font-weight: 500;
+  border-bottom: 5px #4193a9 solid;
+  margin-bottom: -5px;
 }
 
 .pagination > li > a.pseudo-class-hover,
