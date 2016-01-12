@@ -1,0 +1,65 @@
+// Navbar
+//
+// Override of Bootstrap's navbar
+// @see http://getbootstrap.com/components/#navbar
+//
+// Markup: html/navbar.html
+//
+// Styleguide 2.11
+
+// Component
+// --------------------------------------------------
+.navbar
+  margin: 0
+  background-color: #fff
+
+
+// Elements
+// --------------------------------------------------
+.navbar
+  // Hamburger icon
+  .navbar-toggle
+    float: left
+    margin: 30px 20px
+    width: 40px
+    height: 40px
+    border: 3px $brand-primary solid
+    border-radius: 0
+    padding: 7px
+    .icon-bar
+      width: 21px
+      height: 4px
+      border-radius: 0
+      background-color: $brand-primary
+
+  // Navigation
+  .navbar-nav
+    font-weight: $headings-font-weight
+    font-size: $font-size-large
+    & > li
+      padding-bottom: 0
+      & > a
+        color: $gray-base
+
+      +breakpoint(tablet)
+        border-left: 1px $gray-lighter solid
+        &:last-of-type
+          border-right: 1px $gray-lighter solid
+        & > a
+          padding: 32px 40px
+
+
+// States
+// --------------------------------------------------
+.navbar .navbar-nav
+    & > .active > a,
+    & > .active > a:focus,
+    & > li > a:active,
+    & > li > a:focus
+        color: $gray-base
+        font-weight: $font-weight-medium
+        border-bottom: 5px $brand-primary solid
+        margin-bottom: -5px
+
+    & > li > a
+      background-color: transparent !important

@@ -83,6 +83,12 @@
     margin-right: auto !important
     @extend .container-fluid
 
+// Full cover background image.
+=bg-cover($image, $position: top)
+  background: url($image) center no-repeat
+  background-position: $position
+  background-size: cover
+
 // Set of rows where content of all collums is vertically centered.
 =middle-align
   display: table
