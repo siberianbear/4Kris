@@ -39,8 +39,7 @@ $listing-media-height-desktop: 145px
     padding-bottom: 0
     border-bottom: none
 
-.listing__item,
-.listing__pagination
+.listing__item
   overflow: hidden
   padding-top: 30px
   p
@@ -87,33 +86,11 @@ $listing-media-height-desktop: 145px
   top: 2px
 
 
-.listing__header,
-.listing__filters,
-.listing__footer,
-.listing__pagination
-  width: 100%
-
-
-.listing__filters
-  background-color: $gray-lighter
-  padding: 5px 10px
-
-
-.listing__pagination
-  text-align: center
-
-
-.listing__header,
-.listing__footer
-  padding-top: 30px
-
-
 +breakpoint(phone)
   .listing__item-column-second
     float: left
     margin-right: 30px
     max-width: $listing-media-width-phone
-    // max-height: $listing-media-height-phone
     overflow: hidden
 
     .listing__item-media-icon
@@ -142,7 +119,6 @@ $listing-media-height-desktop: 145px
     font-weight: $headings-font-weight
 
 
-  &.listing--separators,
   &.listing--separators-dashed
     .listing__item
       padding-bottom: 15px
@@ -211,7 +187,6 @@ $listing-media-height-desktop: 145px
 .listing--middlealign .icon
   font-size: $font-size-h1
   top: $font-size-base
-
 
 
 // Listing numbered
