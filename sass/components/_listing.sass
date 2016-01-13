@@ -16,6 +16,8 @@
 // .listing--no-separators         - Removes separator between every listing item
 // .listing--separators-dashed     - Adds dashed border separator between every listing item
 // .listing--column-second-above   - Listing where second column is always above the main listing item content
+// .listing--row-two               - Listing with row two grid
+// .listing--row-three             - Listing with row three grid
 //
 // Styleguide 4.1.1
 
@@ -155,8 +157,6 @@ $listing-media-height-desktop: 145px
 
 // Listing middle align
 //
-// Listing middle align
-//
 // Markup: html/listing-middlealign.html
 //
 // Styleguide 4.1.2
@@ -166,15 +166,11 @@ $listing-media-height-desktop: 145px
   .listing__item
     padding: 20px 0
     width: 100%
-    @include middle-align()
+    +middle-align()
     &:first-child
       padding-top: 0
 
-    .listing__item-row
-      // Row settings inherit from mixin
-
     .listing__item-col
-      // Col settings inherit from mixin
       &:nth-of-type(2)
         min-width: 25%
 
@@ -269,22 +265,6 @@ $listing-media-height-desktop: 145px
 //
 // Styleguide 4.1.5
 
-// Listing row two layout
-//
-// Markup: html/listing.html
-//
-// .listing--row-two - row two
-//
-// Styleguide 4.1.6
-
-// Listing row three layout
-//
-// Markup: html/listing.html
-//
-// .listing--row-three - row three
-//
-// Styleguide 4.1.7
-
 .listing--columns-three,
 .listing--columns-two,
 .listing--row-three,
@@ -296,28 +276,28 @@ $listing-media-height-desktop: 145px
 .listing--columns-two,
 .listing--row-three,
 .listing--row-two
-  @extend .row
+  +make-row()
 
 .listing--columns-two
   .listing__column
     margin-bottom: 20px
-    @extend .col-sm-6
+    +make-sm-column(6)
 
 
 .listing--columns-three
   .listing__column
-    @extend .col-md-4
+    +make-md-column(4)
 
 
 .listing--row-two
   .listing__item
-    @extend .col-md-6
+    +make-md-column(6)
 
 
 .listing--row-three
   .listing__item
-    @extend .col-md-4
     margin-top: 15px
+    +make-md-column(4)
 
 .listing__column
   .listing__item
