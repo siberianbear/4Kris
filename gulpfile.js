@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     rename = require('gulp-rename'),
+    concat = require('gulp-concat'),
     watch = require('gulp-watch'),
     sass = require('gulp-sass'),
     styleguide = require('sc5-styleguide'),
@@ -9,8 +10,19 @@ var paths = {
   sass: ['sass/**/*.+(scss|sass)'],
   sassStyleguide: ['sass/**/*.+(scss|sass)', '!sass/_mixins.+(scss|sass)'],
   html: ['sass/**/*.html'],
-  styleguide: 'styleguide'
+  styleguide: 'styleguide',
+  scripts: {
+    base:       'js',
+    components: 'js/components/**/*.js'
+  }
 };
+
+// TODO: contat scripts and add them to styleguide
+gulp.task('scripts', function(){
+  return gulp.src(paths.scripts.components)
+    .pipe(concat('bootsmacss.js'))
+    .pipe(gulp.dest('js'));
+});
 
 gulp.task('images', function() {
   gulp.src(['images/**'])
