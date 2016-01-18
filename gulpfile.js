@@ -12,6 +12,11 @@ var paths = {
   styleguide: 'styleguide'
 };
 
+gulp.task('images', function() {
+  gulp.src(['images/**'])
+    .pipe(gulp.dest(paths.styleguide + '/images'));
+});
+
 gulp.task('sass', function () {
   gulp.src('sass/app.sass')
     .pipe(sass(
@@ -45,7 +50,7 @@ gulp.task('styleguide:applystyles', function() {
 
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
 
-gulp.task('default', ['styleguide', 'sass'], function() {
+gulp.task('default', ['styleguide', 'sass', 'images'], function() {
   livereload.listen();
-  gulp.watch([paths.sass, paths.html], ['styleguide', 'sass']);
+  gulp.watch([paths.sass, paths.html], ['styleguide', 'sass', 'images']);
 });
