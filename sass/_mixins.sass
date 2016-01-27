@@ -1,28 +1,50 @@
 // Custom mixins
 
 // Breakpoints
-=breakpoint($point)
-  @if $point == lg-desktop
-    @media (min-width: $screen-lg-desktop)
+=breakpoint($min: null, $max: null)
+  // Declare breakpoint value variables
+  $min-width: null !default
+  $max-width: null !default
+
+  // Always interpret min value since it is cardinal.
+  @if $min == lg or $min == lg-desktop
+    $min-width: $screen-lg-min
+  @else if $min == md or $min == desktop
+    $min-width: $screen-md-min
+  @else if $min == sm or $min == tablet
+    $min-width: $screen-sm-min
+  @else if $min == xs or $min == phone
+    $min-width: $screen-xs-min
+  @else if $min == xxs or $min == sm-phone
+    $min-width: $screen-xxs-min
+
+  // Interpret also max value if defined.
+  @if $max
+    @if $max == md or $max == desktop
+      $max-width: $screen-md-max
+    @else if $max == sm or $max == tablet
+      $max-width: $screen-sm-max
+    @else if $max == xs or $max == phone
+      $max-width: $screen-xs-max
+    @else if $max == xxs or $max == sm-phone
+      $max-width: $screen-xxs-max
+
+    // Render min and max breakpoint if both are defined
+    @media (min-width: $min-width) and (max-width: $max-width)
       @content
-  @else if $point == desktop
-    @media (min-width: $screen-desktop)
+
+  // Else render only min breakpoint
+  @else
+    @media (min-width: $min-width)
       @content
-  @else if $point == tablet
-    @media (min-width: $screen-tablet)
-      @content
-  @else if $point == phone
-    @media (min-width: $screen-phone)
-      @content
-  @else if $point == sm-phone
-    @media (min-width: $sm-phone)
-      @content
+
 
 // Circle
 =circle($background-color: $brand-primary, $border-width: 0, $border-color: $brand-primary)
   background-color: $background-color
   border: $border-width $border-color solid
   +border-radius(50%)
+
 
 // Placeholder color
 =placeholder($color)
@@ -35,11 +57,13 @@
   &:-ms-input-placeholder
     color: $color
 
+
 // CSS3 Border radius
 =border-radius($radius)
   -webkit-border-radius: $radius
   -moz-border-radius: $radius
   border-radius: $radius
+
 
 // CSS3 Rotate to given degrees (http://www.w3schools.com/cssref/css3_pr_transform-origin.asp)
 =rotate($angle, $origin: 50% 50% 0)
@@ -53,12 +77,14 @@
   transform: translateX(-100%) rotate(#{$angle}deg)
   transform-origin: $origin
 
+
 // WAAT icon size
 =icon-size($size)
   width: $size
   height: $size
   line-height: $size
   font-size: $size
+
 
 // Use no-gutters mixin with make-row mixin to achieve grid without gutters.
 =no-gutters
@@ -69,6 +95,7 @@
   & > *
     padding-right: 0 !important
     padding-left: 0 !important
+
 
 // Reset element placed inside container back to full browser width.
 =full-width
@@ -82,6 +109,7 @@
     margin-left: auto !important
     margin-right: auto !important
     @extend .container-fluid
+
 
 // Full cover background image.
 =bg-cover($image, $position: top)
@@ -100,6 +128,7 @@
       &:not(:last-child)
         padding-right: 30px
 
+
 // Colours half of a site background with specified color
 =twoface-background($bg: $brand-primary-light, $side: "right")
   @media (max-width: $screen-xs-max)
@@ -117,6 +146,7 @@
         right: 0
       @else
         left: 0
+
 
 // Add triangle arrow to element with pseudoclasses.
 =arrow($border-color: $gray-light, $bg-color: white, $side: "left", $direction: "in", $size: 25px, $distance: 50px)
