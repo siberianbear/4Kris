@@ -14,12 +14,22 @@
 
 // Elements
 // --------------------------------------------------
-.timeline__item
+.timeline__item,
+.timeline__legend
   display: table
   width: 100%
 
-.timeline__time
+.timeline__legend
+  margin-bottom: $line-height-computed * 0.667
+
+.timeline__time,
+.timeline__text,
+.timeline__legend-time,
+.timeline__legend-text,
   display: table-cell
+
+.timeline__time,
+.timeline__legend-time
   width: 70px
   padding: 0 20px 0 0
   text-align: left
@@ -29,13 +39,16 @@
   +breakpoint(desktop)
     padding: 0 40px 0 0
 
-.timeline__text
-  display: table-cell
-  border-left: 1px $gray-lighter solid
-  position: relative
+
+.timeline__text,
+.timeline__legend-text
   padding: 0 0 0 20px
   +breakpoint(desktop)
     padding: 0 0 0 40px
+
+.timeline__text
+  border-left: 1px $gray-lighter solid
+  position: relative
   &:before
     content: ''
     display: block
@@ -86,3 +99,11 @@
     font-weight: $font-weight-medium
   .timeline__text:before
     background-color: $yellow
+
+
+// Dependencies
+// --------------------------------------------------
+.timeline__legend .label-default
+  background-color: $gray-lighter
+  font-size: $font-size-xsmall
+  white-space: normal

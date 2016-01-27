@@ -268,6 +268,14 @@ $listing-media-height-desktop: 145px
 .listing--columns-two,
 .listing--row-three,
 .listing--row-two
+  .listing__item
+    border: none
+    padding-bottom: 0
+  .listing__item-column-main
+    border-bottom: 1px $gray-lighter solid
+    padding-bottom: 40px
+  .listing__item-title
+    min-height: 60px
   p
     padding: 0
 
@@ -295,7 +303,6 @@ $listing-media-height-desktop: 145px
 
 .listing--row-three
   .listing__item
-    margin-top: 15px
     +make-md-column(4)
 
 .listing__column
@@ -314,8 +321,3 @@ $listing-media-height-desktop: 145px
   .listing--columns-two
     .listing__column
       margin-bottom: 0
-
-  .listing--row-two,
-  .listing--row-three
-    .listing__item
-      border-bottom: none
