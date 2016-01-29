@@ -6,10 +6,12 @@
 //
 // Markup: html/icon.html
 //
+// .icon--archive - .icon--archive
 // .icon--arrow-right - .icon--arrow-right
 // .icon--arrow-left - .icon--arrow-left
 // .icon--arrow-top - .icon--arrow-top
 // .icon--arrow-bottom - .icon--arrow-bottom
+// .icon--at - .icon--at
 // .icon--circle-arrow-right - .icon--circle-arrow-right
 // .icon--circle-ok - .icon--circle-ok
 // .icon--circle-plus - .icon--circle-plus
@@ -24,12 +26,16 @@
 // .icon--bulb - .icon--bulb
 // .icon--calendar - .icon--calendar
 // .icon--calendar-check - .icon--calendar-check
+// .icon--cam - .icon--cam
+// .icon--clock - .icon--clock
 // .icon--close - .icon--close
 // .icon--cloud - .icon--cloud
 // .icon--clusters - .icon--clusters
 // .icon--database - .icon--database
 // .icon--doc - .icon--doc
+// .icon--doc-ok - .icon--doc-ok
 // .icon--docs - .icon--docs
+// .icon--doc-search - .icon--doc-search
 // .icon--download - .icon--download
 // .icon--envelope - .icon--envelope
 // .icon--envelope-open - .icon--envelope-open
@@ -37,24 +43,26 @@
 // .icon--eu - .icon--eu
 // .icon--europe - .icon--europe
 // .icon--eye - .icon--eye
-// .icon--fb - .icon--fb
 // .icon--fill-doc - .icon--fill-doc
 // .icon--flag - .icon--flag
 // .icon--flag-slat - .icon--flag-slat
 // .icon--globe - .icon--globe
 // .icon--helpdesk - .icon--helpdesk
+// .icon--info - .icon--info
 // .icon--in - .icon--in
 // .icon--out - .icon--out
 // .icon--ok - .icon--ok
 // .icon--open-paper - .icon--open-paper
 // .icon--link - .icon--link
-// .icon--linkedin - .icon--linkedin
+// .icon--listing - .icon--listing
 // .icon--lock - .icon--lock
 // .icon--unlock - .icon--unlock
+// .icon--megaphone - .icon--megaphone
 // .icon--menu - .icon--menu
 // .icon--pencil - .icon--pencil
 // .icon--phone - .icon--phone
 // .icon--phone-question-mark - .icon--phone-question-mark
+// .icon--pin - .icon--pin
 // .icon--plus - .icon--plus
 // .icon--power - .icon--power
 // .icon--print - .icon--print
@@ -68,9 +76,14 @@
 // .icon--square-ok - .icon--square-ok
 // .icon--square-left - .icon--square-left
 // .icon--square-right - .icon--square-right
+// .icon--social-facebook - .icon--social-facebook
+// .icon--social-flickr - .icon--social-flickr
+// .icon--social-gplus - .icon--social-gplus
+// .icon--social-linkedin - .icon--social-linkedin
+// .icon--social-twitter - .icon--social-twitter
+// .icon--social-youtube - .icon--social-youtube
 // .icon--star - .icon--star
 // .icon--study - .icon--study
-// .icon--twitter - .icon--twitter
 // .icon--umbrela - .icon--umbrela
 // .icon--user - .icon--user
 // .icon--user-check - .icon--user-check
@@ -129,17 +142,23 @@ big .icon
 
 // Modifiers
 // --------------------------------------------------
+.icon--archive:before
+  content: "\e672"
+
 .icon--arrow-right:before
-  content: "\e615"
+  content: "\e610"
 
 .icon--arrow-left:before
-  content: "\e613"
+  content: "\e612"
 
 .icon--arrow-top:before
   content: "\e611"
 
 .icon--arrow-bottom:before
   content: "\e60f"
+
+.icon--at:before
+  content: "\e900"
 
 .icon--circle-arrow-right:before
   content: "\e608"
@@ -183,6 +202,12 @@ big .icon
 .icon--calendar-check:before
   content: "\e649"
 
+.icon--cam:before
+  content: "\e79d"
+
+.icon--clock:before
+  content: "\e686"
+
 .icon--close:before
   content: "\e617"
 
@@ -198,8 +223,14 @@ big .icon
 .icon--doc:before
   content: "\e6f4"
 
+.icon--doc-ok:before
+  content: "\e6f7"
+
 .icon--docs:before
   content: "\e604"
+
+.icon--doc-search:before
+  content: "\e6fd"
 
 .icon--download:before
   content: "\e847"
@@ -222,9 +253,6 @@ big .icon
 .icon--eye:before
   content: "\e7ab"
 
-.icon--fb:before
-  content: "\e61f"
-
 .icon--fill-doc:before
   content: "\e62d"
 
@@ -239,6 +267,9 @@ big .icon
 
 .icon--helpdesk:before
   content: "\e647"
+
+.icon--info:before
+  content: "\e905"
 
 .icon--in:before
   content: "\e664"
@@ -255,14 +286,17 @@ big .icon
 .icon--link:before
   content: "\e62b"
 
-.icon--linkedin:before
-  content: "\e623"
+.icon--listing:before
+  content: "\e724"
 
 .icon--lock:before
   content: "\e651"
 
 .icon--unlock:before
   content: "\e652"
+
+.icon--megaphone:before
+  content: "\e6ae"
 
 .icon--menu:before
   content: "\e601"
@@ -315,14 +349,29 @@ big .icon
 .icon--square-right:before
   content: "\e874"
 
+.icon--social-facebook:before
+  content: "\e61f"
+
+.icon--social-flickr:before
+  content: "\e904"
+
+.icon--social-gplus:before
+  content: "\e903"
+
+.icon--social-linkedin:before
+  content: "\e623"
+
+.icon--social-twitter:before
+  content: "\e61e"
+
+.icon--social-youtube:before
+  content: "\e902"
+
 .icon--star:before
   content: "\e61d"
 
 .icon--study:before
   content: "\e634"
-
-.icon--twitter:before
-  content: "\e61e"
 
 .icon--triangle-right:before
   content: "\e608"
@@ -338,6 +387,9 @@ big .icon
 
 .icon--user-check:before
   content: "\e74a"
+
+.icon--pin:before
+  content: "\e678"
 
 .icon--user-plus:before
   content: "\e747"
