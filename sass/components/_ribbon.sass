@@ -4,19 +4,18 @@
 //
 // Markup: html/ribbon.html
 //
+// .ribbon--active - Active
+//
 // Styleguide 4.ribbon
 
 
 // Component
 // --------------------------------------------------
 .ribbon
-  padding: 8px 13px 10px
   position: absolute
   bottom: 20px
   left: -15px
-  background-color: $brand-primary
-  text-align: left
-  color: #fff
+  font-weight: $font-weight-medium
   +opacity(0.90)
   &:before
     content: ''
@@ -30,12 +29,33 @@
 
 // Elements
 // --------------------------------------------------
+.ribbon__inner
+  padding: 8px 13px 10px
+  margin-right: 10px
+  background-color: $brand-primary
+  text-align: left
+  float: left
+  color: #fff
+  display: inline-block
+
 .ribbon__container
   position: relative
 
 
 // Dependencies
 // --------------------------------------------------
-.ribbon .icon
-  +icon-size($font-size-base * 2)
-  top: 7px
+.ribbon
+  .icon
+    +icon-size($font-size-base * 2)
+    top: 7px
+  .btn-lg
+    margin: 0 -2px
+    padding: 12px 20px 11px
+    float: left
+
+
+// Modifiers
+// --------------------------------------------------
+.ribbon--active .ribbon__inner
+  background-color: $yellow
+  color: $gray-base

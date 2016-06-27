@@ -15,6 +15,7 @@
 // .listing--no-separators         - Removes separator between every listing item
 // .listing--separators-dashed     - Adds dashed border separator between every listing item
 // .listing--column-second-above   - Listing where second column is always above the main listing item content
+// .listing--column-sec-above-md   - Listing where second column is above the main listing item content on tablet and desktop devices
 // .listing--row-two               - Listing with row two grid
 // .listing--row-three             - Listing with row three grid
 //
@@ -137,6 +138,10 @@ $listing-media-height-desktop: 145px
     img
       width: 100%
 
+.listing--column-sec-above-md
+  +breakpoint(tablet, tablet)
+  .listing__item-column-second
+    float: none
 
 .listing--zebra
   .listing__item:nth-of-type(even)
@@ -321,3 +326,44 @@ $listing-media-height-desktop: 145px
   .listing--columns-two
     .listing__column
       margin-bottom: 0
+
+
+// Listing notifications
+//
+// Markup: html/listing-notifications.html
+//
+// Styleguide 4.10.6
+
+// Component
+// --------------------------------------------------
+.listing--notifications
+  .listing__item
+    +middle-align()
+    padding: 5px 10px
+    width: 100%
+    &:after
+      content: none
+  .listing__item-title
+    font-size: $font-size-base
+    text-transform: none
+    a
+      color: $gray-base
+  .listing__item-meta
+    margin: -12px 0 0
+    font-size: $font-size-xsmall
+    .label
+      font-size: $font-size-xsmall - 3
+  a
+    color: $brand-primary
+
+// Modifiers
+// --------------------------------------------------
+.listing--notifications
+  .listing__item--active
+    background-color: lighten($yellow, 41%)
+  .listing__item--disabled
+    .listing__item-title
+      color: $gray-lighter
+      font-weight: $font-weight
+    .listing__item-meta
+      color: $gray-lighter
