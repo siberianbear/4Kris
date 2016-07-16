@@ -4,8 +4,6 @@ Bootsmacss
 
 Get all goods from Bootstrap, add dozens of reusable web components that are not included in Bootstrap like listings, navigations or boxes, helpers, write all of them in BEM, then add automatically rendered styleguide and a nice tool to create static pages. **This is Bootsmacss. It will raise your workflow to a new level. Make your markup and styles scalable and easy to maintain**, does not matter if you are working on web app, huge CMS implementation or small website.
 
-**Why? Because we needed something more flexible and scalable for rapid development than Bootstrap**
-
 [See demo of rendered Bootsmacss styleguide](http://bootsmacss.linuxpl.info/)
 
 ## Technologies included
