@@ -1,6 +1,6 @@
 // Title more
 //
-// Title with more button. Replacement for listings, blocks and page headers when there is a need for More button at the same height as header.
+// Component to compose heading with more button. Replacement for listing, block and page headings when there is a need to place More button at the same row as a title. If Heading has multiple lines, button is aligned to bottom. It is especially visible in mobile resolutions.
 //
 // Markup: html/title-more.html
 //
@@ -11,21 +11,20 @@
 .title-more
   width: 100%
   +middle-align
-  @extend h2
 
 // Elements
 // --------------------------------------------------
 .title-more__row
-  // Row settings inherit from mixin
+  // Row settings inherit from middle-align mixin
 
 .title-more__col
-  // Col settings inherit from mixin
+  // Col settings inherit from middle-align mixin
   vertical-align: bottom
-  .btn
-    font-family: $font-family-base
 
 // Dependencies
 // --------------------------------------------------
 .title-more
   h1, h2, h3, h4, h5, h6
     padding-bottom: 0
+  .btn
+    float: right
