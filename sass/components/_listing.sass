@@ -10,21 +10,17 @@
 // Markup: html/listing.html
 //
 // default                         - Default listing
-// .listing--condensed             - Listing with reduced spacing between items
 // .listing--zebra                 - Listing with different background color on even items
 // .listing--no-separators         - Removes separator between every listing item
-// .listing--separators-dashed     - Adds dashed border separator between every listing item
 // .listing--column-second-above   - Listing where second column is always above the main listing item content
 // .listing--column-sec-above-md   - Listing where second column is above the main listing item content on tablet and desktop devices
-// .listing--row-two               - Listing with row two grid
-// .listing--row-three             - Listing with row three grid
+// .listing--2-col-layout          - Listing items in 2 collumn layout
+// .listing--3-col-layout          - Listing items in 3 collumn layout
+// .listing--4-col-layout          - Listing items in 4 collumn layout
 //
 // Styleguide 4.10.1
 
-$listing-media-width-phone: 160px
-$listing-media-height-phone: 145px
-$listing-media-width-desktop: 270px
-$listing-media-height-desktop: 145px
+$listing-media-width: 160px
 
 // Component
 // --------------------------------------------------
@@ -92,7 +88,7 @@ $listing-media-height-desktop: 145px
   .listing__item-column-second
     float: left
     margin-right: 30px
-    max-width: $listing-media-width-phone
+    max-width: $listing-media-width
     overflow: hidden
 
     .listing__item-media-icon
@@ -106,28 +102,6 @@ $listing-media-height-desktop: 145px
 
 // Modifiers
 // --------------------------------------------------
-.listing--condensed
-  .listing__item
-    padding-top: 15px
-    font-size: $font-size-small
-    h3.listing__item-title
-      font-size: $font-size-base
-
-    h4.listing__item-title
-      font-size: $font-size-small
-
-  .listing__item-meta
-    font-family: $font-family-sans-condensed
-    font-weight: $headings-font-weight
-
-
-  &.listing--separators-dashed
-    .listing__item
-      padding-bottom: 15px
-
-      &:last-child
-        padding-bottom: 0
-
 .listing--column-second-above
   .listing__item-column-second
     max-width: none
@@ -154,39 +128,32 @@ $listing-media-height-desktop: 145px
     padding-bottom: 0
 
 
-.listing--separators-dashed
+.listing--2-col-layout,
+.listing--3-col-layout,
+.listing--4-col-layout
+  +make-row()
   .listing__item
-    border-bottom: 1px $gray-light dashed
+    border: none
+    padding-bottom: 0
+  .listing__item-column-main
+    border-bottom: 1px $gray-lighter solid
+    padding-bottom: 40px
+  .listing__item-title
+    min-height: 60px
+  p
+    padding: 0
 
-
-// Listing middle align
-//
-// Markup: html/listing-middlealign.html
-//
-// Styleguide 4.10.2
-
-.listing--middlealign
-  font-size: $font-size-small
+.listing--2-col-layout
   .listing__item
-    padding: 20px 0
-    width: 100%
-    +middle-align()
-    &:first-child
-      padding-top: 0
+    +make-md-column(6)
 
-    .listing__item-col
-      &:nth-of-type(2)
-        min-width: 25%
+.listing--3-col-layout
+  .listing__item
+    +make-md-column(4)
 
-      &:nth-of-type(3)
-        min-width: 20%
-
-      &:nth-of-type(4)
-        min-width: 10%
-
-.listing--middlealign .icon
-  font-size: $font-size-h1
-  top: $font-size-base
+.listing--4-col-layout
+  .listing__item
+    +make-md-column(3)
 
 
 // Listing numbered
@@ -195,7 +162,7 @@ $listing-media-height-desktop: 145px
 //
 // Markup: html/listing-numbered.html
 //
-// Styleguide 4.10.3
+// Styleguide 4.10.2
 
 
 // Component
@@ -257,82 +224,11 @@ $listing-media-height-desktop: 145px
       text-align: left
 
 
-// Listing two column layouts
-//
-// Markup: html/listing-columns-two.html
-//
-// Styleguide 4.10.4
-
-// Listing three column layouts
-//
-// Markup: html/listing-columns-three.html
-//
-// Styleguide 4.10.5
-
-.listing--columns-three,
-.listing--columns-two,
-.listing--row-three,
-.listing--row-two
-  .listing__item
-    border: none
-    padding-bottom: 0
-  .listing__item-column-main
-    border-bottom: 1px $gray-lighter solid
-    padding-bottom: 40px
-  .listing__item-title
-    min-height: 60px
-  p
-    padding: 0
-
-.listing--columns-three,
-.listing--columns-two,
-.listing--row-three,
-.listing--row-two
-  +make-row()
-
-.listing--columns-two
-  .listing__column
-    margin-bottom: 20px
-    +make-sm-column(6)
-
-
-.listing--columns-three
-  .listing__column
-    +make-md-column(4)
-
-
-.listing--row-two
-  .listing__item
-    +make-md-column(6)
-
-
-.listing--row-three
-  .listing__item
-    +make-md-column(4)
-
-.listing__column
-  .listing__item
-    &:last-child
-      padding-bottom: 30px
-      border-bottom: 1px $gray-lighter solid
-
-  &:last-child
-    .listing__item
-      &:last-child
-        padding-bottom: 0
-        border-bottom: none
-
-+breakpoint(tablet)
-  .listing--columns-two
-    .listing__column
-      margin-bottom: 0
-
-
 // Listing notifications
 //
 // Markup: html/listing-notifications.html
 //
-// Styleguide 4.10.6
+// Styleguide 4.10.3
 
 // Component
 // --------------------------------------------------
