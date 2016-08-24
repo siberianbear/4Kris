@@ -85,10 +85,9 @@
 
 // WAAT icon size
 =icon-size($size)
-  width: $size
-  height: $size
-  line-height: $size
   font-size: $size
+  &::before
+    bottom: $size / 4.5
 
 
 // Use no-gutters mixin with make-row mixin to achieve grid without gutters.
