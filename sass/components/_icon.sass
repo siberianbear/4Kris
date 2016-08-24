@@ -6,17 +6,30 @@
 //
 // Markup: html/icon.html
 //
-// .icon--archive - .icon--archive
 // .icon--arrow-right - .icon--arrow-right
 // .icon--arrow-left - .icon--arrow-left
 // .icon--arrow-top - .icon--arrow-top
 // .icon--arrow-bottom - .icon--arrow-bottom
-// .icon--at - .icon--at
+// .icon--add - .icon--add
+// .icon--remove - .icon--remove
+// .icon--ok - .icon--ok
+// .icon--x - .icon--x
 // .icon--circle-arrow-right - .icon--circle-arrow-right
+// .icon--circle-arrow-left - .icon--circle-arrow-left
+// .icon--circle-arrow-top - .icon--circle-arrow-top
+// .icon--circle-arrow-bottom - .icon--circle-arrow-bottom
+// .icon--circle-add - .icon--circle-plus
+// .icon--circle-remove - .icon--circle-minus
 // .icon--circle-ok - .icon--circle-ok
-// .icon--circle-plus - .icon--circle-plus
-// .icon--circle-minus - .icon--circle-minus
+// .icon--square-right - .icon--square-right
+// .icon--square-left - .icon--square-left
+// .icon--square-add - .icon--square-add
+// .icon--square-remove - .icon--square-remove
+// .icon--square-ok - .icon--square-ok
+// .icon--square-x - .icon--square-x
+// .icon--archive - .icon--archive
 // .icon--arrows - .icon--arrows
+// .icon--at - .icon--at
 // .icon--bell - .icon--bell
 // .icon--bin - .icon--bin
 // .icon--book-bookmark - .icon--book-bookmark
@@ -28,7 +41,6 @@
 // .icon--calendar-check - .icon--calendar-check
 // .icon--cam - .icon--cam
 // .icon--clock - .icon--clock
-// .icon--close - .icon--close
 // .icon--cloud - .icon--cloud
 // .icon--clusters - .icon--clusters
 // .icon--database - .icon--database
@@ -37,6 +49,9 @@
 // .icon--docs - .icon--docs
 // .icon--doc-search - .icon--doc-search
 // .icon--download - .icon--download
+// .icon--upload - .icon--upload
+// .icon--upload-2 - .icon--upload-2
+// .icon--edit - .icon--edit
 // .icon--envelope - .icon--envelope
 // .icon--envelope-open - .icon--envelope-open
 // .icon--envelope-plus - .icon--envelope-plus
@@ -47,11 +62,13 @@
 // .icon--flag - .icon--flag
 // .icon--flag-slat - .icon--flag-slat
 // .icon--globe - .icon--globe
+// .icon--heart - .icon--heart
+// .icon--heart-add - .icon--heart-add
+// .icon--heart-remove - .icon--heart-remove
 // .icon--helpdesk - .icon--helpdesk
 // .icon--info - .icon--info
 // .icon--in - .icon--in
 // .icon--out - .icon--out
-// .icon--ok - .icon--ok
 // .icon--open-paper - .icon--open-paper
 // .icon--link - .icon--link
 // .icon--listing - .icon--listing
@@ -63,7 +80,6 @@
 // .icon--phone - .icon--phone
 // .icon--phone-question-mark - .icon--phone-question-mark
 // .icon--pin - .icon--pin
-// .icon--plus - .icon--plus
 // .icon--power - .icon--power
 // .icon--print - .icon--print
 // .icon--printer - .icon--printer
@@ -73,9 +89,7 @@
 // .icon--search - .icon--search
 // .icon--send - .icon--send
 // .icon--share - .icon--share
-// .icon--square-ok - .icon--square-ok
-// .icon--square-left - .icon--square-left
-// .icon--square-right - .icon--square-right
+// .icon--share-2 - .icon--share-2
 // .icon--social-facebook - .icon--social-facebook
 // .icon--social-flickr - .icon--social-flickr
 // .icon--social-gplus - .icon--social-gplus
@@ -84,14 +98,17 @@
 // .icon--social-youtube - .icon--social-youtube
 // .icon--star - .icon--star
 // .icon--study - .icon--study
+// .icon--truck - .icon--truck
 // .icon--umbrela - .icon--umbrela
 // .icon--user - .icon--user
-// .icon--user-check - .icon--user-check
-// .icon--user-plus - .icon--user-plus
-// .icon--user-minus - .icon--user-minus
+// .icon--user-add - .icon--user-add
+// .icon--user-remove - .icon--user-remove
+// .icon--user-ok - .icon--user-ok
 // .icon--user-x - .icon--user-x
 // .icon--user-suit - .icon--user-suit
 // .icon--users - .icon--users
+// .icon--woman - .icon--woman
+// .icon--man - .icon--man
 // .icon--world - .icon--world
 // .icon--mime-default - .icon--mime-default
 // .icon--mime-doc - .icon--mime-doc
@@ -142,9 +159,6 @@ big .icon
 
 // Modifiers
 // --------------------------------------------------
-.icon--archive:before
-  content: "\e672"
-
 .icon--arrow-right:before
   content: "\e610"
 
@@ -157,23 +171,65 @@ big .icon
 .icon--arrow-bottom:before
   content: "\e60f"
 
-.icon--at:before
-  content: "\e900"
+.icon--add:before
+  content: "\e668"
+
+.icon--remove:before
+  content: "\e669"
+
+.icon--ok:before
+  content: "\e66b"
+
+.icon--x:before
+  content: "\e617"
 
 .icon--circle-arrow-right:before
   content: "\e608"
 
+.icon--circle-arrow-left:before
+  content: "\e606"
+
+.icon--circle-arrow-top:before
+  content: "\e605"
+
+.icon--circle-arrow-bottom:before
+  content: "\e609"
+
+.icon--circle-add:before
+  content: "\e60c"
+
+.icon--circle-remove:before
+  content: "\e60d"
+
 .icon--circle-ok:before
   content: "\e618"
 
-.icon--circle-plus:before
-  content: "\e60c"
+.icon--square-right:before
+  content: "\e874"
 
-.icon--circle-minus:before
-  content: "\e60d"
+.icon--square-left:before
+  content: "\e873"
+
+.icon--square-add:before
+  content: "\e878"
+
+.icon--square-remove:before
+  content: "\e879"
+
+.icon--square-ok:before
+  content: "\e877"
+
+.icon--square-x:before
+  content: "\e87a"
+
+.icon--archive:before
+  content: "\e672"
 
 .icon--arrows:before
   content: "\e648"
+
+.icon--at:before
+  content: "\e900"
 
 .icon--bell:before
   content: "\e61a"
@@ -208,9 +264,6 @@ big .icon
 .icon--clock:before
   content: "\e686"
 
-.icon--close:before
-  content: "\e617"
-
 .icon--cloud:before
   content: "\e77b"
 
@@ -234,6 +287,15 @@ big .icon
 
 .icon--download:before
   content: "\e847"
+
+.icon--upload:before
+  content: "\e848"
+
+.icon--upload-2:before
+  content: "\e673"
+
+.icon--edit:before
+  content: "\e6a3"
 
 .icon--envelope:before
   content: "\e629"
@@ -265,6 +327,15 @@ big .icon
 .icon--globe:before
   content: "\e602"
 
+.icon--heart:before
+  content: "\e68f"
+
+.icon--heart-add:before
+  content: "\e691"
+
+.icon--heart-remove:before
+  content: "\e692"
+
 .icon--helpdesk:before
   content: "\e647"
 
@@ -276,9 +347,6 @@ big .icon
 
 .icon--out:before
   content: "\e665"
-
-.icon--ok:before
-  content: "\e66b"
 
 .icon--open-paper:before
   content: "\e628"
@@ -313,6 +381,9 @@ big .icon
 .icon--phone-question-mark:before
   content: "\e638"
 
+.icon--pin:before
+  content: "\e678"
+
 .icon--power:before
   content: "\e64f"
 
@@ -340,14 +411,8 @@ big .icon
 .icon--share:before
   content: "\e7c5"
 
-.icon--square-ok:before
-  content: "\e877"
-
-.icon--square-left:before
-  content: "\e873"
-
-.icon--square-right:before
-  content: "\e874"
+.icon--share-2:before
+  content: "\e7a8"
 
 .icon--social-facebook:before
   content: "\e61f"
@@ -373,6 +438,9 @@ big .icon
 .icon--study:before
   content: "\e634"
 
+.icon--truck:before
+  content: "\e7e8"
+
 .icon--triangle-right:before
   content: "\e608"
 
@@ -385,17 +453,14 @@ big .icon
 .icon--user:before
   content: "\e60a"
 
-.icon--user-check:before
-  content: "\e74a"
-
-.icon--pin:before
-  content: "\e678"
-
-.icon--user-plus:before
+.icon--user-add:before
   content: "\e747"
 
-.icon--user-minus:before
+.icon--user-remove:before
   content: "\e748"
+
+.icon--user-ok:before
+  content: "\e74a"
 
 .icon--user-x:before
   content: "\e749"
@@ -405,6 +470,12 @@ big .icon
 
 .icon--users:before
   content: "\e74b"
+
+.icon--woman:before
+  content: "\e742"
+
+.icon--man:before
+  content: "\e743"
 
 .icon--world:before
   content: "\e62e"
