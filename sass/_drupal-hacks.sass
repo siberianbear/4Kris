@@ -6,10 +6,6 @@ select.form-control,
 input[type="text"].form-control
   padding: 0 $padding-base-horizontal
 
-input[type="radio"].form-radio,
-input[type="checkbox"].form-checkbox
-  margin-left: 0
-
 .views-exposed-form div.views-exposed-widget
   padding: 0
   width: 100%
@@ -78,3 +74,10 @@ input[type="checkbox"].form-checkbox
     border: none
   .vertical-tabs-panes
     +make-md-column(8)
+  .nav-tabs > li
+    margin-left: 0 !important
+    &.active
+      border: none !important
+      padding: 0
+      a
+        border: none

@@ -35,6 +35,13 @@ gulp.task('images', function() {
 });
 
 
+// Define copying component's javascript task
+gulp.task('js', function() {
+  gulp.src(['js/components/**'])
+    .pipe(gulp.dest(paths.styleguide + '/js/components'));
+});
+
+
 // Define sass compiling task
 gulp.task('sass', function () {
   gulp.src('sass/app.sass')
@@ -73,7 +80,7 @@ gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
 
 
 // Listen folders for changes and apply defined tasks
-gulp.task('default', ['styleguide', 'sass', 'images'], function() {
+gulp.task('default', ['styleguide', 'sass', 'images', 'js'], function() {
   livereload.listen();
-  gulp.watch([paths.sass, paths.html], ['styleguide', 'sass', 'images']);
+  gulp.watch([paths.sass, paths.html], ['styleguide', 'sass', 'images', 'js']);
 });
