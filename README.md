@@ -2,7 +2,7 @@
 Bootsmacss
 =========
 
-Get all goods from Bootstrap, add dozens of reusable web components that are not included in Bootstrap like listings, navigations or boxes, helpers, write all of them in BEM, then add automatically rendered styleguide and a nice tool to create static pages. **This is Bootsmacss. It will raise your workflow to a new level. Make your markup and styles scalable and easy to maintain**, does not matter if you are working on web app, huge CMS implementation or small website.
+Get all goods from Bootstrap, add dozens of reusable web components that are not included in Bootstrap, helper classes and extra mixins, write all of them in BEM, then add automatically rendered styleguide and a nice tool to create HTML prototypes. **This is Bootsmacss. It will raise your workflow to a new level. Make your markup and styles scalable and easy to maintain**, does not matter if you are working on web app, huge CMS implementation or small website.
 
 [See demo of rendered Bootsmacss styleguide](http://bootsmacss.linuxpl.info/)
 
@@ -14,7 +14,7 @@ BootSMACSS is nothing else than fusion of becoming increasingly popular approach
 * **SASS** - keeps your stylesheets's syntax clean and tidy
 * **[BEM](http://getbem.com/)** - stylish structure of each SASS component
 * **[GULP](http://gulpjs.com/)** - to process SASS files and render styleguide based on your components
-* **[Jekyll](http://jekyllrb.com/)** - to render static html prototypes as a result of graphic project's implementation that can be shown to client, tested and implemented later to CMS, or deployed to production server
+* **[Mustache](https://mustache.github.io/)** - to render static html prototypes as a result of graphic project's implementation that can be shown to client, tested and implemented later to CMS, or deployed to production server
 
 ## Realizations
 Here are the examples of sites we created using BootSMACSS and Drupal:
