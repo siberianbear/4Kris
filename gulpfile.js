@@ -1,4 +1,4 @@
-// Get dependency variables
+// Gather used gulp plugins
 var gulp = require('gulp'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     styleguide = require('sc5-styleguide'),
     livereload = require('gulp-livereload');
+    mustache = require('gulp-mustache');
 
 
 // Set paths
@@ -13,6 +14,7 @@ var paths = {
   sass: ['sass/**/*.+(scss|sass)'],
   sassStyleguide: ['sass/**/*.+(scss|sass)', '!sass/_mixins.+(scss|sass)'],
   html: ['sass/**/*.html'],
+  mustache: ['html-prototype-sandbox/*.html', 'html-prototype-sandbox/**/*.mustache'],
   styleguide: 'styleguide',
   scripts: {
     base:       'js',
@@ -42,7 +44,7 @@ gulp.task('js', function() {
 });
 
 
-// Define sass compiling task
+// Define SASS compiling task
 gulp.task('sass', function () {
   gulp.src('sass/app.sass')
     .pipe(sass(
@@ -54,7 +56,15 @@ gulp.task('sass', function () {
 });
 
 
-// Define rendering styleguide task.
+// Define Mustache compiling task
+gulp.task('mustache', function() {
+  return gulp.src("./html-prototype-sandbox/*.html")
+    .pipe(mustache())
+    .pipe(gulp.dest("./html-prototype"));
+});
+
+
+// Define rendering styleguide task
 gulp.task('styleguide:generate', function() {
   return gulp.src(paths.sassStyleguide)
     .pipe(styleguide.generate({
@@ -80,7 +90,7 @@ gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
 
 
 // Listen folders for changes and apply defined tasks
-gulp.task('default', ['styleguide', 'sass', 'images', 'js'], function() {
+gulp.task('default', ['styleguide', 'sass', 'images', 'js', 'mustache'], function() {
   livereload.listen();
-  gulp.watch([paths.sass, paths.html], ['styleguide', 'sass', 'images', 'js']);
+  gulp.watch([paths.sass, paths.html, paths.mustache], ['styleguide', 'sass', 'images', 'js', 'mustache']);
 });
