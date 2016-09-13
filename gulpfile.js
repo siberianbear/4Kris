@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 // Set paths
 var paths = {
   sass: ['sass/**/*.+(scss|sass)'],
-  sassStyleguide: ['sass/**/*.+(scss|sass)', '!sass/_mixins.+(scss|sass)'],
+  sassStyleguide: ['sass/**/*.+(scss|sass)', '!sass/_*.+(scss|sass)'],
   html: ['sass/**/*.html'],
   mustache: ['html-prototype-sandbox/*.html', 'html-prototype-sandbox/**/*.mustache'],
   styleguide: 'docs',
