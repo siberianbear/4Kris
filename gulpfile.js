@@ -15,7 +15,7 @@ var paths = {
   sassStyleguide: ['sass/**/*.+(scss|sass)', '!sass/_mixins.+(scss|sass)'],
   html: ['sass/**/*.html'],
   mustache: ['html-prototype-sandbox/*.html', 'html-prototype-sandbox/**/*.mustache'],
-  styleguide: 'styleguide',
+  styleguide: 'docs',
   scripts: {
     base:       'js',
     components: 'js/components/**/*.js'
