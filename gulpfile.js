@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 // Set paths
 var paths = {
   sass: ['sass/**/*.+(scss|sass)'],
-  sassStyleguide: ['sass/**/*.+(scss|sass)', '!sass/_*.+(scss|sass)'],
+  sassStyleguide: ['sass/app.sass'],
   html: ['sass/**/*.html'],
   mustache: ['html-prototype-sandbox/*.html', 'html-prototype-sandbox/**/*.mustache'],
   styleguide: 'docs',
@@ -65,11 +65,13 @@ gulp.task('mustache', function() {
 
 
 // Define rendering styleguide task
+// https://github.com/SC5/sc5-styleguide#build-options
 gulp.task('styleguide:generate', function() {
   return gulp.src(paths.sassStyleguide)
     .pipe(styleguide.generate({
-        title: 'Bootsmacss',
+        title: 'Bootsmacss styleguide',
         server: true,
+        sideNav: true,
         rootPath: paths.styleguide,
         overviewPath: 'README.md',
         commonClass: 'body'
