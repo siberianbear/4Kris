@@ -18,8 +18,8 @@ var paths = {
   ],
   html: ['sass/**/*.html'],
   mustache: [
-    'html-prototype-sandbox/*.html',
-    'html-prototype-sandbox/**/*.mustache'
+    'html-workspace/*.html',
+    'html-workspace/**/*.mustache'
   ],
   styleguide: 'styleguide',
   scripts: {
@@ -50,7 +50,7 @@ gulp.task('sass', function () {
 
 // Define Mustache compiling task
 gulp.task('mustache', function() {
-  return gulp.src("./html-prototype-sandbox/*.html")
+  return gulp.src("./html-workspace/*.html")
     .pipe(mustache())
     .pipe(gulp.dest("./html-prototype"));
 });
