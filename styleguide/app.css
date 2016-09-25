@@ -6278,8 +6278,6 @@ label {
   bottom: 0;
   background-color: transparent;
   border: 1px #4193a9 solid;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%; }
 
 .carousel .carousel-control.left .icon {
@@ -6568,90 +6566,6 @@ label {
       padding-bottom: 0;
       margin-bottom: 0;
       border-bottom: none; }
-
-.panel-group--horizontal {
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateX(-100%) rotate(-90deg);
-  -webkit-transform-origin: right top;
-  -moz-transform: translateX(-100%) rotate(-90deg);
-  -moz-transform-origin: right top;
-  -o-transform: translateX(-100%) rotate(-90deg);
-  -o-transform-origin: right top;
-  transform: translateX(-100%) rotate(-90deg);
-  transform-origin: right top;
-  z-index: 100;
-  width: 450px;
-  height: 450px;
-  margin: 30px 0 0; }
-  .panel-group--horizontal .panel + .panel {
-    padding-top: 1px;
-    border: none !important; }
-  .panel-group--horizontal .panel {
-    width: 450px;
-    padding-bottom: 0; }
-  .panel-group--horizontal .panel-heading,
-  .panel-group--horizontal .panel-collapse {
-    width: 100%; }
-  .panel-group--horizontal .panel-collapse {
-    height: 210px; }
-  .panel-group--horizontal .panel-title {
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateX(-100%) rotate(180deg);
-    -webkit-transform-origin: right 50% 0;
-    -moz-transform: translateX(-100%) rotate(180deg);
-    -moz-transform-origin: right 50% 0;
-    -o-transform: translateX(-100%) rotate(180deg);
-    -o-transform-origin: right 50% 0;
-    transform: translateX(-100%) rotate(180deg);
-    transform-origin: right 50% 0;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    text-transform: none;
-    padding: 5px 10px;
-    height: 30px; }
-  .panel-group--horizontal .panel-body {
-    background-color: white;
-    position: relative;
-    width: 450px;
-    height: 210px;
-    margin: 0;
-    font-size: 14px; }
-    .panel-group--horizontal .panel-body ul {
-      margin-left: 0;
-      padding-left: 10px;
-      list-style: none; }
-      .panel-group--horizontal .panel-body ul li:before {
-        content: '';
-        margin: 5px 0 0 -10px;
-        float: left;
-        background-color: white;
-        border: 1px #e75404 solid;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        width: 6px;
-        height: 6px;
-        display: block; }
-    .panel-group--horizontal .panel-body big {
-      font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
-      font-weight: 400;
-      font-size: 20px; }
-  .panel-group--horizontal .panel__rotate-wrapper {
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateX(-100%) rotate(90deg);
-    -webkit-transform-origin: right top;
-    -moz-transform: translateX(-100%) rotate(90deg);
-    -moz-transform-origin: right top;
-    -o-transform: translateX(-100%) rotate(90deg);
-    -o-transform-origin: right top;
-    transform: translateX(-100%) rotate(90deg);
-    transform-origin: right top;
-    position: absolute;
-    width: 210px;
-    height: 450px;
-    right: -210px;
-    bottom: -450px;
-    padding: 20px !important; }
 
 .panel.is-active .panel-heading {
   background-color: #e75404;
@@ -7114,8 +7028,6 @@ table {
   float: right;
   background-color: #4193a9;
   border: 0 #4193a9 solid;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%; }
   .featured__circle .icon {
     font-size: 30px;
@@ -7928,23 +7840,13 @@ table {
   text-transform: uppercase;
   padding: 3px 0;
   width: 120px;
-  left: 93px;
+  left: -27px;
   top: 21px;
   position: relative;
   font-weight: 500;
   color: #fff;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateX(-100%) rotate(-45deg);
-  -webkit-transform-origin: 50% 50% 0;
-  -moz-transform: translateX(-100%) rotate(-45deg);
-  -moz-transform-origin: 50% 50% 0;
-  -o-transform: translateX(-100%) rotate(-45deg);
-  -o-transform-origin: 50% 50% 0;
-  transform: translateX(-100%) rotate(-45deg);
-  transform-origin: 50% 50% 0;
-  -webkit-box-shadow: 1px 1px 1px 0 #d8d8d8 ;
-  -moz-box-shadow: 1px 1px 1px 0 #d8d8d8 ;
-  box-shadow: 1px 1px 1px 0 #d8d8d8 ; }
+  transform: rotate(-45deg);
+  box-shadow: 1px 1px 1px #d8d8d8; }
   .live__inner:before, .live__inner:after {
     content: '';
     border-top: 4px solid #101c27;
@@ -8160,8 +8062,6 @@ table {
   left: -5px;
   background-color: white;
   border: 1px #57c2f0 solid;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
   width: 10px;
   height: 10px; }
@@ -8194,8 +8094,6 @@ table {
   display: inline-block;
   background-color: #57c2f0;
   border: 0 #4193a9 solid;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%; }
   .nav-tiles__icon-wrapper .icon {
     position: absolute;
@@ -8283,8 +8181,6 @@ table {
   .nav-tiles .nav-tiles__item.active-trail .nav-tiles__icon-wrapper {
     background-color: #44bbee;
     border: 0 #4193a9 solid;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%; }
 
 .nav-vertical {
@@ -8452,8 +8348,6 @@ table {
 .notification-counter {
   background-color: #4193a9;
   border: 0 #4193a9 solid;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
   font-size: 10.656px;
   width: 15px;
@@ -8557,8 +8451,6 @@ table {
 .social-links .icon {
   background-color: transparent;
   border: 1px #4193a9 solid;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
   font-size: 37.5px;
   color: #4193a9;
@@ -8592,8 +8484,6 @@ table {
     background: #f5f6f8;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.4s ease-in-out;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
     border-radius: 15px; }
   .switch__label:after {
     background: #fff;
@@ -8603,8 +8493,6 @@ table {
     position: absolute;
     transition: all 0.3s ease-in-out;
     width: 30px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
     content: '|||';
     font-size: 10px;

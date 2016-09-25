@@ -43,7 +43,7 @@
 =circle($background-color: $brand-primary, $border-width: 0, $border-color: $brand-primary)
   background-color: $background-color
   border: $border-width $border-color solid
-  +border-radius(50%)
+  border-radius: 50%
 
 
 // Placeholder color
@@ -56,31 +56,6 @@
     color: $color
   &:-ms-input-placeholder
     color: $color
-
-
-// CSS3 Border radius
-=border-radius($radius)
-  -webkit-border-radius: $radius
-  -moz-border-radius: $radius
-  border-radius: $radius
-
-// CSS3 Box shadow (http://www.w3schools.com/cssref/css3_pr_box-shadow.asp)
-=shadow($color, $blur, $horizontal: 0, $vertical: 0, $spread: 0, $inset: "")
-  -webkit-box-shadow: $horizontal $vertical $blur $spread $color #{$inset}
-  -moz-box-shadow: $horizontal $vertical $blur $spread $color #{$inset}
-  box-shadow: $horizontal $vertical $blur $spread $color #{$inset}
-
-// CSS3 Rotate to given degrees (http://www.w3schools.com/cssref/css3_pr_transform-origin.asp)
-=rotate($angle, $origin: 50% 50% 0)
-  -webkit-backface-visibility: hidden
-  -webkit-transform: translateX(-100%) rotate(#{$angle}deg)
-  -webkit-transform-origin: $origin
-  -moz-transform: translateX(-100%) rotate(#{$angle}deg)
-  -moz-transform-origin: $origin
-  -o-transform: translateX(-100%) rotate(#{$angle}deg)
-  -o-transform-origin: $origin
-  transform: translateX(-100%) rotate(#{$angle}deg)
-  transform-origin: $origin
 
 
 // WAAT icon size

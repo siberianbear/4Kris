@@ -1413,8 +1413,6 @@ a a.pseudo-class-visited {
 .nav-tiles .nav-tiles__link.pseudo-class-focus .nav-tiles__icon-wrapper {
   background-color: #44bbee;
   border: 0 #4193a9 solid;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
 }
 

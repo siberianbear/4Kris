@@ -45,7 +45,7 @@ gulp.task('sass', function () {
     ).on('error', sass.logError))
     .pipe(rename('style.css'))
     .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
+      browsers: ['last 10 versions'],
       cascade: false
     }))
     .pipe(gulp.dest('css'))
