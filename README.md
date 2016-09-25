@@ -4,7 +4,7 @@ Bootsmacss
 
 Get all goods from Bootstrap, add dozens of reusable web components that are not included in Bootstrap, helper classes and extra mixins, write all of them in BEM, then add automatically rendered styleguide and a nice tool to create HTML prototypes. **This is Bootsmacss. It will raise your workflow to a new level. Make your markup and styles scalable and easy to maintain**, does not matter if you are working on web app, huge CMS implementation or small website.
 
-[See demo of rendered Bootsmacss styleguide](http://bootsmacss.linuxpl.info/)
+[View Bootsmacss styleguide demo](http://bandanaman.github.io/bootsmacss/styleguide/)
 
 ## Technologies included
 BootSMACSS is nothing else than fusion of becoming increasingly popular approaches that we liked very much:
