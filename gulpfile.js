@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     watch = require('gulp-watch'),
     sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer');
     styleguide = require('sc5-styleguide'),
     livereload = require('gulp-livereload');
     mustache = require('gulp-mustache');
@@ -43,6 +44,10 @@ gulp.task('sass', function () {
       {outputStyle: 'compressed'}
     ).on('error', sass.logError))
     .pipe(rename('style.css'))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(gulp.dest('css'))
     .pipe(livereload());
 });
@@ -92,7 +97,18 @@ gulp.task('js', function() {
 
 
 // Listen folders for changes and apply defined tasks
-gulp.task('default', ['styleguide', 'sass', 'images', 'js', 'mustache'], function() {
+gulp.task('default', [
+    'styleguide',
+    'sass',
+    'images',
+    'js',
+    'mustache'
+  ], function() {
   livereload.listen();
-  gulp.watch([paths.sass, paths.html, paths.mustache], ['styleguide', 'sass', 'images', 'js', 'mustache']);
+  gulp.watch([paths.sass, paths.html, paths.mustache], [
+    'styleguide',
+    'sass',
+    'images',
+    'js',
+    'mustache']);
 });
