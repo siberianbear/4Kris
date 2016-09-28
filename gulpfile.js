@@ -18,10 +18,10 @@ var paths = {
     '!sass/_*.+(scss|sass)'
   ],
   html: ['sass/**/*.html'],
-  mustache: [
-    'html-workspace/*.html',
-    'html-workspace/**/*.mustache'
-  ],
+  mustache: {
+    input: './html-workspace/*.html',
+    output: './html-preview'
+  },
   styleguide: 'styleguide',
   scripts: {
     base:       'js',
@@ -52,14 +52,12 @@ gulp.task('sass', function () {
     .pipe(livereload());
 });
 
-
 // Define Mustache compiling task
 gulp.task('mustache', function() {
-  return gulp.src("./html-workspace/*.html")
+  return gulp.src(paths.mustache.input)
     .pipe(mustache())
-    .pipe(gulp.dest("./html-prototype"));
+    .pipe(gulp.dest(paths.mustache.output));
 });
-
 
 // Define rendering styleguide task
 // https://github.com/SC5/sc5-styleguide#build-options
@@ -105,10 +103,11 @@ gulp.task('default', [
     'mustache'
   ], function() {
   livereload.listen();
-  gulp.watch([paths.sass, paths.html, paths.mustache], [
+  gulp.watch([paths.sass, paths.html, paths.mustache.input], [
     'styleguide',
     'sass',
     'images',
     'js',
-    'mustache']);
+    'mustache'
+  ]);
 });
