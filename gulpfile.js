@@ -1,7 +1,6 @@
 // Gather used gulp plugins
 var gulp = require('gulp'),
     rename = require('gulp-rename'),
-    concat = require('gulp-concat'),
     watch = require('gulp-watch'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer');
@@ -12,34 +11,28 @@ var gulp = require('gulp'),
 
 // Set paths
 var paths = {
-  sass: ['sass/**/*.+(scss|sass)'],
-  sassStyleguide: [
-    'sass/**/*.+(scss|sass)',
-    '!sass/_*.+(scss|sass)'
-  ],
-  html: ['sass/**/*.html'],
+  sass: {
+    input: 'sass/app.sass',
+    allfiles: 'sass/**/*.+(scss|sass)',
+    output: 'css'
+  },
   mustache: {
     input: './html-workspace/*.html',
     output: './html-preview'
   },
-  styleguide: 'styleguide',
-  scripts: {
-    base:       'js',
-    components: 'js/components/**/*.js'
+  styleguide: {
+    sass: [
+      'sass/**/*.+(scss|sass)',
+      '!sass/_*.+(scss|sass)'
+    ],
+    html: 'sass/**/*.html',
+    output: 'styleguide',
   }
 };
 
-// TODO: contat scripts and add them to styleguide
-gulp.task('scripts', function(){
-  return gulp.src(paths.scripts.components)
-    .pipe(concat('bootsmacss.js'))
-    .pipe(gulp.dest('js'));
-});
-
-
 // Define SASS compiling task
 gulp.task('sass', function () {
-  gulp.src('sass/app.sass')
+  gulp.src(paths.sass.input)
     .pipe(sass(
       {outputStyle: 'compressed'}
     ).on('error', sass.logError))
@@ -48,7 +41,7 @@ gulp.task('sass', function () {
       browsers: ['last 10 versions'],
       cascade: false
     }))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest(paths.sass.output))
     .pipe(livereload());
 });
 
@@ -62,16 +55,16 @@ gulp.task('mustache', function() {
 // Define rendering styleguide task
 // https://github.com/SC5/sc5-styleguide#build-options
 gulp.task('styleguide:generate', function() {
-  return gulp.src(paths.sassStyleguide)
+  return gulp.src(paths.styleguide.sass)
     .pipe(styleguide.generate({
         title: 'Bootsmacss styleguide',
         server: true,
         sideNav: true,
-        rootPath: paths.styleguide,
+        rootPath: paths.styleguide.output,
         overviewPath: 'README.md',
         commonClass: 'body'
       }))
-    .pipe(gulp.dest(paths.styleguide));
+    .pipe(gulp.dest(paths.styleguide.output));
 });
 gulp.task('styleguide:applystyles', function() {
   return gulp.src('sass/app.sass')
@@ -79,18 +72,18 @@ gulp.task('styleguide:applystyles', function() {
       errLogToConsole: true
     }))
     .pipe(styleguide.applyStyles())
-    .pipe(gulp.dest(paths.styleguide));
+    .pipe(gulp.dest(paths.styleguide.output));
 });
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
 // Define copying images for styleguide task
 gulp.task('images', function() {
   gulp.src(['images/**'])
-    .pipe(gulp.dest(paths.styleguide + '/images'));
+    .pipe(gulp.dest(paths.styleguide.output + '/images'));
 });
 // Define copying javascript for styleguide task
 gulp.task('js', function() {
   gulp.src(['js/components/**'])
-    .pipe(gulp.dest(paths.styleguide + '/js/components'));
+    .pipe(gulp.dest(paths.styleguide.output + '/js/components'));
 });
 
 
@@ -103,7 +96,7 @@ gulp.task('default', [
     'mustache'
   ], function() {
   livereload.listen();
-  gulp.watch([paths.sass, paths.html, paths.mustache.input], [
+  gulp.watch([paths.sass.allfiles, paths.styleguide.html, paths.mustache.input], [
     'styleguide',
     'sass',
     'images',
