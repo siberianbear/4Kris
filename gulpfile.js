@@ -1,4 +1,4 @@
-// Gather used gulp plugins
+﻿// Gather used gulp plugins
 var gulp = require('gulp'),
     rename = require('gulp-rename'),
     watch = require('gulp-watch'),
@@ -49,7 +49,8 @@ gulp.task('sass', function () {
 gulp.task('mustache', function() {
   return gulp.src(paths.mustache.input)
     .pipe(mustache())
-    .pipe(gulp.dest(paths.mustache.output));
+    .pipe(gulp.dest(paths.mustache.output))
+    //.pipe(livereload());
 });
 
 // Define rendering styleguide task

@@ -878,7 +878,7 @@ a.label.pseudo-class-focus {
 
 .label-default[href].pseudo-class-hover,
 .label-default[href].pseudo-class-focus {
-  background-color: #28b1ec;
+  background-color: #004d00;
 }
 
 .label-primary[href].pseudo-class-hover,
@@ -1411,7 +1411,7 @@ a a.pseudo-class-visited {
 
 .nav-tiles .nav-tiles__link.pseudo-class-hover .nav-tiles__icon-wrapper,
 .nav-tiles .nav-tiles__link.pseudo-class-focus .nav-tiles__icon-wrapper {
-  background-color: #44bbee;
+  background-color: #006c00;
   border: 0 #4193a9 solid;
   border-radius: 50%;
 }
@@ -1432,7 +1432,7 @@ a a.pseudo-class-visited {
 
 .news-carousel__controls-left.pseudo-class-hover,
 .news-carousel__controls-right.pseudo-class-hover {
-  color: #57c2f0;
+  color: green;
 }
 
 .switch__input.pseudo-class-checked + label:before {
